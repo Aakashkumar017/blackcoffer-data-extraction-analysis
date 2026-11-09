@@ -1,0 +1,34 @@
+NER Task using BERT with data in XML-format
+Client: A leading tech firm in the USA
+Industry Type: IT
+Services: SaaS, Products
+Organization Size: 100+
+The goal of this task is to create and implement a workflow that annotates People/Places/Organizations and assigns them a specific number (from a normdatabase). The NER-Task should be done by using Bert (NER-German https://huggingface.co/flair/ner-german or something similar).
+The input to this first task is a text in XML-Format. It is important that the structuring text is not altered by the NER. This could be possible by tokenizing the XML-elements in a different/seperate way, to then run the NER with BERT and afterwards add the elements afterwards at the exact position where the initially were. The tags that were added by the NER than can be easily replaced with the required tags in the XML-format.
+Input Data 🡪 XML Text Tokenization 🡪 NER Model 🡪 Replace NER Tags with XML Tags 🡪 Final Output
+Python tool
+Documentation
+Installation
+VSCode For Python script
+Python Programming Language
+Named Entity Recognition (NER)
+FuzzyWuzzy tqdm Flair Pandas
+Data Loading Data Processing Data Restoring
+During the project execution, we faced the following challenges:
+Parsing of the input XML file.
+Predicting the Name, Place and Organization.
+Rearranging the XML file to its origin form with the predicted value.
+To solve the technical challenges, we provided following solutions as follow:
+It was not possible by the beautiful soup library. So by using the logically function start index and end index we break the sentence.
+For predicting the NPO we used the flair ner-german model.
+To rearrange the file we used start index and end index function which can be split with a certain condition and we place the predicted value in it.
+The client can know easily predict the Name, Place, and Organisation from XML containing file by using our python script model.
+Fig. Input XML file
+Fig. Output XML file with predicted values.
+Github: https://github.com/AjayBidyarthy/Sven-Meier-XML-tool/tree/master
+Here are my contact details:
+Email: ajay@blackcoffer.com
+Skype: asbidyarthy
+WhatsApp: +91 9717367468
+Telegram: @asbidyarthy
+For project discussions and daily updates, would you like to use Slack, Skype, Telegram, or Whatsapp? Please recommend, what would work best for you.

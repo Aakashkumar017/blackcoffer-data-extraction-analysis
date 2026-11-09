@@ -1,0 +1,176 @@
+List of data analysis tools, categorized based on their primary functions
+Here’s a comprehensive list of data analysis tools , categorized based on their primary functions:
+1. Programming Languages for Data Analysis
+Python – NumPy, Pandas, SciPy, Scikit-learn, Matplotlib, Seaborn, Statsmodels
+R – Tidyverse (ggplot2, dplyr, tidyr), Shiny, caret, forecast, data.table
+SQL – PostgreSQL, MySQL, SQLite, Microsoft SQL Server, Snowflake, Google BigQuery
+Julia – DataFrames.jl, Plots.jl, MLJ.jl
+SAS – Base SAS, SAS Enterprise Miner, SAS Viya
+MATLAB – Statistics and Machine Learning Toolbox
+Scala – Apache Spark (PySpark, Spark SQL)
+Java – Weka, Deeplearning4j
+C/C++ – Armadillo, Eigen, mlpack
+2. Business Intelligence (BI) Tools
+Tableau
+Microsoft Power BI
+Google Data Studio (Looker Studio)
+QlikView / Qlik Sense
+SAP BusinessObjects
+Domo
+TIBCO Spotfire
+Sisense
+Zoho Analytics
+IBM Cognos Analytics
+Oracle Analytics Cloud
+MicroStrategy
+GoodData
+Metabase
+Mode Analytics
+Kibana (for Elasticsearch analytics)
+3. Statistical and Predictive Analytics Tools
+SPSS (IBM)
+Stata
+Minitab
+JMP (SAS)
+EViews (for econometrics)
+RapidMiner
+Alteryx
+Orange
+KNIME
+XLStat (Excel add-on for statistics)
+4. Data Visualization Tools
+D3.js (JavaScript library)
+Plotly (Python, R, JavaScript)
+Matplotlib & Seaborn (Python)
+ggplot2 (R)
+Chart.js (JavaScript)
+Grafana
+Dash (by Plotly)
+Bokeh (Python)
+Superset (Apache)
+Highcharts
+RAWGraphs
+Gephi (for network graph analysis)
+5. Big Data Analytics and Processing
+Apache Hadoop (HDFS, MapReduce, YARN)
+Apache Spark (PySpark, MLlib, Spark SQL)
+Databricks
+Dask (Python parallel computing)
+Google BigQuery
+Amazon Redshift
+Snowflake
+Presto (SQL Query Engine)
+Apache Flink
+Apache Drill
+Vertica
+ClickHouse
+6. Machine Learning & AI for Data Analysis
+TensorFlow (Google)
+PyTorch (Meta)
+Scikit-learn (Python ML Library)
+XGBoost / LightGBM / CatBoost (Gradient Boosting Libraries)
+H2O.ai
+AutoML (Google Cloud)
+Azure ML
+AWS SageMaker
+Google Vertex AI
+MLflow (for ML model tracking and management)
+DataRobot
+Cortex (for deploying ML models as APIs)
+7. Data Integration and ETL (Extract, Transform, Load)
+Apache Nifi
+Talend
+Informatica
+Fivetran
+Airbyte
+Stitch
+Microsoft Azure Data Factory
+AWS Glue
+Google Cloud Dataflow
+dbt (Data Build Tool)
+Pentaho Data Integration
+Apache Kafka
+Apache Airflow
+Luigi
+Hevo Data
+Zapier (for simple integrations)
+8. NoSQL and Graph Data Analysis
+MongoDB (Document-oriented database)
+Cassandra (Wide-column store)
+Neo4j (Graph database)
+ArangoDB (Multi-model database)
+JanusGraph (Scalable graph database)
+Dgraph (Distributed graph database)
+GraphDB (RDF store for semantic graphs)
+Amazon Neptune (Graph database)
+OrientDB
+9. Data Warehousing & Cloud Storage for Analytics
+Google BigQuery
+Amazon Redshift
+Snowflake
+Microsoft Azure Synapse Analytics
+Databricks Lakehouse
+Vertica
+SAP HANA
+IBM Db2 Warehouse
+Exasol
+10. Spreadsheet-Based Analysis
+Microsoft Excel (Power Query, Power Pivot, Solver)
+Google Sheets (Connected Sheets, Apps Script)
+Zoho Sheet
+Airtable
+Smartsheet
+11. Web & Social Media Analytics
+Google Analytics
+Adobe Analytics
+SEMrush
+Ahrefs
+HubSpot Analytics
+Kissmetrics
+Mixpanel
+Hotjar (User behavior analytics)
+Crazy Egg (Heatmaps & user behavior analysis)
+Matomo (Open-source web analytics)
+12. Time Series Analysis Tools
+Prophet (Facebook)
+tsfresh (Python)
+GluonTS (Amazon)
+AutoTS (Python)
+Statsmodels (Python)
+Forecast (R)
+Holt-Winters (Triple Exponential Smoothing)
+SARIMA / ARIMA (Time Series Models)
+13. Data Annotation & Labeling Tools
+Labelbox
+SuperAnnotate
+V7 Labs
+Prodigy (by Explosion.ai)
+CVAT (Computer Vision Annotation Tool)
+Amazon SageMaker Ground Truth
+Google Cloud AutoML Data Labeling
+Scale AI
+Supervise.ly
+14. Open-Source Data Science Platforms
+Jupyter Notebook / JupyterLab
+Google Colab
+RStudio
+VS Code (with Jupyter Extensions)
+Kaggle Kernels
+Zeppelin (Apache Notebook for Big Data)
+Orange (Drag-and-drop ML & data visualization)
+15. Text and NLP (Natural Language Processing) Analytics
+SpaCy (Python)
+NLTK (Python)
+Transformers (Hugging Face)
+CoreNLP (Stanford NLP)
+Gensim (Topic modeling)
+FastText (Facebook)
+Polyglot (Multilingual NLP)
+Amazon Comprehend
+Google Cloud NLP
+Azure Text Analytics
+TextBlob
+Word2Vec / BERT / GPT Models
+This list covers most major data analysis tools , but let me know if you need a specific category or a more tailored recommendation! 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

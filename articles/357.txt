@@ -1,0 +1,46 @@
+Advanced ETL Framework: Data Integration & Analytics with BigQuery
+Client: A leading wellness firm in the USA, EU
+Industry Type: Healthcare
+Products & Services: Wellness products
+Organization Size: 2000+
+The client needed a robust and scalable data pipeline to extract, integrate, and analyze data from multiple sources, including Shopify, Recharge, GetFeedback, Salesforce, and SimplyBook. The existing data infrastructure was fragmented, leading to inefficiencies in reporting and analytics.
+We developed a data pipeline that seamlessly extracts data from various sources and integrates it into a unified data warehouse. Initially, we implemented the solution using Y42 v1 and v2, creating orchestrations and automated data workflows. As the client transitioned to Kleene.ai, we migrated the data pipeline to this new platform to ensure continued efficiency and scalability. Additionally, Python scripts were used for integrating data from SimplyBook and GetFeedback, deployed on Google Cloud Functions and scheduled to run every morning at 7 AM.
+Fully automated data pipeline
+Migration from Y42 to Kleene.ai
+Data warehouse setup in BigQuery
+Integrated reporting dashboards in Looker Studio and Google Sheets
+Python-based integrations for SimplyBook and GetFeedback
+Documentation for pipeline maintenance
+Y42 v1 & v2
+Kleene.ai
+Looker Studio
+Google Sheets
+Google Cloud Functions
+Google Bigquery
+SQL
+Python
+ETL (Extract, Transform, Load) methodologies
+API integrations
+Data orchestration models
+Data transformation models
+Data Engineering
+ETL development
+Cloud Data Warehousing
+Dashboarding and Visualization
+API Integration
+Google BigQuery
+Google Cloud Platform (GCP)
+What are the technical Challenges Faced during Project Execution
+Integration of multiple data sources with varying APIs and formats.
+Transitioning from Y42 to Kleene.ai without disrupting ongoing operations.
+Ensuring data consistency and accuracy during migration.
+Deploying and scheduling Python scripts on Google Cloud Functions.
+How the Technical Challenges were Solved
+Developed API-based connectors for seamless data extraction.
+Created a parallel processing environment to test Kleene.ai workflows before full migration.
+Implemented data validation checks and automated reconciliation reports to ensure data integrity.
+Used Google Cloud Scheduler to automate Python script execution every morning at 7 AM.
+Improved data processing efficiency and reduced manual intervention.
+Faster reporting with real-time data availability.
+Scalable data pipeline supporting future growth.
+Enhanced decision-making through reliable analytics and insights.

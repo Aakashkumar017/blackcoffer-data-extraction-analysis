@@ -1,0 +1,237 @@
+Playstore & Appstore to Google Analytics (GA) or Firebase to Google Data Studio Mobile App KPI Dashboard
+General Mobile App KPIs
+User Growth Rate
+Mobile Downloads
+Installs
+Uninstalls
+Registrations
+Subscriptions
+Crashes
+Upgrades
+App Engagement Metrics
+Retention Rate
+Sessions
+Session Length
+Session Interval
+Session Depth
+Average Screens Per Visit
+Daily Active Users (DAU)
+Monthly Active Users (MAU)
+Social Shares
+Brand Awareness
+Churn Rate
+Revenue-Focused/Financial Mobile KPIs
+Average Revenue Per User (ARPU)
+Lifetime Value (LTV)
+Time To First Purchase
+Purchases
+Customer Acquisition Cost (CAC)
+Cost Per Acquisition (CPA)
+Customer Lifetime Value (CLV)
+eCAC (Effective Customer Acquisition Cost)
+eCPM (Effective Cost Per Mille)
+Paid Conversion Rate
+Organic Conversion Rate
+Return On Investment (ROI)
+Cost Per Install (CPI)
+User Experience KPIs
+Load Time
+Devices
+Carriers
+OS
+Screen Dimensions/Resolution
+Permissions Granted
+API Latency
+Mobile App Marketing KPIs
+Install Source (Attribution)
+Virality and K Factor
+Channel Breakdown
+Geo-metrics
+Demographics
+Cohort Analysis
+Behavioral Metrics
+App Store Optimization (ASO) KPIs
+Keywords
+App Store Category Ranking
+Views To Installs
+Reviews
+Ratings
+General Mobile App KPIs
+There are some KPIs that measure the general performance of mobile apps.
+Nearly everyone in the app’s development or marketing realm should track these. How much weight or consideration each carries depends on the app itself.
+User Growth Rate
+You will want to track this to ensure that your user base is growing, and how .
+Does it spike due to particular events (such as changes in price, app updates, and other activities)? Or is it slow and steady?
+Here’s the formula for your user growth rate:
+((Present User Amount – Past User Amount) / (Past User Amount)) X 100
+Mobile Downloads
+The number of times that an app gets downloaded to a device is perhaps the simplest and most obvious way to track its popularity among users. Of course, you should track app downloads, as this KPI is the foundation that most KPIs are built on.
+Installs
+The fact that someone downloaded an app doesn’t mean that they completed the setup process. Therefore, you should also be tracking actual installations on the various devices that your audience uses.
+Uninstalls
+Someone can decide to uninstall your app for any number of reasons and they won’t always leave feedback or give a reason why.
+However, if the uninstalls correspond with an update or changes in your app (or advertising methods or targeting), you should consider what happened and why — especially if the uninstalls occurred in clusters or were performed by a previously stable user base.
+Registrations
+Deciding whether or not to register (and therefore give up their personal data) is another sign that users are buying what you are selling, at least figuratively.
+Plus you can use their email addresses or other contact info to market future upgrades and other apps to them. If users are failing to sign up for your app after downloading it, it’s time to review your onboarding flow.
+Subscriptions
+If subscribing to new content or other updates is a feature you offer, you should be tracking the number of signups and unsubscribes.
+Besides, keeping track of how long it takes users to subscribe once they have installed the app — as well as the average subscription length — tells you more about the behavior of your users.
+Crashes
+Of course, if a user downloads and installs an app and it crashes frequently, that is not ideal.
+Keeping track of the number of crashes that occur and when in the user process they happen is necessary to improve the performance, the user experience, and the app retention metrics of your app.
+Upgrades
+If you offer the option to upgrade your app to a premium or paid version, track the number and timing of upgrades. How long does it take a user who has installed or registered for the app to upgrade?
+Is the upgraded version rated higher than the basic version or are they similarly rated?
+All of the former show the level of engagement your users have with the app and the depth of financial commitment they might be willing to make. This is essential data when you’re attempting to calculate the valuation of your mobile app.
+App Engagement Metrics
+Other key performance indicators measure how users engage with the app, including how, when, and where they use it and in which ways they connect or engage with your mobile app.
+Retention Rate
+The number of users that come back or return after a given period has passed. Retaining users is generally an indicator of creating a “sticky” or valuable app because people use it on a regular or more consistent basis.
+The higher the app retention rate, the more positive implications for future earnings from the app.
+Retention Rate = ((CE – CN) / CS)) X 100
+CE = number of customers at the end of the period CN = number of new customers acquired during this period CS = number of customers at the start of the period
+Sessions
+The number of sessions you generate — also referred to as the number of times a user opens up the app — is an indicator of popularity and “stickiness” since the more sessions a user creates and that an app receives, the better.
+Keep in mind that in digital analytics, a session is a user or device-specific group of interactions that occur on your website or app within a given time frame. Therefore, defining what a session means for your particular app or project is essential.
+You can additionally calculate “stickiness” by dividing your daily active users (DAU) by your monthly active users (MAU) .
+DAU/MAU = Stickiness
+Session Length
+The amount of time that users spend on the app per session. Generally, the more time a user spends on the app, the better, but you may also want to look at session length, as it is related to the number of crashes and uninstalls, and see if there is a correlation.
+On the other hand, depending on your app’s functionality and goals, you may not need users to stay long to convert or take the desired action. In that case, the number of session intervals, AOR or depth of sessions may be a more useful KPI to track.
+Session Interval
+The amount of time between sessions e.g., Do users visit every day or every week? More than once per day?
+Shorter intervals are usually better. This KPI for mobile apps can also be tied to content updates or other timely events to consider with your app.
+For instance, if there is new content to view every morning, then your session intervals are likely to be 24 hours or so; on the contrary, if your app isn’t tied to a particular time of day or event, shorter session intervals might be more desirable.
+Session Depth
+The number of interactions per session, or how far someone goes on the user journey before closing a session or the app.
+For instance, going from browsing to making a purchase or leveling up in a game may signify more session depth than logging and checking for new content or using an app that requires only a short time to take advantage of its functionality, like a photo editor or calculator.
+Average Screens Per Visit
+The number of unique pages or URLs that a user hits during each visit, averaged.
+Usually, the higher the number, the better for your app, particularly if you rely on advertising for monetization — more screens equals more views or impressions.
+Daily Active Users (DAU)
+The number of active users who use the app daily.
+Averaging the number of DAUs over a month or year is a common way to discern a valuation or the future growth of a project.
+Monthly Active Users (MAU)
+The number of active users of the app on a monthly basis. Keep in mind that these are tracked as unique visitors who may visit for multiple sessions, so it is useful to pay attention to both app usage metrics.
+Social Shares
+The number of times your app is recommended or shared on social media. The higher the number, the better. Still, don’t forget to check when and where your app is shared and in what context.
+This is especially important if you have any social media functionality or integration built into your app.
+Brand Awareness
+There are several different ways to define brand awareness, including how many times your brand appears in the search engine results, on various social networks or the “reach” of your brand.
+The more users are aware of your brand, the better, but you also want to analyze the diversity of brand mentions.
+Churn Rate
+The rate at which active users unsubscribe or uninstall your app.
+You want a low churn rate . A high one is potentially indicative of functionality problems elsewhere that can be determined by checking when and where the app crashes or users log out or drop off.
+Revenue-Focused/Financial Mobile KPIs
+Money may not be everything , but it is certainly important.
+And you probably want your app to be profitable or financially stable in some way, shape or form. Therefore, you will need to measure how it’s generating revenue using metrics like the following KPIs for apps.
+Average Revenue Per User (ARPU)
+The average amount of value or cash generated per user via in-app purchases, ad impressions or clicks, subscriptions, paid downloads, or other forms of monetization.
+Multiplied by the size of the user base or the number of active users, this figure gives a good rough idea of the value of the app as a whole.
+Lifetime Revenue / # of Users
+Lifetime Value (LTV)
+The lifetime value of a user is the amount of revenue they’ve generated for your app thus far. Combined with the average revenue per user, it can be a great way to determine the total prospective revenue or value of an app.
+Avg value of a Conversion X Avg # of Conversions in a Time Frame X Avg Customer Lifetime
+Time To First Purchase
+This mobile app KPI is about the amount of time it takes a user who has downloaded and installed the app to make a purchase, whether that is an in-app purchase, an e-commerce purchase, or buying a premium or otherwise upgraded version of the app.
+Date/Time of First Purchase – Date/Time Registered (in days)
+Purchases
+This is a relatively simple and necessary number to track if your app involves any kind of exchange of funds, whether they are in-app purchases, upgrades to a premium version, subscriptions or an e-commerce play.
+Customer Acquisition Cost (CAC)
+The cost of acquiring a new customer, e.g., the money spent advertising your app, including the time factored in for marketing costs — time is money, after all.
+You can determine this number by dividing the total gross revenue during a given period by the sales and marketing costs incurred during the same period.
+Cost of Acquiring a New Customer / # of New Customers
+Cost Per Acquisition (CPA)
+The cost per acquisition of a conversion.
+This mobile app KPI doesn’t necessarily imply the conversion comes from a new customer but from a new behavior, such as signing up for a subscription, upgrading to a premium or higher level, in-app purchases, or giving new permissions.
+Cost / # of Acquisitions
+Customer Lifetime Value (CLV)
+The lifetime value of a customer based on the net profit they generate over time. In this case, it depends on their spending — in and on the app — in proportion to the cost required for their acquisition.
+A user pool with a high average CLV is a tremendous asset for a mobile app. Keep in mind that successful apps tend to have an excellent CLV to CAC ratio.
+Annual profit contribution per Customer X Average number of years that they remain a customer minus the initial cost of customer acquisition
+eCAC (Effective Customer Acquisition Cost)
+The actual or effective cost of acquiring new customers, including organic discovery methods, paid advertising, and time spent or other expenses incurred during the marketing process.
+Calculate it by comparing the number of new customers to the total number of impressions generated by marketing campaigns while factoring in the cost of those campaigns.
+eCPM (Effective Cost Per Mille)
+The actual cost per 1,000 impressions or actions, including organic and paid marketing efforts along with the cost of time spent or other expenses incurred.
+This can be calculated by factoring in the number of impressions or views generated by marketing efforts divided by the number of customers gained.
+Cost for Advertising X (Impressions / 1000)
+Paid Conversion Rate
+The rate of conversion via paid advertising.
+It includes PPC advertising, display ads, social media ads (e.g., promoted Tweets or boosted Facebook posts), sponsored posts or reviews, or any other method of marketing your mobile app that involves a direct exchange of money for mentions or views.
+Organic Conversion Rate
+The rate of conversion via unpaid discovery, such as organic search,word of mouth mentions on social media, influencer marketing, public relations mentions and buzz, related apps in the app store listings, or any other way of marketing your mobile app that doesn’t involve direct paid advertising.
+Return On Investment (ROI)
+The return on investment for any marketing tactics or techniques is calculated by dividing the number of gains in customers or revenue generated by how much you spent on marketing — including time or any expenses incurred.
+(Gain from Investment – Cost of Investment) / Cost of Investment
+Cost Per Install (CPI)
+Cost per install measures your customer acquisition costsfor customers that installed your app after seeing an advertisement. It tracks paid installs rather than organic ones.
+Ad Spend / # of Installs Directly Tied to Ad Campaign
+User Experience KPIs
+User experience is perhaps the main factor concerning whether a mobile app succeeds or fails.
+Accordingly, using these mobile app analytics KPIs and others to track, measure and improve on it might be the most important activity you can engage in as a mobile app developer or marketer.
+Load Time
+The amount of time it takes an app to leadfrom the initial tap to being ready to use. It also applies to in-app screens and how long it takes the user to transition from one screen or activity to another.
+The lower the load time, the faster the app, and the more desirable of a user experience it provides . You almost always want your load times to be as low as possible.
+Devices
+Another relatively simple KPI to define and track is which devices your audience uses to access your app.
+Depending on your target clientele, it is essential to know if they usually use tablets versus smartphones, Android versus iOS or other specific devices. Then you can target your app’s performance accordingly.
+Carriers
+The devices used to access your app are only part of the equation. You should also know which carriers your user base tends to prefer, in particular, if you are targeting a particular geographic region.
+OS
+This is overwhelmingly a question of Android versus iOS for both users and developers — although your app should work well on both.
+If there is a high crash or uninstall rate for either OS or if your user base prefers Apple or Android, that is something to consider. Try to get to the bottom of why it is happening and solve any problems that these preferences may indicate.
+Screen Dimensions/Resolution
+This KPI is almost always related to the devices that your customers use to access your app. It is something to consider when making updates and future versions. Correlate it with mobile app performance metrics like uninstalls or crashes.
+Permissions Granted
+The amount of access or permissions that your customers allow via your app.
+API Latency
+This is the time interval between your API proxies being called or triggered and their response or load time. In general, you want this number to be low. This KPI for apps is tied to load time and the corresponding user behaviors.
+Mobile App Marketing KPIs
+There are plenty of key performance indicators tied to the effectiveness of how you market your application.
+Choosing the mobile marketing KPIs that track your preferred or most effective methods is essential, along with measuring your app growth and mentions on social media and influencer networks.
+Naturally, you should also be reporting on any paid advertising and monitoring your app store analytics to see what is driving downloads.
+Install Source (Attribution)
+The platform and referral source where your customers discover and install your app is a key piece of knowledge that will inform the rest of your campaign.
+Is it via paid ads or links, organic mentions, or some combination of the two, and what is that ratio?
+What sources are the most and least successful?
+Which app store do they use, and how do they get to your app’s page (keyword search, inbound link, social media promotion, etc.)?
+If you want to track this, you can do more of the same regarding successful sources and lower or adjust your marketing methods to the less advantageous ones.
+Virality and K Factor
+This is the viral popularity or word of mouth surrounding your mobile app marketing. Virality can be measured in different ways, but a common method is to calculate the k factor by multiplying the number of mentions (organic or paid) by the corresponding conversion percentage.
+However, you track virality, determine one way of tracking it from the beginning and stick with it for the most complete and cohesive results.
+Channel Breakdown
+The range and type of channels that users use to access your application. Generally, you want to aim for a variety in sources along with analyzing the type of source as it relates to its popularity with your target demographics and how the users who arrived via various channels behave once they download and install your app.
+Geo-metrics
+The geographic location of your users — and subsequently their language too — may affect in-app purchases and ad revenue.
+This mobile app metric can also inform your future mobile app marketing campaigns by letting you know which locations to target and which are already saturated.
+Demographics
+The gender, ethnicity, and age of your audience.
+Tracking the demographics of your actual customer base as it compares to your target audience is an excellent way to judge the effectiveness of your marketing efforts.
+Cohort Analysis
+Your user base can likely be grouped into several categories or collectives based on demographics, locations, in-app behaviors, or other common characteristics.
+Grouping your users and seeing the patterns in their behavior can be a valuable learning experience or source of knowledge about your current and potential customers.
+Behavioral Metrics
+The behaviors that are unique to your app can be a valuable insight into your audience’s minds.
+This mobile app KPI applies to how the users arrived at your app and what they do once they download it. It can also include other apps they have downloaded, social networks they participate in or websites they actively visit.
+Essentially, tracking behavioral metrics allows you to create a collection of user profiles and develop app features and marketing plans that tap into and take advantage of these behaviors.
+App Store Optimization (ASO) KPIs
+Perhaps the most important part of marketing and promoting your mobile app is the app store experience and how it attracts users — how they discover your app, decide whether to install and purchase it, and rate and review it.
+Keywords
+Keywords or phrases that caused users to discover and download your app.
+Tracking the user path from the initial keyword search to the eventual purchase will let you see which keywords actually generate revenue and other positive or desired behaviors.
+App Store Category Ranking
+Monitoring your rankings over time and studying how they affect your app’s performance is essential and, in general, the better your ranking the better your performance.
+Views To Installs
+The number of times a user viewed your app listing before installing it.
+In general, the lower number of views to install, the better. It shows that your advertising and app store listing are effective.
+Reviews
+The more positive reviews you get, the better. Also, be attentive to the total number of them since that shows users are passionate and engaged enough to take the time to write a review of your app.
+Negative reviews also give you a chance to learn from critics what to improve, while positive reviews can show you features that you should boost, augment, or even consider upgrading to a premium version or a spin-off app.
+Sometimes you can learn the most about what people want from this kind of direct feedback.
+Ratings
+Like app store reviews, the more positive ratings you get and the higher the average rating or score, the better.
+That said, because it takes less effort to rate an app, the number of ratings is not as indicative of passion or engagement as reviews are.
+Of course, not all mobile app KPIs and metrics are created equal when it comes to measuring a mobile app’s success or placing value on a given app.
+There are lots of key performance indicators that mobile app developers should consider at various points in the creation process. However, distilling all these apps into a coherent report or cohesive analysis — making them tell a story — is easier said than done.

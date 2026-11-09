@@ -1,0 +1,43 @@
+Spark DDE + Claude Desktop: AI-Powered ASX Trading Intelligence via Live DDE Bridge
+The Problem
+Traders using Spark have access to rich, live ASX market data delivered via Dynamic Data Exchange (DDE) — a Windows protocol that works great with Excel but is completely invisible to modern AI tools.
+There was no way to ask simple questions like “What is my P&L today?” or “Which stock is dragging my portfolio?” without switching between tools, running Excel macros, or pulling reports manually. The data existed — it just wasn’t accessible to AI in any useful way.
+•    DDE data is siloed inside Spark and only readable by legacy Windows applications like Excel
+•    Modern AI tools (including Claude) have no awareness of DDE — they cannot subscribe to feeds or read live prices
+•    No structured, queryable layer existed between Spark’s live data and any AI interface
+•    Traders had no way to run natural language analytics across positions, P&L, and orders
+Our Solution
+We built a four-layer bridge that connects Spark’s live DDE feed to Claude Desktop — so traders can ask questions in plain English and get real-time answers backed by live market data.
+Everything runs locally on the trader’s Windows machine. No cloud services, no manual steps, no data leaving the machine. Once the system is running, asking Claude “Show my positions” returns a live portfolio table with P&L in under two seconds.
+•    A Python DDE listener polls Spark every 2 seconds for 6 ASX stocks and writes data to Redis and SQLite
+•    A FastAPI backend exposes 15 authenticated REST endpoints for quotes, positions, P&L, orders, and analytics
+•    An MCP server registers 18 tools with Claude Desktop — one for each type of trading question
+•    Claude Desktop picks the right tool based on the user’s question and returns a formatted, data-driven answer
+The result: Market data rows captured, live P&L calculated in real time, and 30 days of order and P&L history — all queryable through a simple conversation with Claude.
+Solution Architecture
+The system is split into four clear layers. Each layer does one job and hands off to the next.
+The database has four tables: quotes (live DDE snapshots), positions (holdings with live P&L), orders (trade history), and pnl_daily (30-day P&L with win rate and drawdown stats).
+Deliverables
+• Windows DDE Listener —
+•    polls Spark live, writes to Redis and SQLite, includes rotating logs
+• Redis Real-Time Cache —
+•    sub-millisecond price reads for the API layer
+• SQLite Database —
+•    Data rows, 4 tables, properly indexed
+• FastAPI Backend —
+•    15 endpoints, API key auth, OpenAPI docs auto-generated at /docs
+• MCP Server —
+•    18 Claude tools covering quotes, positions, P&L, orders, and analytics
+• Dummy Data Seeder —
+•    one command to populate positions, 30 days P&L, and ~60 orders for immediate testing
+• Claude Desktop Config —
+•    ready-to-use claude_desktop_config.json wiring everything to Claude
+• Project Documentation —
+•    full technical docs covering architecture, setup, API reference, and troubleshooting
+Tech Stack
+Business Impact
+This project demonstrates something that hasn’t been done before: connecting a legacy Windows DDE trading platform directly to a modern AI assistant. The implications go beyond this one implementation.
+For individual traders: Instead of switching between Spark, Excel, and manual reports, a trader can now ask one question and get a structured answer in under two seconds. Queries that used to take 10–15 minutes of spreadsheet work — like drawdown analysis or best/worst performer — are instant.
+For trading firms and prop desks: The architecture is reusable. Any DDE-based platform can be bridged using the same pattern: DDE listener → data store → REST API → MCP server → Claude. Adding a new data source or a new type of analysis takes hours, not weeks. The system is also audit-ready — every query is logged, all data is timestamped, and all endpoints are authenticated.
+For the broader fintech and AI industry: This proves that legacy IPC protocols like DDE can be modernised without replacing the underlying platform. It also establishes MCP as a viable production protocol for financial tooling — not just developer experiments. The barrier to AI adoption in traditional trading environments just got a lot lower.
+Concretely: live data freshness is 2 seconds, time from question to answer is under 2 seconds, and extending the system with a new tool or endpoint takes a few hours. The POC is working — 72,090+ rows captured, all 18 Claude tools tested, positions and P&L queried live. Demo Video

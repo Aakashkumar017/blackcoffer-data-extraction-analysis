@@ -1,0 +1,56 @@
+WhatsApp AI Assistant
+WhatsApp AI Assistant
+ClawBot (clawbot.ai) is a personal AI infrastructure that runs on your own hardware and integrates with 15+ messaging platforms including WhatsApp and Telegram. Inspired by ClawBot’s vision of ‘AI that lives on your terms’, we built a WhatsApp AI Assistant that allows users to chat with an intelligent AI directly from WhatsApp
+ClawBot addresses a fundamental problem — AI assistants are locked behind apps and websites. Users must open a browser, navigate to ChatGPT or similar tools, and context-switch from their daily workflow. This creates friction:
+People already spend hours on WhatsApp every day — but AI is not available there
+Opening a separate app or website breaks workflow and reduces AI adoption
+Most AI tools require internet browsers — not accessible to users who primarily use mobile messaging
+No conversation memory — every new session starts fresh, losing context of previous conversations
+AI is centralized on corporate servers — no privacy, no data sovereignty
+The core problem: AI assistance should be available where people already are — on WhatsApp — not locked behind separate applications that require context switching.
+Inspired by ClawBot’s messaging platform integration, we built a WhatsApp AI Assistant that brings AI directly into WhatsApp conversations:
+User sends any message on WhatsApp to the AI bot number
+Twilio receives the message and forwards it to the Next.js backend via webhook
+Groq LLM processes the message with full conversation history
+AI generates a helpful, contextual response
+Response is sent back to the user’s WhatsApp instantly
+Conversation history is maintained per user — AI remembers previous messages in the session
+Deployed on Render — available 24/7, no local computer required
+The result: users get a powerful AI assistant accessible directly from WhatsApp — exactly as ClawBot envisions personal AI infrastructure that lives where users already communicate.
+Complete Flow — Step by Step
+Key Components
+Twilio WhatsApp API — WhatsApp message receive aur send karne ka bridge
+Next.js /api/whatsapp route — webhook handler jo message process karta hai
+Groq LLM (Llama 3.3 70B) — AI brain jo actual answer generate karta hai
+In-memory Map — per-user conversation history storage
+Render deployment — 24/7 online, no local machine needed
+ClawBot Alignment
+ClawBot: AI on messaging platforms → Our project: AI on WhatsApp via Twilio
+ClawBot: Conversation continuity across sessions → Our project: Per-user history Map
+ClawBot: Model-agnostic architecture → Our project: Groq (Llama 3.3 70B)
+ClawBot: Always available infrastructure → Our project: Render 24/7 deployment
+WhatsApp AI Assistant — fully functional, deployed on Render
+/api/whatsapp webhook route — Twilio integration with Next.js
+Per-user conversation history — Map-based memory, last 20 messages retained
+Groq LLM integration — fast, free, Llama 3.3 70B model
+Twilio WhatsApp Sandbox setup — message receive and send
+Render deployment — 24/7 availability without local server
+ngrok local development setup — for testing before deployment
+Environment-based configuration — all secrets in .env.local
+This solution brings AI directly into WhatsApp —
+For Individuals
+AI assistance without opening any app or browser — just WhatsApp
+Works on any phone — even basic Android phones with WhatsApp
+Conversation memory — AI remembers context within a session
+Available 24/7 — no need to keep any computer running
+For Businesses
+Customer support automation — businesses can deploy AI support on WhatsApp
+2 billion+ WhatsApp users are potential users — no app download required
+Zero friction adoption — customers already use WhatsApp daily
+Cost effective — Groq free tier + Render free tier = zero running cost
+Industries Impacted
+E-commerce — order tracking, product queries via WhatsApp
+Healthcare — appointment booking, symptom checking, medicine reminders
+Education — student queries, doubt solving, assignment help on WhatsApp
+Banking & Finance — balance queries, transaction alerts, financial advice
+Travel — booking assistance, itinerary help, real-time updates

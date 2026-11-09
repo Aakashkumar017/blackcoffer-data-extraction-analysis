@@ -1,0 +1,120 @@
+List of AI Tools
+AI tools cover a wide range of applications, from machine learning platforms to AI-powered automation, content generation, and analytics tools. Below is a categorized list of AI tools across different domains:
+1. AI Development & Machine Learning Platforms
+Google Vertex AI – End-to-end ML platform by Google Cloud.
+Amazon SageMaker – AWS ML development and deployment tool.
+Microsoft Azure ML – AI development on Azure cloud.
+IBM Watson AI – AI-powered insights and automation.
+DataRobot – Automated machine learning platform.
+H2O.ai – Open-source AI and ML models.
+MLflow – Open-source ML lifecycle management.
+Weights & Biases – Experiment tracking for ML projects.
+MindsDB – AI for databases and real-time analytics.
+Dify – Low-code AI application development.
+2. AI-Powered Automation & Workflow Tools
+Zapier AI – AI-powered workflow automation.
+Pipedream – Serverless automation and API integrations.
+Make (formerly Integromat) – AI-based workflow automation.
+Retool – AI-enhanced internal tool builder.
+Ansible AI – AI-assisted IT automation.
+Jenkins AI – AI-driven CI/CD pipeline automation.
+3. AI Chatbots & Virtual Assistants
+ChatGPT – OpenAI’s conversational AI model.
+Claude AI – AI assistant by Anthropic.
+Google Bard (Gemini) – AI chatbot by Google.
+Microsoft Copilot – AI-powered assistant for Windows & Office.
+Jasper Chat – AI-driven business chatbot.
+Drift AI Chatbot – Conversational AI for sales and marketing.
+Tidio AI – AI-powered live chat and automation.
+Freshchat AI – AI for customer support.
+4. AI Content Generation & Writing Tools
+ChatGPT (OpenAI) – Text and content generation.
+Jasper AI – AI copywriting assistant.
+Copy.ai – AI-based marketing and sales content.
+Writesonic – AI content and ad copy generator.
+Rytr – AI-powered writing assistant.
+Scalenut – AI-driven content marketing platform.
+Grammarly AI – AI-assisted grammar and writing improvement.
+5. AI Image & Video Generation
+DALL·E (OpenAI) – AI image generation.
+Stable Diffusion – Open-source text-to-image AI.
+MidJourney – AI-generated artistic visuals.
+Runway ML – AI-powered video editing and generation.
+Pika Labs – AI-generated video tools.
+Synthesia – AI-powered video avatars.
+Deepbrain AI – AI-driven video synthesis.
+Kaiber AI – AI-generated animations and visuals.
+Lumen5 – AI video creation for marketing.
+HeyGen – AI-powered avatar and video generation.
+6. AI Voice & Speech Generation
+ElevenLabs – AI voice cloning and text-to-speech.
+PlayHT – AI-generated realistic voices.
+Murf.ai – AI voiceover for content creators.
+Descript AI – AI-powered voice editing and transcription.
+Voicemaker – AI text-to-speech engine.
+Deepgram – AI speech recognition.
+7. AI Code Generation & Development
+GitHub Copilot – AI coding assistant powered by OpenAI Codex.
+Codeium – AI code completion and suggestions.
+Tabnine – AI-driven code assistant.
+Code Interpreter (OpenAI) – AI code analysis and debugging.
+Replit Ghostwriter – AI-enhanced coding on Replit.
+Amazon CodeWhisperer – AI-powered code assistance for AWS.
+Pinecone – AI-powered vector database for search and recommendation.
+8. AI Search & Data Analysis
+Perplexity AI – AI-powered search engine.
+You.com AI – AI-enhanced search and summarization.
+Metaphor AI – AI-driven contextual search.
+Seek AI – AI-powered data queries and insights.
+ThoughtSpot AI – AI-driven business intelligence.
+Looker AI – Google’s AI-enhanced BI tool.
+Tableau AI – AI-powered data visualization.
+9. AI Cybersecurity & Fraud Detection
+Darktrace AI – AI-powered cybersecurity threat detection.
+IBM QRadar AI – AI-enhanced security intelligence.
+CrowdStrike Falcon – AI-driven endpoint protection.
+Microsoft Defender AI – AI for cybersecurity and threat detection.
+Zscaler AI – AI-driven cloud security solutions.
+Splunk AI – AI-powered security analytics.
+10. AI Marketing & SEO Tools
+Surfer SEO – AI-driven SEO optimization.
+Frase.io – AI-powered content research and optimization.
+NeuralText – AI SEO and copywriting tool.
+MarketMuse – AI-driven content strategy.
+Outranking AI – AI-based content optimization.
+Semrush AI – AI-powered marketing and SEO insights.
+11. AI Business & CRM Tools
+HubSpot AI – AI-powered CRM and marketing automation.
+Salesforce Einstein – AI for CRM insights and automation.
+Zoho Zia – AI assistant for Zoho CRM.
+Pipedrive AI – AI-powered sales automation.
+Freshworks AI – AI-driven customer engagement.
+12. AI Finance & Trading Tools
+Kavout AI – AI-driven stock predictions.
+Numerai AI – AI-powered hedge fund and trading models.
+Zebra AI – AI-enhanced financial forecasting.
+Trade Ideas AI – AI-powered stock market insights.
+Alpaca AI – AI-driven algorithmic trading.
+Bloomberg GPT – AI-powered financial data analysis.
+13. AI Healthcare & Medical Diagnosis
+IBM Watson Health – AI-powered medical insights.
+Viz.ai – AI for stroke detection.
+Paige AI – AI-driven pathology analysis.
+Tempus AI – AI-powered precision medicine.
+Aidoc AI – AI-based radiology and diagnostics.
+Qure.ai – AI for medical imaging and diagnostics.
+14. AI Legal & Compliance Tools
+Casetext AI – AI-powered legal research.
+DoNotPay – AI-powered legal assistance.
+Luminance AI – AI-driven contract analysis.
+Evisort AI – AI-powered contract management.
+ROSS Intelligence – AI for legal research (now defunct).
+15. AI HR & Recruitment Tools
+HireVue AI – AI-powered video interviews.
+Pymetrics AI – AI-driven recruitment analytics.
+Eightfold AI – AI-powered talent management.
+Hiretual AI – AI-powered candidate sourcing.
+SeekOut AI – AI-driven hiring platform.
+This list includes many of the top AI tools across industries, but new ones emerge constantly. Do you need recommendations tailored to your needs?
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

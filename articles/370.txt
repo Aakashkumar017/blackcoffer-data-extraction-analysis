@@ -1,0 +1,64 @@
+AI Sales Chatbot for Pest Control Service Automation
+Client: A leading pest control firm in the USA
+Industry Type: Pest Control Services / Home Services (Service-Based Industry) Products & Services: Home Services & Facility Management, Field Services & Local Services Automation, Consumer Services (Pest Control & Property Maintenance)
+Products & Services: Home Services & Facility Management, Field Services & Local Services Automation, Consumer Services (Pest Control & Property Maintenance)
+Organization Size: 200+
+The Problem
+To build a conversational AI bot capable of selling pest control services to live customers via chat, with a future goal of enabling voice interaction. The initial MVP would be a chatbot trained on historical customer call data, integrated with a SaaS platform, and capable of handling sales objections, quotations, and booking flows.
+Our Solution
+Designed and developed an AI sales bot using AWS Lex .
+Created backend logic using AWS Lambda functions for dynamic conversational flows.
+Integrated Amazon Transcribe for voice-to-text processing of customer audio calls.
+Added OpenAI’s ChatGPT API via EC2 to improve natural language capabilities where AWS Lex limitations were met.
+Built a pest-identification model (ongoing) to categorize and respond with targeted packages.
+Implemented quotation logic, user data capture, and objection-handling sequences.
+Developed an admin-facing UI (planned) to allow bot customization per company strategy.
+Solution Architecture
+AWS Lex – Core conversational interface.
+AWS Lambda – Handles logic, slot fulfillment, response customization.
+Amazon Transcribe – Converts historical audio calls to text for training and insights.
+AWS EC2 – Hosts OpenAI API integration for enhanced NLU responses.
+Python & Flask – Used for web tools, transcription app, and integration flows.
+Future voice integration planned using Amazon Polly + Lex V2 voice support .
+Deliverables
+Functional chatbot on AWS Lex (Bot Name: pest_Control)
+Lambda functions for intent handling and slot fulfillment
+Transcription tool for customer call dataset (via Flask + AWS Transcribe)
+Pest classification logic and quote response framework
+EC2-hosted OpenAI integration for advanced language capabilities
+Tech Stack
+Services: AWS Lex, Lambda, EC2, Transcribe, S3
+Languages: Python, Flask
+External: OpenAI GPT API
+Tools: Amazon Transcribe, OpenAI, Visual Studio Code
+Skills Applied:
+Conversational AI Design
+Serverless Architecture (Lambda)
+Natural Language Understanding (NLU)
+Voice Data Preprocessing & Transcription
+SaaS Integration
+Sales Process Mapping
+API Integration (OpenAI, AWS)
+Databases:
+AWS Buckets
+Cloud Server:
+AWS
+Technical Challenges Faced
+Lex’s limited conversational capabilities and static flow
+Lambda function size and timeout limits when integrating with external APIs like OpenAI
+Difficulty handling voice input and turning it into usable text
+Building a flexible, dynamic quote generation logic based on pest type and customer responses
+Using years of audio recordings as training/reference data
+How the Technical Challenges Were Solved
+Integrated OpenAI’s GPT via an EC2 instance to enhance conversational depth
+Offloaded OpenAI API calls to a dedicated EC2 server to bypass Lambda constraints
+Used AWS Transcribe to convert voice input into text and feed it into Lex
+Created a dynamic flow for quoting based on pest category, with follow-up logic
+Developed a custom tool to upload and transcribe audio files for bot training and refinement.
+Business Impact
+Reduced need for human reps for first-level queries and quotes
+Created foundation for future voice bot deployment
+Positioned the business for scalable lead conversion automation
+Webapp to simply upload the audio for transcribing.
+Project Website URL
+Black Coffer Github Repo

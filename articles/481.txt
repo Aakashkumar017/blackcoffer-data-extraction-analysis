@@ -1,0 +1,66 @@
+List of website development tools categorized by their purpose
+Here’s a list of website development tools categorized by their purpose:
+1. Code Editors & IDEs
+Visual Studio Code – Lightweight, powerful, and extensible with plugins.
+Sublime Text – Fast, customizable, and supports multiple languages.
+Atom – Open-source editor with GitHub integration.
+WebStorm – Powerful IDE for JavaScript and front-end development.
+Brackets – Lightweight editor with a live preview feature.
+2. Front-End Development Frameworks
+React.js – Component-based UI library by Facebook.
+Angular – Full-featured front-end framework by Google.
+Vue.js – Lightweight and progressive JavaScript framework.
+Bootstrap – CSS framework for responsive design.
+Tailwind CSS – Utility-first CSS framework for rapid UI development.
+3. Back-End Development Frameworks
+Node.js – JavaScript runtime for server-side development.
+Django – High-level Python web framework.
+Flask – Lightweight Python framework for quick web apps.
+Ruby on Rails – MVC framework for Ruby applications.
+Spring Boot – Java framework for scalable web apps.
+4. Database Management
+PostgreSQL – Powerful open-source relational database.
+MySQL – Popular open-source database.
+MongoDB – NoSQL database for flexible data storage.
+Firebase – NoSQL cloud database by Google.
+Supabase – Open-source Firebase alternative.
+5. CMS & Website Builders
+WordPress – Most popular CMS for blogs and websites.
+Wix – Drag-and-drop website builder.
+Webflow – No-code website design tool.
+Ghost – Minimalist CMS for publishing.
+Shopify – E-commerce website builder.
+6. Version Control & Collaboration
+Git – Popular version control system.
+GitHub – Cloud-based repository hosting.
+GitLab – CI/CD and repository management tool.
+Bitbucket – Git repository hosting with Jira integration.
+7. APIs & Testing Tools
+Postman – API testing and collaboration tool.
+Swagger (OpenAPI) – API documentation and testing tool.
+Insomnia – API design and testing tool.
+SoapUI – Web service testing tool.
+8. Performance & Debugging Tools
+Lighthouse – Google’s performance and accessibility audit tool.
+GTmetrix – Website speed testing tool.
+PageSpeed Insights – Google tool for performance analysis.
+Chrome DevTools – Built-in browser developer tools.
+9. Deployment & Hosting Services
+Vercel – Hosting for front-end frameworks like Next.js.
+Netlify – Cloud hosting for static websites and Jamstack apps.
+AWS (Amazon Web Services) – Scalable cloud hosting.
+DigitalOcean – Developer-friendly cloud hosting.
+Heroku – PaaS for web application deployment.
+10. Web Security Tools
+Cloudflare – DDoS protection, SSL, and CDN.
+Let’s Encrypt – Free SSL certificates.
+Snyk – Security for open-source dependencies.
+OWASP ZAP – Open-source security scanner.
+11. UI/UX Design & Prototyping
+Figma – Collaborative design and prototyping tool.
+Adobe XD – UI/UX design and prototyping tool.
+Sketch – Design tool for macOS.
+Balsamiq – Wireframing tool for website layouts.
+Would you like recommendations based on a specific type of project?
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

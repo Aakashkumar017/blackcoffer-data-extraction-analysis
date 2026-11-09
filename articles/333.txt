@@ -1,0 +1,72 @@
+DeVa – Engineering PDF Validation System for AI Data Centers
+Client Background
+Client Name: A leading AI Data Center firm in the USA
+Industry Type: Engineering Analytics & AI Solutions
+Products & Services: Engineering document analysis Computer vision-based automation AI-driven validation systems
+Engineering document analysis
+Computer vision-based automation
+AI-driven validation systems
+About Client:
+The client works with complex engineering datasets including: Electrical panel images Architectural drawings Multi-page technical PDFs
+Electrical panel images
+Architectural drawings
+Multi-page technical PDFs
+Their workflows required high accuracy, scalability, and automation
+Objective: Reduce manual inspection Improve validation accuracy Automate structured data extraction
+Reduce manual inspection
+Improve validation accuracy
+Automate structured data extraction
+The Problem
+Engineering documents contained hundreds of sheets in multi-page PDFs
+Manual verification issues: Sheet index mismatch with actual pages Inconsistent naming formats Difficult to validate document structure
+Sheet index mismatch with actual pages
+Inconsistent naming formats
+Difficult to validate document structure
+High time consumption and risk of errors
+Our Solution
+Built an automated PDF validation system
+Key features: Extract sheet indices using regex Detect document type automatically Validate sheet order and structure Generate structured JSON reports
+Extract sheet indices using regex
+Detect document type automatically
+Validate sheet order and structure
+Generate structured JSON reports
+Integrated: OCR and Vision Language Models YOLO for symbol detection
+OCR and Vision Language Models
+YOLO for symbol detection
+Solution Architecture
+User uploads PDF via FastAPI
+Modal compute handles: PDF ingestion Page extraction Image tiling (3×3 grid)
+PDF ingestion
+Page extraction
+Image tiling (3×3 grid)
+YOLOv8: Symbol detection
+Symbol detection
+OCR (Gemini): Text extraction
+Text extraction
+Validation engine: Regex-based sheet extraction Cross-verification logic
+Regex-based sheet extraction
+Cross-verification logic
+Output: JSON report Match percentage Validation results
+JSON report
+Match percentage
+Validation results
+Deliverables
+Automated PDF analysis system
+Sheet index validation engine
+JSON-based structured reporting
+Symbol detection model
+Technical Challenges
+Extracting structured data from unstructured PDFs
+Handling variations in document formats
+Spatial understanding of engineering drawings
+OCR accuracy on complex layouts
+Solutions
+Custom regex patterns for sheet extraction
+Hybrid OCR and VLM approach
+YOLO-based symbol detection
+Batch processing for scalability
+Business Impact
+Eliminated manual document validation
+Improved accuracy of sheet verification
+Reduced processing time significantly
+Enabled scalable document analysis

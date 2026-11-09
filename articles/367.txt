@@ -1,0 +1,70 @@
+Ethnic Origin Integration & Master Dataset Development
+Client: A leading IT & Tech firm in USA
+Industry Type: IT & Data Service
+Products & Services: Data Analysis
+Organization Size: 100+
+The Problem
+The client had multiple fragmented datasets containing client and project information collected between 2014–2021. There was no unified way to analyze these records due to:
+Separate datasets for active and closed projects.
+Lack of standardized ethnic origin categorization.
+No consolidated view linking projects with client demographics.
+This fragmentation made it difficult to derive insights, assess trends, or perform data-driven evaluations for funding, outreach, and policy decisions.
+Our Solution
+To address the fragmentation and lack of ethnic origin coding, a structured, multi-step data integration process was followed:
+Familiarized with over 30 sheets across 4 Excel workbooks to understand data structure and overlap.
+Added a new column for “Ethnic Origin” in the “2014-2021 Clients Compiled Translated” file.
+Mapped and merged ethnicity codes from the “Ethnic Origin Coding Book 1” into each relevant client record across 28 sheets.
+Created a new “Master Projects” workbook by merging project data from both active and closed project files, identifying and merging duplicates as the same project.
+Linked client demographics (including the newly added Ethnic Origin) to corresponding projects based on name matching of individuals/organizations.
+Delivered final outputs as two clean, analysis-ready workbooks: Master Projects 2014-2021 Clients Compiled Translated_with Ethnic_Origin
+Master Projects
+2014-2021 Clients Compiled Translated_with Ethnic_Origin
+Solution Architecture
+Tools Used: Microsoft Excel (with Power Query), manual formula logic, and VBA scripting (where needed for sheet-level merging), Python and Jupyter Notebook.
+Process Structure:
+Data Cleaning: Ensured consistency in naming conventions and formats across sheets.
+Data Augmentation: Enriched client data with the ethnic origin variable using controlled mappings.
+Data Consolidation: Created a master reference of projects and linked it to enriched client records.
+Final Validation: Cross-checked for duplication, completeness, and alignment between demographic and project datasets.
+Deliverables
+The final outputs were structured and delivered via Google Drive in the form of two Excel workbooks:
+Deliverable Folder: https://drive.google.com/drive/folders/1p0pvATctEswRAaHWp–dgjnmcXIVutWZ?usp=drive_link
+Date Folder (21102022): https://drive.google.com/drive/folders/1ZXBFpIkMdziq1BbDm64PSKgFfuuj0Pr_?usp=drive_link
+Delivered Files:
+2014–2021 Clients Compiled Translated_with Ethnic_Origin.xlsx – Client demographic data enriched with Ethnic Origin variable.
+Master Projects.xlsx – Merged and deduplicated project data with matched client demographics.
+Tech Stack
+Tools Used:
+Microsoft Excel – Core tool used for data cleaning, transformation, merging, and formula-driven integration across multiple sheets and files.
+Power Query (Excel) – Utilized for semi-automated data processing and deduplication logic.
+Google Drive – Used for file sharing, collaboration, and version control throughout the project.
+Python (Pandas, OpenPyXL) – Employed selectively for efficient handling of large Excel files and to streamline matching and transformation processes.
+Languages/Techniques Used:
+Python – Core language for building the data collection engine, Redis integration, and FastAPI interface.
+Skills Applied:
+Data Cleaning
+Data Merging & Deduplication
+Data Mapping
+Entity Matching
+Excel Automation
+Project Documentation
+Databases:
+N/A
+Cloud Server:
+N/A
+Technical Challenges Faced
+Managing complex data structure across multiple sheets.
+Integrating ethnic origin data across 28 sheets.
+Identifying and merging duplicate project records.
+Ensuring accurate entity matching across datasets.
+How the Technical Challenges Were Solved
+Analyzed data structure and overlaps to create a systematic merging approach.
+Used Power Query and manual lookup functions to map ethnic origin coding.
+Applied custom deduplication logic using Excel formulas.
+Employed lookup functions to match individual and organization names for accurate demographic linkage.
+Business Impact
+Improved Data Accessibility : Consolidated fragmented datasets into a single, clean, and enriched master workbook, enabling easier analysis and reporting.
+Enhanced Demographic Insights : Integrated the Ethnic Origin variable, providing deeper insights into client demographics for targeted outreach and decision-making.
+Streamlined Project Analysis : Merged active and closed project data, allowing the client to track and analyze projects holistically, reducing manual data processing time.
+Project Website URL
+Black Coffer Github Repo

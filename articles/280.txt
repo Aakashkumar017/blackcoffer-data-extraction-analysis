@@ -1,0 +1,27 @@
+AI Powered PDF Chatbot using Langflow
+The Problem:
+Businesses ko large documents (PDFs, reports) se quickly information extract karna mushkil hota hai. Manual reading time-consuming hai aur efficiency low hoti hai.
+Our Solution:
+Humne Langflow use karke ek AI chatbot banaya jo PDFs ko read karke user ke questions ka instant answer deta hai using Retrieval-Augmented Generation (RAG).
+Solution Architecture:
+PDF → Text Split → Embedding
+Stored in Vector Database
+User Query → Retriever
+Context + Query → LLM
+Output → Chat UI
+Deliverables:
+Functional chatbot
+PDF Q&A system
+Langflow pipeline
+UI for chat interaction
+Tech Stack:
+Langflow
+HuggingFace Embeddings
+Chroma DB
+OpenAI / Groq LLM
+Python
+Business Impact:
+Time saving (manual reading remove)
+Faster decision making
+Automation of knowledge retrieval
+Useful for legal, healthcare, finance docs

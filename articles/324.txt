@@ -1,0 +1,37 @@
+RetellAI Product Voice Agent — AI-Powered Voice Assistant for Product Catalog Queries
+The Problem Businesses with large product catalogs struggle to handle high volumes of customer inquiries about pricing, availability, and specifications. Traditional support channels — phone agents, chat support, and email — are slow, expensive, and not available 24/7. Customers often have to wait to get simple answers like “Is this product in stock?” or “What is the price of X?” This leads to poor customer experience, lost sales, and high operational costs for businesses.
+Our Solution We built a real-time AI-powered voice agent using RetellAI that answers customer product queries over a phone or web call. The agent reads directly from a live Excel-based product catalog and responds accurately to questions about pricing, stock availability, product specifications, and category listings. It operates 24/7 with no human intervention required, giving customers instant answers in a natural conversational voice.
+Solution Architecture
+Customer initiates a web or phone call via RetellAI dashboard or phone number.
+RetellAI connects to our Custom LLM WebSocket endpoint hosted on FastAPI.
+The FastAPI server receives the customer’s spoken query (transcribed by RetellAI).
+The LLM Handler processes the query — either via OpenAI GPT-4o-mini or a rule-based fallback engine.
+The Excel Reader loads product data from products.xlsx and matches it against the query.
+The matched response is sent back through the WebSocket to RetellAI, which speaks it to the customer.
+All call logs, transcripts, and stats are stored in-memory and viewable on a live dashboard at localhost:8000.
+Deliverables
+Fully functional voice agent deployed on RetellAI capable of handling real product queries over call
+FastAPI backend with WebSocket-based Custom LLM endpoint
+Excel-powered product catalog reader with hot-reload support
+Rule-based NLP fallback engine for zero-cost operation without OpenAI key
+OpenAI GPT-4o-mini integration for natural language understanding
+Live web dashboard showing product catalog, call logs, and inventory stats
+ngrok-based local tunnel setup for rapid development and testing
+agent_setup.py script for automated agent and LLM creation via RetellAI API
+Tech Stack
+Voice AI Platform: RetellAI (Custom LLM WebSocket integration)
+Backend Framework: FastAPI + Uvicorn
+LLM: OpenAI GPT-4o-mini (with rule-based fallback)
+Data Layer: Excel (products.xlsx) via Pandas + openpyxl
+Tunneling: ngrok (local to public HTTPS/WSS)
+Frontend Dashboard: HTML + CSS + JavaScript (static, served by FastAPI)
+Environment Management: Python dotenv
+Language: Python 3.11+
+Business Impact
+Cost Reduction: Replaces or augments human call center agents for routine product inquiries, reducing staffing costs significantly. A single voice agent can handle hundreds of simultaneous calls at near-zero marginal cost.
+24/7 Availability: The agent never sleeps, meaning customers in any timezone can get instant answers without waiting for business hours.
+Faster Sales Conversion: Customers who get instant answers on price and availability are more likely to complete a purchase. Reducing friction in the buying journey directly impacts revenue.
+Scalability: The same architecture can scale to thousands of SKUs across multiple product categories with no change to the core system — just update the Excel file.
+Retail & E-Commerce: Any retail or e-commerce business with a product catalog can deploy this within hours, making it highly accessible for small and mid-sized businesses.
+Wholesale & Distribution: Distributors managing large inventories can use this to let their B2B customers self-serve on stock checks and pricing without tying up sales staff.
+Multilingual Potential: RetellAI supports multiple languages, meaning this solution can be extended to serve customers in regional languages with minimal additional development. Demo Video

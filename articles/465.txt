@@ -1,0 +1,94 @@
+List of database tools, categorized by their use cases
+Here’s a comprehensive list of database tools , categorized by their use cases:
+1. Relational Database Management Systems (RDBMS)
+MySQL
+PostgreSQL
+MariaDB
+SQLite
+Microsoft SQL Server
+Oracle Database
+IBM Db2
+SAP HANA
+CockroachDB
+Amazon Aurora
+Google Cloud SQL
+2. NoSQL Databases
+Document Stores
+MongoDB
+CouchDB
+RethinkDB
+Amazon DocumentDB
+RavenDB
+Key-Value Stores
+Redis
+DynamoDB
+Riak KV
+Aerospike
+Memcached
+Columnar Databases
+Apache Cassandra
+Apache HBase
+Google Bigtable
+ScyllaDB
+Graph Databases
+Neo4j
+JanusGraph
+ArangoDB
+TigerGraph
+OrientDB
+3. NewSQL Databases
+CockroachDB
+TiDB
+NuoDB
+Google Spanner
+MemSQL (SingleStore)
+4. Time-Series Databases
+InfluxDB
+TimescaleDB
+Prometheus
+OpenTSDB
+Graphite
+5. Search & Analytics Databases
+Elasticsearch
+Apache Solr
+Splunk
+Rockset
+OpenSearch
+6. Cloud Databases & Managed Services
+Amazon RDS (Relational Database Service)
+Google Firestore
+Azure Cosmos DB
+Snowflake
+BigQuery
+Redshift
+7. Data Warehousing Solutions
+Amazon Redshift
+Google BigQuery
+Snowflake
+Microsoft Synapse Analytics (formerly Azure SQL Data Warehouse)
+Teradata
+8. ETL (Extract, Transform, Load) & Data Pipeline Tools
+Apache Airflow
+Apache NiFi
+Talend
+Fivetran
+Stitch
+Matillion
+Singer
+9. Database Management & GUI Tools
+DBeaver
+pgAdmin
+MySQL Workbench
+Sequel Pro
+HeidiSQL
+DataGrip (JetBrains)
+Navicat
+10. Distributed & Blockchain Databases
+BigchainDB
+Hyperledger Fabric
+Corda
+Fluree
+IPFS (InterPlanetary File System)
+Would you like me to categorize these further based on use cases? 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

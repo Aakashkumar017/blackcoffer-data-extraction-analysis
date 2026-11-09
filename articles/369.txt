@@ -1,0 +1,92 @@
+Real-Time Cryptocurrency Market Data Aggregation & API Platform
+Client: A leading crypto tech firm in the USA
+Industry Type: Cryptocurrency
+Products & Services: Financial services
+Organization Size: 200
+The Problem
+The client needed a real-time digital currency exchange data collection system to aggregate market quotations from various online sources. However, there was no existing infrastructure in place for:
+Continuous data collection from multiple cryptocurrency exchange platforms.
+Efficient in-memory storage of high-frequency exchange rate data.
+Providing external access to the collected data through an API or interface.
+The client required a solution that could not only scrape and aggregate data accurately in near real-time but also ensure low-latency data delivery to external systems via a reliable interface.
+Moreover, performance and reliability were critical due to the fast-paced nature of digital currency markets, where delayed or inaccurate data could result in significant decision-making risks..
+Our Solution
+Developed a robust digital currency exchange quotation collection program in Python to fetch real-time market data from Binance APIs, replacing the previously used Huobi APIs as per client requirements.
+Successfully obtained and integrated Binance API credentials to authenticate requests and securely access market data.
+Designed and tested a modular Python script that fetches exchange rates and market information at 1-second intervals, ensuring high-frequency and up-to-date data collection.
+Introduced a dynamic configuration file to allow flexible addition of API keys and selection of specific currencies, enabling the client to easily scale and manage different trading pairs.
+Implemented Redis as the primary in-memory data store (db=2), with structured data pipelines to ingest and update market data in real time.
+Developed a FastAPI-based external interface that serves live data directly from Redis, including support for fetching detailed Kline book (candlestick) data with customizable parameters.
+Deployed both the collection service and the API interface to the client’s control panel system, ensuring the service is live, stable, and continuously delivering data.
+Handled redeployment and integration of updated logic seamlessly into the production environment, minimizing downtime and ensuring long-term maintainability of the system.
+Solution Architecture
+The data collection program is built in Python and deployed on the client’s control panel system.
+It fetches live digital currency market data from Binance using REST APIs, authenticated through securely stored API keys.
+A dynamic configuration file allows easy updates to API credentials and targeted currency pairs, enabling scalable data collection.
+Collected market data is stored in Redis (db=2) for high-speed access and real-time updates.
+A FastAPI interface is layered on top of Redis to expose the market data through an external API, supporting custom parameters and endpoints for Kline (candlestick) data.
+The collection service is configured to fetch and write fresh data to Redis every second, ensuring high-frequency accuracy.
+The entire solution runs as a continuously active background service on the client’s hosting panel, designed for stability and minimal latency between data ingestion and external delivery.
+Deliverables
+Fully functional Python-based Binance data collection service that continuously fetches and stores live digital currency market data.
+Dynamic configuration system via CONFIG.json, allowing users to set API keys and select target currencies without altering the source code.
+Collected data is stored in Redis (specifically db=2) with a scheduled task running every second to maintain real-time accuracy.
+FastAPI-based external interface developed to expose market data stored in Redis through accessible and well-structured REST endpoints.
+The complete and finalized codebase is stored in the following folder: Deliverables Directory: https://drive.google.com/drive/folders/19_i6xLpz1LFvlNJJF6JVmYQ_6MbelsEj?usp=drive_link Dated Deployment Folder (Latest Code – 02/11/2022): https://drive.google.com/drive/folders/1L7fWH9RplDw4vaY0TClsLjyy7V2K_T4J?usp=drive_link
+Key files included in the final deliverable folder (02112022):
+A_transactionData_I_SMD_Q_MD.py
+B_CPBI_B_HLprice.py
+C_currency_current_buying_and_selling_price.py
+CONFIG.json
+D_currency_pair_depth_G_depth.py
+F_latest_price.py
+H_K-line_chart_and_account_book_1min.py
+H_K-line_chart_and_account_book_5min.py
+H_K-line_chart_and_account_book_15min.py
+H_K-line_chart_and_account_book_30min.py
+H_K-line_chart_and_account_book_60min.py
+H_K-line_chart_and_account_book_1day.py
+H_K-line_chart_and_account_book_1week.py
+H_K-line_chart_and_account_book_1Month.py
+H-L_Market_Details.py
+Tech Stack
+Tools Used:
+Visual Studio Code (VSCode) – Development environment used for coding and debugging.
+AA Panel (Control Panel System) – Used to deploy and manage the collection and interface services on the server.
+Git – Version control and source code management throughout the development cycle.
+Postman – Used for testing REST API endpoints during interface development.
+Google Drive – For collaborative documentation, deliverables, and requirement sharing.
+Languages/Techniques Used:
+Python – Core language for building the data collection engine, Redis integration, and FastAPI interface.
+FastAPI – High-performance web framework used to develop the external interface for accessing Redis-stored data.
+Redis – In-memory key-value data store used to store real-time market data.
+Binance REST APIs – Data source used to fetch live digital currency exchange information.
+Skills Applied:
+API Integration
+Data Serialization & Storage in Redis
+REST API Development
+Real-Time Data Collection
+Deployment & Configuration Management
+Configuration File Design for Dynamic Inputs
+Code Modularity and Scalability
+Databases:
+Redis (db=2) – Used as the primary in-memory store for the collected Binance market data.
+Cloud Server:
+Linux Server with AA Panel – Used to host the services and manage deployments.
+CRON Jobs / Scheduled Execution – Ensures that the collection script runs continuously with updates every second.
+Technical Challenges Faced
+The main challenge was ensuring real-time data fetching for live trading decisions. The market’s reliance on instant trades required optimized response times for live API hits. Additionally, managing large volumes of data and ensuring data accuracy and security added complexity.
+How the Technical Challenges Were Solved
+To address the live trading need, I separated the files based on quantity and type, as reflected in the Python file names, optimizing API response times. Efficient handling of database updates, querying mechanisms, and data segmentation helped maintain speed and accuracy during live trading sessions.
+Business Impact
+The solution significantly enhanced the system’s ability to handle real-time data, enabling faster and more accurate market decisions. By reducing latency during live API calls, it improved trading responsiveness, leading to better user experience and higher transaction throughput. Additionally, the optimized structure ensured scalability, allowing the platform to accommodate future growth while maintaining system stability and reliability in the competitive digital currency exchange market.
+Project Snapshots (Minimum 10 Pictures)
+Project Website URL
+Black Coffer Github Repo
+Interface has been deployed and set up on the aa control panel system. For accessing Interface Pls use following link:
+http://127.0.0.1:8000/GetData/?pageSize={pageSize}&type={type}&code={code}
+Here: {pageSize} can be replaced by page number(example: 1,2,3,etc.). Since requirement doc doesn’t mention how much data to show on each page, we have kept it standard 10 data values on each page.
+{type} can be replaced with values: 1, 5, 15, 30, 60, 1440, 10080, 43200
+{code} can be replaced with currency pair code (etcusdt or btcusdt etc. )
+Project Video
+Loom VIdeo

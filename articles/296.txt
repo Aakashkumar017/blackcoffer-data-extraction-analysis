@@ -1,0 +1,40 @@
+Project Documentation: Vapi AI Chatbot
+1. Executive Summary
+This project is a Proof of Concept (POC) for a custom-prompted AI Chatbot. The system utilizes Vapi.ai ‘s powerful assistant configuration (specifically the System Prompt and Model management) while bypassing the voice layer for a clean, text-based conversational interface.
+The architecture ensures that the “Brain” of the bot is managed in Vapi, the “Logic” is handled by FastAPI, and the “Face” is presented via Streamlit.
+2. Technical Architecture
+The application follows a standard Client-Server-Provider model:
+Frontend (Streamlit): Provides the chat interface (st.chat_input) and manages the user’s session state to maintain conversation history.
+Backend (FastAPI): Acts as a secure proxy. It receives text from the frontend, formats it for the Vapi API, and handles any necessary preprocessing or logging.
+Engine (Vapi.ai): Hosts the System Prompt and connects to the LLM (e.g., GPT-4). It processes the input based on the persona defined and returns a text response.
+3. Core Components
+A. Vapi.ai Configuration
+The Vapi platform serves as the configuration hub.
+Assistant Definition: A unique assistantId is created.
+System Prompt: This is the core instruction set (e.g., “You are a professional technical support agent for XYZ Corp…” ).
+Model Selection: Configured to use specific LLMs with defined temperature and token limits.
+B. FastAPI Backend
+The backend serves as the bridge. By using FastAPI, we keep API keys secure (they never reach the browser) and allow for future scalability (like adding a database).
+Key Endpoint: /chat
+Method: POST
+Payload: { “message”: “User text here” }
+Logic: Uses the httpx or requests library to call the Vapi Chat API.
+C. Streamlit Frontend
+The frontend provides a modern, “ChatGPT-like” experience.
+Chat UI: Uses st.chat_message to display the dialogue.
+State Management: Stores the message history so the UI doesn’t “forget” the conversation when the user types a new message.
+4. Implementation Details
+Vapi System Prompt (The “Brain”)
+Inside the Vapi Dashboard, the assistant was configured with a specific persona.
+Example Prompt: “You are a concise project manager assistant. Your goal is to help users document their software architecture. Use bullet points and professional language.”
+Backend Snippet (FastAPI)
+Python
+@app.post(“/chat”) async def chat_with_vapi(user_input: dict): vapi_url = “https://api.vapi.ai/assistant/chat” headers = {“Authorization”: f”Bearer {VAPI_API_KEY}”} # Forwarding the message to Vapi’s text-based endpoint response = requests.post(vapi_url, json={ “assistantId”: ASSISTANT_ID, “message”: user_input[‘message’] }, headers=headers) return response.json()
+Frontend Snippet (Streamlit)
+Python
+import streamlit as st import requests st.title(“AI Assistant POC”) if “messages” not in st.session_state: st.session_state.messages = [] # Display chat history for message in st.session_state.messages: with st.chat_message(message[“role”]): st.markdown(message[“content”]) # Handle new input if prompt := st.chat_input(“How can I help?”): st.session_state.messages.append({“role”: “user”, “content”: prompt}) # Call FastAPI backend response = requests.post(“http://localhost:8000/chat”, json={“message”: prompt}) bot_reply = response.json().get(“reply”, “Error communicating with AI.”) st.session_state.messages.append({“role”: “assistant”, “content”: bot_reply}) st.rerun()
+5. Environment Configuration
+6. Key Advantages of this Setup
+Separation of Concerns: You can change the bot’s personality in Vapi without touching a single line of code in the frontend or backend.
+Scalability: FastAPI can handle asynchronous requests, making the chat feel snappy.
+Security: API keys are hidden on the server side, preventing unauthorized usage of your Vapi credits.

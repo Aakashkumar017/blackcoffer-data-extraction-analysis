@@ -1,0 +1,16 @@
+Running a Personal AI Assistant on Own PC using OpenClaw, Telegram, and Google Gemini
+Most AI assistants like ChatGPT run on someone else’s servers. This means your conversations are stored online, you depend on internet subscriptions, and you have no control over your data,the second problem would be shifting from one platform to another whereas here connected it to Telegram so the user can chat with it like any other contact,not just telegram here it was used for demo,where few n8n automations we would be using telegram as user input here People who want a private, always-available AI assistant on their own computer had no simple way to set one up.
+We set up a personal AI assistant that runs directly on a Windows PC. We used a tool called OpenClaw to create the AI agent, connected it to Telegram so the user can chat with it like any other contact, I.e we don’t have to switch the platforms and reduces time and used Google Gemini as the AI brain that answers questions. Everything runs on the user’s own computer — no data goes to a third-party server.
+The user sends a message on Telegram → @redriddingbot. The bot passes the message to OpenClaw, which is running on the PC inside WSL2 (Ubuntu) — a way to run Linux on Windows. OpenClaw sends the message to Google Gemini, gets a reply, and sends it back to the user on Telegram. Everything happens on the local PC.
+OpenClaw installed and running on a Windows PC via WSL2
+Telegram bot (@redriddingbot) set up and working
+Google Gemini connected as the AI model
+Bot personality configured — name is Claw, friendly and casual tone
+Web interface accessible from the browser
+Scheduled task support set up
+– Runtime: Node.js v22
+– OS: Ubuntu (WSL2)
+– AI Model: Google Gemini 2.5 Flash
+– Channel: Telegram
+– Security: Token auth + Pairing system + Allowlist
+This project shows that anyone can have their own AI assistant running on a regular PC — no monthly fees, no data shared with third parties. This idea can be used in small businesses to handle customer queries, all privately and cheaply. It proves that powerful AI tools do not have to be expensive or complicated to set up.

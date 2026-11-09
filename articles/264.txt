@@ -1,0 +1,42 @@
+MCP Weather Intelligence Application
+This project is a locally-running intelligent weather assistant built using the Model Context Protocol (MCP). Users ask weather questions in plain English and receive real-time answers powered by AI — no manual API calls, no hardcoded logic.
+The application connects three components: an MCP Server exposing weather tools, a Groq-powered AI client for natural language understanding, and the National Weather Service API as the live data source. Everything runs locally at zero cost using free-tier APIs.
+The system follows a clean three-layer architecture with MCP as the communication backbone between the AI model and the weather tools.
+When a user types ‘What is the weather in New York?’ — here is exactly what happens:
+MCP is the core framework bridging the AI model and the real-world weather tools. It provides tool registration, discovery, and execution as a standardised protocol.
+Prerequisites
+Step 1 — Get Free Groq API Key
+Go to console.groq.com and sign up (free, no credit card)
+Navigate to API Keys → Create API Key
+Copy the key — you will need it in Step 3
+Step 2 — Clone the Repository
+git clone https://github.com/shivamrawat2002/mcp-weather-assistant
+cd mcp-sse
+Step 3 — Add API Key to .env file
+Open the .env file in the project folder and add:
+GROQ_API_KEY=your_groq_api_key_here
+Step 4 — Install Dependencies
+uv sync
+uv add groq
+Step 5 — Replace client.py
+Replace the existing client.py with the Groq-compatible version from this submission. Key changes made:
+Replaced Anthropic SDK with Groq SDK
+Updated model to llama-3.3-70b-versatile
+Updated tool format to OpenAI-compatible function calling
+Fixed cleanup() method with hasattr() to prevent AttributeError
+Step 6 — Run the Server (Terminal 1)
+uv run weather.py
+Wait until you see:
+INFO:     Uvicorn running on http://0.0.0.0:8080
+INFO:     Application startup complete.
+Step 7 — Run the Client (New Terminal 2)
+.venv\Scripts\Activate.ps1
+uv run client.py http://localhost:8080/sse
+You should see:
+Connected to server with tools: [‘get_alerts’, ‘get_forecast’]
+MCP Client Started! Type your queries or ‘quit’ to exit.
+Step 8 — Try These Queries
+Query: What is the weather in New York?
+Query: Any weather alerts in California?
+Query: Storm warnings in Texas?
+Query: quit Demo Video

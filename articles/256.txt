@@ -1,0 +1,58 @@
+Automated Data Pipeline Using Airbyte: Google Drive CSV to Supabase PostgreSQL
+Many organizations store operational data in spreadsheets and CSV files on cloud storage platforms such as Google Drive. Manually downloading these files, cleaning data, and uploading them into databases is time-consuming, error-prone, and difficult to maintain.
+The business needed a simple automated data integration solution that could extract CSV data from Google Drive and load it into a centralized database for further analysis and reporting.
+We designed and implemented a cloud-based data pipeline using Airbyte Cloud.
+The solution automatically extracts CSV files from a specific Google Drive folder and loads the data into a PostgreSQL database hosted on Supabase.
+Airbyte was configured as the data integration layer to automate the extraction and loading process, eliminating manual data movement.
+The pipeline enables organizations to maintain a reliable and repeatable data ingestion process.
+Google Drive
+(CSV Files)
+|
+|
+↓
+Airbyte Cloud
+(Source Connector)
+|
+|
+↓
+Airbyte Connection
+(ETL/ELT Pipeline)
+|
+|
+↓
+Supabase PostgreSQL
+(Data Storage Layer)
+|
+|
+↓
+Analytics / Reporting / Applications
+Workflow:
+CSV files are uploaded into a Google Drive folder.
+Airbyte authenticates with Google Drive using OAuth.
+Airbyte extracts CSV file data.
+Airbyte processes the file structure and schema.
+Data is loaded into Supabase PostgreSQL tables.
+The database can be used for analytics, dashboards, or downstream application
+Configured Google Drive source connector in Airbyte Cloud
+Configured PostgreSQL destination using Supabase
+Automated data synchronization pipeline
+CSV ingestion workflow
+Database tables populated from source files
+End-to-end cloud ETL/ELT pipeline documentation
+Pipeline testing and validation
+Platform: Airbyte Cloud
+Source: Google Drive
+Auth: Google OAuth
+Format: CSV
+Destination: PostgreSQL via Supabase
+Type: ELT
+Management: SQL
+The solution reduces manual data handling by automating the movement of data from cloud storage into a centralized database.
+Potential business benefits:
+Reduces operational effort required for data collection
+Improves data availability for reporting and analytics
+Creates a repeatable and scalable data ingestion process
+Reduces errors caused by manual file transfers
+Enables faster decision-making using centralized data
+Provides a foundation for future analytics, dashboards, and machine learning workflows
+This approach can be applied across industries such as finance, retail, healthcare, education, and operations where teams frequently exchange data through spreadsheets and CSV files.

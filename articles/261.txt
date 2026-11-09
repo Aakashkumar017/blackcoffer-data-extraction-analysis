@@ -1,0 +1,21 @@
+Blackcoffer Vapi AI Voice Assistant
+Traditional client engagement relied heavily on static websites, forms, or manual calls. This approach lacked interactivity, often leading to missed opportunities and lower conversion rates. Blackcoffer needed a voice-first conversational agent to introduce services (AI Consulting, Big Data Analytics, AI Apps) in a structured, professional way, while allowing callers to navigate easily and end the call naturally.
+We built a menu-style voice assistant using Vapi AI . The bot greets callers, presents a simple menu of services, and guides them through explanations. It includes a built-in end-call tool to terminate sessions politely when requested. No external integrations were added, keeping the solution lightweight and demo-ready.
+Begin Node / Greeting → Welcomes callers and introduces services.
+Menu Options → AI Consulting, Big Data Analytics, AI Apps.
+Conversation Flow → Each option explains the service in detail.
+Transitions → Callers can return to the main menu or end the call.
+End-Call Tool → Closes the conversation with a polite goodbye.
+Configured Vapi AI agent with menu-style flow.
+Scripts for greeting and service explanations.
+End-call tool (40ceb710-8468-41e1-8662-00296ebffa27).
+Demo-ready assistant with microphone input testing.
+Vapi AI for agent orchestration
+OpenAI GPT-4.1 for conversational intelligence
+Deepgram nova-3 for speech-to-text transcription
+Vapi Voice Elliot v2 for professional voice output
+This solution demonstrates how voice-first AI agents can modernize client engagement. Instead of static menus, prospects interact naturally with a bot that explains services clearly. The impact includes:
+Improved lead conversion → Prospects understand offerings faster.
+Enhanced customer experience → Professional, interactive, and easy to use.
+Scalability → Architecture allows adding new services or integrations later.
+Industry relevance → Consulting, IT services, and analytics firms benefit from conversational AI to reduce friction and improve brand perception.

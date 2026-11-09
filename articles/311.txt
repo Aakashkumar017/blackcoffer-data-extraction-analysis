@@ -1,0 +1,26 @@
+AI Interviewer Agent Using VAPI
+Recruitment processes today face several challenges:
+High manual effort in initial candidate screening
+Inconsistent evaluation due to human bias
+Limited interviewer availability causing delays
+Poor scalability when handling large applicant volumes
+Lack of standardized feedback across candidates
+These issues lead to increased hiring time, higher costs, and inconsistent hiring quality .
+We developed an AI-powered Voice Interviewer using VAPI that:
+Conducts automated, real-time interviews
+Asks dynamic, role-based questions
+Understands candidate responses via speech recognition
+Evaluates answers using LLMs
+The system acts as a virtual recruiter, capable of interviewing multiple candidates simultaneously with consistent evaluation criteria.
+Functional AI Interviewer Prototype
+End-to-end Voice Interaction Workflow
+Question Generation & Evaluation Engine
+VAPI Cloud Platform
+Reduced screening time.
+Ability to conduct parallel interviews at scale
+Standardized evaluation across candidates
+Reduced human bias
+Lower dependency on human interviewers
+Reduced operational hiring costs
+Instant interview availability (24/7)
+Interactive and engaging process

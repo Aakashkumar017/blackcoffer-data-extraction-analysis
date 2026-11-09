@@ -1,0 +1,44 @@
+OpenClaw AI Telegram Bot Integration — Autonomous Agent Deployment on Windows
+Managing multiple workflows and AI-powered automation on a personal computer required complex setup processes with limited accessibility. Traditional chatbot deployments lacked flexibility, required deep technical knowledge, and provided no unified way to interact with AI agents across multiple channels. Developers and power users needed a solution that could be deployed quickly, supported multiple chat interfaces, and allowed for autonomous task execution without constant human oversight.
+We successfully deployed OpenClaw, an open-source AI orchestration platform, on a Windows machine with seamless Telegram bot integration. The solution enables real-time chat-based interaction with an AI agent powered by Gemini 2.5, includes a web-based control dashboard, and supports future extensibility for web search, scheduled tasks, and multi-agent workflows. The bot is now operational and ready to handle user queries, execute custom commands, and manage projects through simple Telegram messages.
+The architecture consists of four core components working in harmony:
+OpenClaw Gateway (Local WebSocket Server): Runs on localhost:18789 via Node.js, managing the AI agent lifecycle and handling all communications between channels, models, and the dashboard.
+AI Model Provider (Gemini 2.5): Uses OpenRouter API as the unified backend to access multiple LLM providers, including Google Gemini, OpenAI, Anthropic Claude, and open-source models—enabling flexibility and cost optimization.
+Telegram Bot Interface: Connected via BotFather API with secure allowlist-based access control; only pre-approved Telegram user IDs can interact with the agent.
+Web Control UI Dashboard: Browser-based interface (http://127.0.0.1:18789) for monitoring agent status, viewing conversation history, managing sessions, and configuring skills and channels.
+Fully functional OpenClaw installation with Node.js v22.18.0 on Windows 10
+Telegram bot (demo-bot-openclaw) deployed and tested with secure user authentication
+Web-based control dashboard accessible via authenticated token-based session
+Configured Gemini 2.5 model via OpenRouter for AI inference
+Systemd-ready gateway service with automatic startup configuration
+Agent workspace with markdown-based configuration files for personality, identity, and user context
+Security hardening setup with groupPolicy allowlisting and sensitive data redaction
+Future-ready infrastructure for web search (Brave API), scheduled tasks (cron jobs), and multi-agent teams
+Backend & Infrastructure
+Node.js v22.18.0 (runtime)
+OpenClaw v2026.3.13 (AI orchestration platform)
+WebSocket Gateway (ws://127.0.0.1:18789)
+OpenRouter API (unified LLM provider access)
+AI Models
+Gemini 2.5 (primary inference model)
+Support for Claude Sonnet, Llama 70B, Mistral, and other OpenRouter models
+Chat & Communication
+Telegram Bot API (async event-driven)
+Web dashboard (React-based control UI)
+Configuration & Storage
+SQLite (session & memory storage)
+Markdown files (.md) for agent configuration
+Local filesystem (~/.openclaw directory)
+Operating System
+Windows 10 (v10.0.26200.8037) with PowerShell 7.x
+This POC demonstrates the feasibility of deploying autonomous AI agents on consumer-grade hardware with minimal setup friction. The implementation enables multiple value streams:
+Operational Efficiency
+Users can now delegate repetitive tasks (content summarization, research compilation, scheduling) to an AI agent via simple Telegram messages. No need to context-switch between applications or write custom scripts.
+Cost Optimization
+By leveraging OpenRouter, users access cutting-edge models (Claude Opus, Gemini Ultra) through cheaper open-source alternatives (Llama, Mistral) for the same capability, reducing API costs by up to 80% compared to direct provider pricing.
+Scalability
+The architecture supports deployment on Raspberry Pi, VPS, or edge devices. Teams can spin up specialized agents (research agent, writing agent, project manager) without proprietary infrastructure or vendor lock-in.
+Security & Privacy
+On-premises deployment ensures sensitive data never leaves the local machine. Allowlist-based access control and token authentication prevent unauthorized bot interactions. Future integrations can include secure credential management and encryption-at-rest.
+Market Opportunity
+This validates demand in the freelance, startup, and SMB segments for affordable, deployable AI agent platforms. Potential B2B applications include: customer support automation, content generation, research assistance, project management, and decision support systems. Demo Video

@@ -1,0 +1,30 @@
+Microsoft Copilot-Powered Internal Knowledge Assistant POC
+The Problem
+Employees need fast, trusted answers for HR, IT, security, and onboarding questions. Internal support teams receive repetitive requests, and there is no simple way to verify policy guidance or automatically route unresolved issues to the appropriate team.
+Our Solution
+We built a proof-of-concept employee knowledge assistant powered by Microsoft Copilot Studio that uses a curated internal knowledge base to answer questions, cite source documents, and automate the routing of unresolved or out-of-scope requests. The solution features a local web UI designed to prototype and validate the Microsoft Copilot conversational workflow, backed by native integration blueprints for Power Automate and Microsoft Teams.
+Solution Architecture
+The architecture centers on a Microsoft Copilot Studio framework, pairing a responsive front-end prototype with enterprise-ready Copilot workflows:
+Copilot Logic: The conversational experience and topic triggering are modeled around Microsoft Copilot Studio’s core runtime architecture.
+Knowledge Storage: Stored in Markdown files under knowledge-base/ to mirror how Microsoft Copilot ingests unstructured data.
+Local UI Prototype: Driven by demo/index.html, demo/app.js, and demo/styles.css to simulate an embedded Microsoft Copilot chat widget.
+Answer Matching & Grounding: Selected through keyword scoring and matched to approved internal knowledge sources, simulating Microsoft Copilot’s native retrieval-augmented generation (RAG) and document grounding.
+Citations & Filtering: Replicates Microsoft Copilot’s signature inline citations and allows filtering by HR, IT, Security, or Onboarding content.
+Automated Routing: Request escalation is handled via custom actions, showing how Microsoft Copilot triggers a Power Automate flow to generate ticket IDs for unresolved questions.
+Enterprise Deployment: For production, Microsoft Copilot Studio hosts the agent natively, SharePoint or uploaded documents serve as live knowledge sources, and Copilot passes human-review requests straight to Teams or service desks.
+Deliverables
+Microsoft Copilot Web Prototype: A local web interface simulating an embedded Copilot chat widget for internal knowledge Q&A.
+Copilot-Ready Knowledge Files: Curated data files structured for seamless ingestion by Microsoft Copilot (covering HR, IT support, security policy, and onboarding).
+Citations & Source Filtering: UI components demonstrating Microsoft Copilot’s document grounding and citation features.
+Copilot Escalation Mechanism: Sample request routing workflows showing how Copilot hands off unresolved questions to human teams.
+Microsoft Copilot Studio Implementation Blueprint: Detailed configuration notes and Power Automate flow specifications for the final cloud environment.
+Test Plan & Build Checklist: Validation assets tailored for deploying the assistant within the Microsoft Copilot ecosystem.
+Tech Stack
+Core Conversational Platform: Microsoft Copilot Studio (for custom assistant design, intent routing, and grounding)
+Workflow Automation: Power Automate (integrated with Microsoft Copilot for routing human-review requests)
+Data Layer: SharePoint or uploaded documents (serving as Microsoft Copilot knowledge sources)
+Delivery Channel: Microsoft Teams (for native Microsoft Copilot end-user delivery)
+Security & Identity: Microsoft Entra ID (for authenticated employee access to the Copilot agent)
+Prototype UI Layer: HTML, CSS, JavaScript (for simulating the embedded Copilot client experience)
+Business Impact
+By leveraging Microsoft Copilot Studio , this solution accelerates employee self-service and significantly reduces repetitive support volume for HR, IT, and security teams. Grounding the Microsoft Copilot responses in approved internal documents ensures high-accuracy, compliant answers. The architecture enables organizations to maximize their existing Microsoft 365 investment, streamline policy enforcement, and deliver an enterprise-grade digital employee experience.

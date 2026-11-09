@@ -1,0 +1,10 @@
+Complete list of Materials Science and Engineering AI Tools & AI Software
+Artificial intelligence (AI) is revolutionizing materials science and engineering by accelerating the discovery, design, and optimization of new materials. Here’s a list of notable AI tools and software utilized in this field:​ Medium
+MatterGen Developed by Microsoft Research, MatterGen is a generative model designed for inorganic materials design, facilitating the creation of novel materials with desired properties. ​ Microsoft
+MatterSim Also from Microsoft Research, MatterSim is a simulation tool that complements MatterGen by predicting the properties and behaviors of newly designed materials, aiding in the validation process. ​ Microsoft
+GNoME (Graph Networks for Materials Exploration) Developed by DeepMind, GNoME utilizes graph neural networks to explore vast chemical spaces, predicting stable crystal structures and accelerating the discovery of new materials. ​ Wikipedia – Die freie Enzyklopädie
+AlphaMat AlphaMat serves as a materials informatics hub, connecting data, features, models, and applications to facilitate the discovery and design of materials across various domains. ​ arXiv
+Cephalo Cephalo integrates multimodal vision and language models for bio-inspired materials analysis and design, enabling the interpretation of complex visual data and aiding in the creation of novel materials. ​ arXiv
+These AI tools exemplify the integration of artificial intelligence into materials science, enabling researchers and engineers to expedite the development of innovative materials with tailored properties for various applications.
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

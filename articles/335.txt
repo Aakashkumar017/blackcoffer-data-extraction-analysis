@@ -1,0 +1,42 @@
+AI-Powered Inventory Forecasting & Alert System in Knime
+Client Name: A leading IT consulting firm in the USA
+Industry Type: E-commerce & Supply Chain
+Products & Services: Online retail & fulfillment operations
+The client operates in a fast-paced e-commerce environment managing inventory across multiple fulfillment channels including Shipmonk, Amazon, and WooCommerce.
+The client faced major challenges in:
+Inventory stockouts and overstocking
+Lack of centralized data across platforms
+No predictive system for demand forecasting
+Manual tracking leading to inefficiencies
+We developed an automated inventory forecasting system using Knime and Tableau that:
+Integrated data from multiple sources
+Calculated major KPIS
+Built Dashboard
+Standardized and cleaned datasets
+Predicted demand using forecasting logic
+Generated automated alerts for stock risks
+Data ingestion from Shipmonk, Amazon, WooCommerce using Selenium in a Python node
+ETL pipeline using KNIME
+Data transformation and KPI computation
+Python scripting for forecasting logic
+Alert system for stockout prediction
+Tableau Dashboard
+Automated ETL Knime  workflow
+Tableau dashboard
+Alert system for low inventory
+Framework used KNIME Analytics Platform
+Language/techniques used Python, ETL pipelines, Data preprocessing
+Models used Time-series forecasting (basic predictive models)
+Skills used Data analysis, forecasting, automation, backend logic
+Databases used CSV-based structured datasets
+Inconsistent data formats across sources
+Missing and duplicate data
+Real-time alert generation
+Implemented data standardization pipelines
+Applied cleaning and validation rules
+Built custom Python scripts for KPI logic
+Automated workflows to reduce manual errors
+Reduced stockouts significantly
+Improved inventory planning accuracy
+Saved manual effort and time
+Enabled data-driven decision making

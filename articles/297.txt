@@ -1,0 +1,63 @@
+Local Document Question Answering System using Langflow, Ollama, and ChromaDB
+Organizations often store important information in documents such as PDFs, offer letters, contracts, policies, and reports. Manually searching these documents to find specific information is time-consuming and inefficient. Existing cloud-based AI solutions also raise concerns regarding data privacy and internet dependency.
+The objective of this Proof of Concept (POC) was to build a completely local AI-powered document question answering system that allows users to upload documents and ask natural language questions without relying on external APIs.
+A Retrieval-Augmented Generation (RAG) application was developed using Langflow to provide an intuitive low-code workflow for document ingestion and querying.
+The solution performs the following steps:
+Reads uploaded PDF or text documents.
+Splits documents into smaller chunks.
+Generates vector embeddings using Ollama’s local embedding model.
+Stores embeddings in ChromaDB.
+Retrieves the most relevant document chunks based on the user’s query.
+Uses a local Llama 3.1 model through Ollama to generate accurate responses using the retrieved context.
+The entire pipeline runs locally without sending any data to external cloud services.
+User
+│
+▼
+Chat Input
+│
+▼
+Agent (Llama 3.1 via Ollama)
+│
+▼
+ChromaDB Search Tool
+│
+▼
+Relevant Document Chunks
+│
+▼
+Generated Answer
+AND
+Read File
+│
+▼
+Split Text
+│
+▼
+Ollama Embeddings
+│
+▼
+ChromaDB
+Local RAG application built using Langflow.
+PDF/Text document ingestion workflow.
+ChromaDB vector database integration.
+Ollama embedding generation.
+Local Llama 3.1 inference.
+Interactive question-answering interface.
+Reusable Langflow workflow.
+Langflow
+Ollama
+Llama 3.1 8B
+Nomic Embed Text
+ChromaDB
+Python
+LangChain
+Windows
+PDF/Text Parser
+This solution enables organizations to quickly retrieve information from large document repositories without manual searching.
+Potential business benefits include:
+Faster document search and information retrieval.
+Improved employee productivity.
+Reduced dependency on cloud AI services.
+Better data privacy since all processing occurs locally.
+Lower operational costs by using open-source local models.
+Can be extended for HR documents, legal contracts, SOPs, research papers, and company policies.

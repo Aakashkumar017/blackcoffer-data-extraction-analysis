@@ -1,0 +1,203 @@
+List of Marketing Tools categorized by their primary functions
+Here’s a comprehensive list of Marketing Tools categorized by their primary functions:
+1. Marketing Automation Tools
+HubSpot Marketing Hub
+Marketo
+Pardot (by Salesforce)
+ActiveCampaign
+Drip
+Omnisend
+Klaviyo
+Keap (formerly Infusionsoft)
+SharpSpring
+GetResponse
+2. Customer Relationship Management (CRM) Tools
+Salesforce CRM
+HubSpot CRM
+Zoho CRM
+Pipedrive
+Freshsales
+Insightly
+Nimble
+Copper
+Microsoft Dynamics CRM
+Monday Sales CRM
+3. Email Marketing Tools
+Mailchimp
+Sendinblue (Brevo)
+Constant Contact
+ConvertKit
+AWeber
+MailerLite
+Campaign Monitor
+Moosend
+Benchmark Email
+Emma
+4. Social Media Marketing & Management Tools
+Hootsuite
+Buffer
+Sprout Social
+Later
+Loomly
+Agorapulse
+SocialBee
+MeetEdgar
+SocialPilot
+CoSchedule
+5. Content Marketing & Blogging Platforms
+WordPress
+Medium
+Ghost
+HubSpot CMS
+Contently
+StoryChief
+ClearVoice
+Skyword
+Kapost
+NewsCred
+6. SEO & Keyword Research Tools
+Ahrefs
+SEMrush
+Moz
+Google Keyword Planner
+Ubersuggest
+KWFinder
+Serpstat
+AnswerThePublic
+Surfer SEO
+Yoast SEO (for WordPress)
+7. Paid Advertising & PPC Management Tools
+Google Ads
+Facebook Ads Manager
+Microsoft Ads
+AdEspresso
+SpyFu
+WordStream Advisor
+SEMRush PPC Toolkit
+Optmyzr
+Adzooma
+Skai (formerly Kenshoo)
+8. Analytics & Data Tracking Tools
+Google Analytics
+Google Search Console
+Google Tag Manager
+Adobe Analytics
+Mixpanel
+Hotjar
+Crazy Egg
+Heap
+Matomo
+Pendo
+9. Lead Generation & Conversion Rate Optimization (CRO) Tools
+OptinMonster
+Unbounce
+Leadpages
+Instapage
+Sumo
+Hello Bar
+Thrive Leads
+ConvertFlow
+Outgrow
+Quora Ads
+10. Influencer & Affiliate Marketing Tools
+Upfluence
+AspireIQ
+Heepsy
+Klear
+Grin
+Tapfiliate
+Refersion
+Post Affiliate Pro
+CJ Affiliate (Commission Junction)
+Rakuten Advertising
+11. Video Marketing & Editing Tools
+Vidyard
+Wistia
+Animoto
+Promo.com
+Lumen5
+Veed.io
+Kapwing
+Vimeo Create
+Clipchamp
+Descript
+12. Chatbot & Conversational Marketing Tools
+Drift
+Intercom
+ManyChat
+Tidio
+Chatfuel
+MobileMonkey
+Landbot
+Botsify
+Freshchat
+Crisp.chat
+13. E-commerce Marketing & Sales Tools
+Shopify Marketing Tools
+BigCommerce
+WooCommerce Marketing Extensions
+Growave
+Yotpo
+Smile.io
+ReferralCandy
+Omnisend
+ReConvert
+Klaviyo for E-commerce
+14. Webinar & Virtual Event Marketing Tools
+Zoom Webinars
+GoToWebinar
+Webex Events
+Demio
+Livestorm
+BigMarker
+ClickMeeting
+ON24
+EverWebinar
+EasyWebinar
+15. Online Survey & Feedback Tools
+SurveyMonkey
+Typeform
+Google Forms
+Qualtrics
+Jotform
+Survicate
+Zoho Survey
+Alchemer (formerly SurveyGizmo)
+QuestionPro
+Hotjar Polls & Surveys
+16. Digital PR & Brand Monitoring Tools
+Brand24
+Mention
+BuzzSumo
+Meltwater
+Google Alerts
+Critical Mention
+Cision
+HARO (Help a Reporter Out)
+TrendKite
+Awario
+17. Marketing Collaboration & Project Management Tools
+Trello
+Asana
+ClickUp
+Monday.com
+Basecamp
+Wrike
+Teamwork
+Notion
+Smartsheet
+Airtable
+18. AI-Powered Marketing & Personalization Tools
+Persado
+Phrasee
+Seventh Sense
+Crayon
+Pathmatics
+Adobe Sensei
+Frase.io
+Jarvis (Jasper AI)
+Copy.ai
+MarketMuse
+This is a complete and detailed list of marketing tools used by businesses to optimize and scale their marketing efforts. Do you need recommendations based on your specific needs? 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

@@ -1,0 +1,52 @@
+Streamlined Equity Waterfall Calculation and Deal Management System
+Client: A leading real estate firm in the USA
+Industry Type: Real Estate
+Products & Services: Real Estate, Construction, Financing
+Organization Size: 100+
+Calculating equity waterfalls based on CSV data.
+Implementing different user roles and their permissions.
+Creating a user-friendly dashboard for each user type.
+Managing deal creation, invitations, and subscriptions.
+Handling user invitations and registration.
+Copying deals while preserving specific data.
+Develop Python code to calculate equity waterfalls.
+Implement role-based access control for admin, sponsors, and investors.
+Create distinct dashboards with relevant data using ReactJS.
+Design intuitive UI for deal management.
+Develop invitation mechanisms and registration flows.
+Implement copying deals with proper data handling.
+Backend built with Django for handling data, authentication, and API endpoints.
+Frontend developed using ReactJS for user interfaces.
+SQLite database for data storage.
+Google Cloud for application deployment.
+Project Github Source Code :
+Tools used Pillow Requests GCP VM
+Pillow
+Requests
+GCP VM
+Language/techniques used Python React JS
+Python
+React JS
+Models used Django ORM
+Django ORM
+Skills used Python Python Django Python Django REST Framework
+Python
+Python Django
+Python Django REST Framework
+Databases used SQLite3 database
+SQLite3 database
+Web Cloud Servers used GCP
+GCP
+Equity waterfall calculations based on dynamic CSV data.
+Managing user permissions and access control.
+Designing and implementing complex user registration and invitation flows.
+Copying deals while maintaining data integrity.
+Ensuring data consistency and security.
+Developed Python scripts to parse CSV files and perform required calculations.
+Utilized Django’s built-in authentication system and implemented role-based permissions.
+Designed clear and user-friendly registration and invitation processes.
+Implemented a controlled deal copying mechanism.
+Conducted thorough testing and used encryption for data security.
+Summarized: https://blackcoffer.com/
+This project was done by the Blackcoffer Team, a Global IT Consulting firm.
+This solution was designed and developed by Blackcoffer Team Here are my contact details: Firm Name: Blackcoffer Pvt. Ltd. Firm Website: www.blackcoffer.com Firm Address: 4/2, E-Extension, Shaym Vihar Phase 1, New Delhi 110043 Email: ajay@blackcoffer.com Skype: asbidyarthy WhatsApp: +91 9717367468 Telegram: @asbidyarthy

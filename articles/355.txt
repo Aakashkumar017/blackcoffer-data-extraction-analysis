@@ -1,0 +1,37 @@
+Automated Named Entity Recognition (NER) Tool using BERT
+Client: A leading IT firm in the USA
+Industry Type: IT
+Products & Services: IT Services
+Organization Size: 2000+
+The client needed a Python-based solution to automate Named Entity Recognition (NER) using advanced NLP techniques. The primary goal was to predict and tag named entities (like names, organizations, etc.) from text data and produce structured output in XML format. The solution also needed to be deployed and set up on the client’s local environment.
+We developed a complete Python-based NER tool utilizing a pre-trained BERT model. The tool extracts named entities from the input data and wraps them with RS tags. The project included the creation of sample outputs, delivery of a working XML output for validation, and final deployment on the client machine with all dependencies installed.
+Solution architecture diagram
+Python script for BERT-based NER tagging
+Sample output in XML format
+Deployed tool on client’s local environment
+Documentation for tool usage and setup
+Jupyter Notebook
+Python environment (local & client setup)
+Python
+BERT transformer model
+XML formatting
+Named Entity Recognition (NER)
+RS tagging
+Pre-trained BERT model for NER
+Natural Language Processing (NLP)
+Python Development
+ML Model Integration
+Data Tagging Automation
+Client Deployment Support
+Not applicable (script-based input/output processing)
+Local machine and client machine environment
+Mapping NER model output to XML structure.
+Ensuring consistent entity tagging with RS tags.
+Setting up Python environment and dependencies on client machine.
+Implemented a conversion function to wrap entities with RS tags in XML format.
+Used test-driven development to ensure consistent tagging across sample datasets.
+Shared a requirements.txt and provided virtual environment setup for easy deployment.
+Reduced manual tagging time significantly.
+Improved data consistency and tagging accuracy.
+Ready-to-use tool for further NLP automation.
+Easy deployment and reproducibility ensured scalability for future tasks.

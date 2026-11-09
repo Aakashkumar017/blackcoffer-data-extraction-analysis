@@ -1,0 +1,99 @@
+Civil Engineering Software, categorized by their primary applications
+1. Structural Analysis & Design Software
+STAAD.Pro – Structural analysis and design
+ETABS – Structural and seismic analysis for buildings
+SAP2000 – General-purpose structural analysis
+SAFE – Slab and foundation analysis
+RISA-3D – Structural engineering and analysis
+Robot Structural Analysis – Autodesk’s finite element analysis tool
+Tekla Structural Designer – Analysis and design for concrete and steel structures
+Midas Gen – Advanced analysis for complex structures
+SCIA Engineer – Structural engineering and BIM integration
+STRAP – Structural analysis of bridges and buildings
+2. Building Information Modeling (BIM) Software
+Autodesk Revit – BIM for architecture, structure, and MEP
+Tekla Structures – Steel detailing and structural BIM
+Bentley AECOsim – BIM for large infrastructure projects
+Allplan Engineering – BIM software for civil engineers
+Archicad – BIM tool for architects and engineers
+3. CAD (Computer-Aided Design) Software
+AutoCAD – General drafting and design
+AutoCAD Civil 3D – Civil engineering design and documentation
+MicroStation – Bentley’s CAD platform for infrastructure
+BricsCAD – Alternative to AutoCAD for drafting and 3D modeling
+DraftSight – CAD software for 2D and 3D modeling
+4. Geotechnical & Foundation Engineering Software
+PLAXIS – Geotechnical finite element analysis
+GeoStudio – Geotechnical modeling and slope stability
+Midas GTS NX – Advanced geotechnical and tunnel analysis
+FLAC3D – Rock and soil behavior simulation
+LPILE – Pile foundation analysis
+DeepEX – Deep excavation and shoring design
+Geo5 – Suite of geotechnical design software
+Settle3 – Settlement analysis
+5. Transportation & Roadway Design Software
+Autodesk Civil 3D – Road and highway design
+OpenRoads Designer – Bentley’s road infrastructure software
+MX Road – Road and highway design
+InfraWorks – Conceptual design for civil infrastructure
+TransCAD – Transportation planning and modeling
+VISSIM – Traffic simulation and analysis
+AASHTOWare – Highway safety and design
+HDM-4 – Highway development and management
+6. Hydraulic & Water Resource Engineering Software
+HEC-RAS – River and floodplain modeling
+HEC-HMS – Hydrologic modeling and watershed analysis
+SWMM – Stormwater and drainage modeling
+WaterGEMS – Water distribution modeling
+EPANET – Water distribution network modeling
+MIKE 21/MIKE FLOOD – Coastal and flood modeling
+StormCAD – Stormwater drainage design
+SewerCAD – Sewer network design and analysis
+InfoWorks ICM – Integrated catchment modeling
+RiverFlow2D – 2D hydrodynamic modeling
+7. Bridge Engineering Software
+CSI Bridge – Bridge analysis and design
+Midas Civil – Advanced bridge and structural analysis
+LUSAS Bridge – Finite element bridge analysis
+RM Bridge – Bentley’s bridge modeling software
+CSiCol – Column and bridge pier design
+OpenBridge Modeler – Bentley’s bridge BIM software
+8. Surveying & GIS (Geographic Information System) Software
+ArcGIS – GIS and spatial analysis
+QGIS – Open-source GIS software
+Global Mapper – GIS data processing
+AutoCAD Map 3D – GIS and CAD integration
+Surfer – Surface mapping and terrain analysis
+TBC (Trimble Business Center) – Survey data processing
+LISCAD – Land surveying and engineering software
+Google Earth Pro – GIS visualization
+9. Construction Management & Estimation Software
+Primavera P6 – Construction scheduling and project management
+Microsoft Project – Project scheduling and tracking
+Autodesk Navisworks – Clash detection and project review
+Procore – Construction management
+CostX – Cost estimation and quantity takeoff
+PlanSwift – Takeoff and estimation software
+BIM 360 – Autodesk’s cloud collaboration for construction
+Candy CCS – Cost estimating and project control
+e-Builder – Project lifecycle management
+10. Environmental Engineering Software
+AERMOD – Air dispersion modeling
+CORMIX – Water quality and mixing zone analysis
+BREEZE – Air pollution modeling
+WASP – Water quality simulation
+LEED Online – Sustainability and green building certification
+11. Tunnel & Underground Structure Software
+FLAC3D – Tunnel and underground rock mechanics analysis
+Midas GTS NX – Tunnel and geotechnical analysis
+RocScience RS2 (Phase2) – Underground excavation modeling
+TunnelCAD – Tunnel design and analysis
+UTEXAS – Slope stability and underground works
+12. Pavement Design & Analysis Software
+KENPAVE – Pavement analysis
+FAARFIELD – Airport pavement design
+AASHTO Pavement ME – Pavement design and analysis
+Pave3D – Road pavement modeling
+This list covers almost all major software used in civil engineering, categorized by function. If you need recommendations based on a specific project, let me know! 🚧
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

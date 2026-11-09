@@ -1,0 +1,142 @@
+List of No-Code and Low-Code tools across different categories
+Here’s a comprehensive list of No-Code and Low-Code tools across different categories:
+🚀 General No-Code/Low-Code Platforms
+These platforms allow users to build applications without coding or with minimal coding.
+Bubble – No-code web app builder
+Glide – Build mobile & web apps from Google Sheets
+Thunkable – No-code mobile app development
+Adalo – Build apps without code
+Appgyver (SAP Build Apps) – Enterprise-level no-code app builder
+Backendless – No-code backend development
+Kodular – Drag-and-drop Android app builder
+Thunkable – No-code iOS & Android apps
+OutSystems – Enterprise low-code app development
+Mendix – Low-code for enterprise applications
+Zoho Creator – No-code database & app builder
+🖥 Web & Website Builders
+These tools help build websites and web apps without coding.
+Webflow – No-code responsive websites
+Wix – Drag-and-drop website builder
+Squarespace – Website & e-commerce builder
+Shopify – E-commerce site builder
+WordPress (with Elementor, Divi, etc.) – Low-code website builder
+Weebly – Simple drag-and-drop website builder
+Framer – No-code website design & animation
+Softr – No-code website builder from Airtable
+Carrd – One-page website builder
+Dorik – Website & landing page builder
+📱 Mobile App Builders
+These tools help create Android and iOS applications without coding.
+Thunkable – Drag-and-drop mobile app builder
+Glide – No-code mobile apps from spreadsheets
+Kodular – Drag-and-drop Android apps
+Appgyver (SAP Build Apps) – No-code mobile app platform
+Adalo – No-code mobile apps with built-in databases
+Draftbit – Low-code React Native app builder
+Thunkable – Cross-platform mobile app builder
+Bravo Studio – Convert Figma to an app
+🔧 Automation & Workflow Automation
+These tools automate workflows and integrate apps.
+Zapier – No-code automation platform
+Make (Integromat) – Advanced automation & workflows
+Pipedream – Low-code workflow automation
+Retool – Low-code internal tool builder
+n8n – Open-source workflow automation
+Parabola – Visual automation for e-commerce
+Microsoft Power Automate – Business process automation
+HubSpot Operations Hub – CRM automation
+Workato – Enterprise automation platform
+🏛 Database & Backend (No-Code/Low-Code Backend Solutions)
+These tools provide backend functionalities without writing complex code.
+Airtable – No-code relational database
+Xano – No-code backend for web & mobile apps
+Baserow – Open-source no-code database
+Nocodb – No-code database alternative to Airtable
+Backendless – No-code backend services
+Firebase – Low-code backend with real-time DB
+Supabase – Open-source Firebase alternative
+AppSheet (by Google) – No-code backend for apps
+Stacker – Turn spreadsheets into databases
+📊 Data Analytics & BI (Business Intelligence)
+These tools help visualize and analyze data without coding.
+Google Looker Studio (Data Studio) – Free BI tool
+Microsoft Power BI – Low-code data visualization
+Tableau – Low-code data analytics platform
+Metabase – Open-source BI tool
+GoodData – Cloud BI for businesses
+Klipfolio – No-code dashboards
+Domo – Business analytics with automation
+🧠 AI & Machine Learning (No-Code/Low-Code AI Tools)
+These platforms allow AI model building without coding.
+Google Vertex AI (AutoML) – No-code ML by Google
+Teachable Machine – No-code ML by Google
+Lobe – Train ML models visually
+Akkio – No-code AI for data analytics
+Levity – No-code AI automation
+Peltarion – No-code deep learning
+MonkeyLearn – No-code text analysis
+Obviously AI – AI model building without coding
+Runway ML – No-code AI for media & video
+OpenAI API + Zapier – AI automation without coding
+📩 Email, Marketing & CRM Automation
+These tools help automate marketing and customer management.
+Mailchimp – No-code email marketing
+ActiveCampaign – Marketing automation
+HubSpot CRM – No-code CRM & automation
+GoHighLevel – Automation for marketing agencies
+Sendinblue (Brevo) – Email & SMS marketing
+ConvertKit – Email automation for creators
+Campaign Monitor – Email & automation
+Omnisend – E-commerce marketing automation
+Klaviyo – Email & SMS for e-commerce
+Customer.io – Automated messaging
+💬 No-Code Chatbots & Conversational AI
+These platforms help create chatbots without coding.
+Chatfuel – No-code chatbot for Messenger
+ManyChat – Chatbots for Instagram, Facebook
+Tars – AI-powered chatbots
+Landbot – No-code chatbot builder
+Drift – Conversational AI for sales & marketing
+Dialogflow – Google’s conversational AI tool
+Botpress – Open-source chatbot framework
+Rasa – Low-code AI-powered chatbot
+Voiceflow – No-code voice assistants
+🛒 E-Commerce & Marketplace Builders
+These platforms help create online stores without coding.
+Shopify – No-code e-commerce
+WooCommerce – E-commerce for WordPress
+BigCommerce – Enterprise e-commerce solution
+Ecwid – No-code store integration
+Podia – Sell courses & memberships
+Lemon Squeezy – No-code SaaS billing
+Gumroad – Sell digital products
+Popsy – No-code marketplace builder
+🎨 Design & UI/UX Prototyping
+These tools help design and prototype without coding.
+Figma – UI/UX design
+Adobe XD – Design & prototype apps
+Canva – No-code graphic design
+Framer – No-code website & animation
+LottieFiles – No-code animations
+🔍 SEO & Web Scraping
+ScrapyCloud – No-code web scraping
+ParseHub – Visual web scraper
+Octoparse – No-code web scraping
+Bright Data – Scraping & proxy tools
+SEOClarity – No-code SEO automation
+🎥 Video & Audio No-Code Tools
+Descript – AI-powered video & audio editing
+Runway ML – AI video editing
+Synthesia – AI video generation
+Pictory – No-code video automation
+🛠 Other No-Code & Low-Code Tools
+Thunkable – No-code mobile app development
+Voiceflow – No-code voice assistants
+Pory.io – Turn Airtable into web apps
+Memberstack – Membership & authentication
+Clerk.dev – No-code authentication
+Zapier Tables – No-code relational database
+Conclusion
+This is one of the most complete lists of no-code & low-code tools. Do you need recommendations based on a specific use case? 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

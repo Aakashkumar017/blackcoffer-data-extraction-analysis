@@ -1,0 +1,63 @@
+Travel Itinerary Generator using Langflow
+Planning a trip is often time-consuming and fragmented. Users typically need to:
+Search multiple websites for destinations, attractions, and food recommendations
+Manually estimate travel costs and budgets
+Organize all information into a coherent itinerary
+This results in:
+Information overload
+Inefficient planning
+Lack of personalized travel experiences
+We developed an AI-powered Travel Itinerary Generator using Langflow, which automates the entire travel planning process.
+The system:
+Accepts a user’s desired travel location
+Fetches relevant destinations, monuments, and food recommendations using the Tavily Search API
+Extracts and processes information from URLs using URL tools
+Uses a calculator tool to estimate budget and expenses
+Generates a structured, day-wise travel itinerary
+This enables users to receive a complete travel plan, eliminating manual effort.
+Functional Langflow pipeline
+AI-generated travel itinerary output
+Integrated API-based data retrieval system
+Budget estimation module
+End-to-end automated workflow
+Langflow – Visual LLM orchestration
+Tavily Search API – Real-time travel data retrieval
+LLMs – Content generation & reasoning
+URL Tools – Web content extraction
+Calculator Tool – Budget estimation
+Reduces planning time from hours to seconds
+Improves user experience with structured outputs
+Provides cost transparency for better decision-making
+Scalable solution for travel platforms and agencies
+Demonstrates potential for AI-driven personalization in tourism
+Planning a trip is often time-consuming and fragmented. Users typically need to:
+Search multiple websites for destinations, attractions, and food recommendations
+Manually estimate travel costs and budgets
+Organize all information into a coherent itinerary
+This results in:
+Information overload
+Inefficient planning
+Lack of personalized travel experiences
+We developed an AI-powered Travel Itinerary Generator using Langflow, which automates the entire travel planning process.
+The system:
+Accepts a user’s desired travel location
+Fetches relevant destinations, monuments, and food recommendations using the Tavily Search API
+Extracts and processes information from URLs using URL tools
+Uses a calculator tool to estimate budget and expenses
+Generates a structured, day-wise travel itinerary
+This enables users to receive a complete travel plan, eliminating manual effort.
+Functional Langflow pipeline
+AI-generated travel itinerary output
+Integrated API-based data retrieval system
+Budget estimation module
+End-to-end automated workflow
+Langflow – Visual LLM orchestration
+Tavily Search API – Real-time travel data retrieval
+LLMs – Content generation & reasoning
+URL Tools – Web content extraction
+Calculator Tool – Budget estimation
+Reduces planning time from hours to seconds
+Improves user experience with structured outputs
+Provides cost transparency for better decision-making
+Scalable solution for travel platforms and agencies
+Demonstrates potential for AI-driven personalization in tourism Demo Video

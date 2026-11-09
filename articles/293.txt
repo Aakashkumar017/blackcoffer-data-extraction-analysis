@@ -1,0 +1,45 @@
+AI-Powered Research Assistant using LangChain & LangGraph
+In today’s fast-paced environment, gathering accurate and structured information from multiple sources is time-consuming and inefficient. Users often struggle with:
+Fragmented information across web and research papers
+Lack of structured research outputs
+Difficulty distinguishing between simple queries and deep research needs
+Manual effort required to synthesize insights
+There is a need for an intelligent system that can automatically analyze queries, perform research, and generate structured responses.
+This AI-powered Research Assistant using LangChain and LangGraph can:
+Understands user queries intelligently
+Classifies them into: General queries Clarification-needed queries Research-intensive queries
+General queries
+Clarification-needed queries
+Research-intensive queries
+Automatically creates a research plan
+Uses tools like web search and ArXiv retrieval
+Synthesizes results into a structured research report
+Provides an interactive Streamlit-based chat interface
+Fully functional AI Research Assistant
+Streamlit-based interactive UI
+LangGraph-based agent workflow
+Integration with: Tavily Web Search ArXiv Research Papers
+Tavily Web Search
+ArXiv Research Papers
+End-to-end research automation pipeline
+AI / LLM LangChain LangGraph Groq API (LLaMA 3.1 8b model)
+LangChain
+LangGraph
+Groq API (LLaMA 3.1 8b model)
+Tools & APIs Tavily Search API ArXiv Retriever
+Tavily Search API
+ArXiv Retriever
+Frontend Streamlit
+Streamlit
+Language Python
+Python
+Other Libraries JSON Typing (TypedDict)
+JSON
+Typing (TypedDict)
+Increased Productivity: Reduces manual research time.
+Provides structured and reliable insights
+Combines web + academic sources
+Automates research tasks → reduces human effort
+Enhanced User Experience
+Conversational interface
+Intelligent query handling Demo Video

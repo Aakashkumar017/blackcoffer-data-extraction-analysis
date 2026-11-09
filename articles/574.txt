@@ -1,0 +1,67 @@
+How To Secure (SSL) Nginx with Let’s Encrypt on Ubuntu (Cloud VM, GCP, AWS, Azure, Linode) and Add Domain
+Prerequisites:-
+One Ubuntu 22.04 server set up by following this initial server setup for Ubuntu 22.04 tutorial, including a sudo-enabled non-root user and a firewall.
+A registered domain name. This tutorial will use example.com throughout. You can purchase a domain name from Namecheap, get one for free with Freenom, or use the domain registrar of your choice.
+Both of the following DNS records set up for your server. If you are using DigitalOcean, please see our DNS documentation for details on how to add them.
+An A record with example.com pointing to your server’s public IP address.
+An A record with www.example.com pointing to your server’s public IP address.
+Nginx installed by following How To Install Nginx on Ubuntu 22.04. Be sure that you have a server block for your domain. This tutorial will use /etc/nginx/sites-available/example.com as an example.
+Installing Certbot
+sudo snap install core; sudo snap refresh core
+sudo apt remove certbot
+sudo snap install –classic certbot
+2. Confirming Nginx’s Configuration
+sudo nano /etc/nginx/sites-available/example.com
+3. Find file –> /etc/nginx/sites-available/example.com
+make these changes on server_name line
+…
+server_name example.com www.example.com;
+…
+sudo nginx -t
+sudo systemctl reload nginx
+5. Allowing HTTPS Through the Firewall
+sudo ufw status
+Output
+Status: active
+To                         Action      From
+—                         ——      —-
+OpenSSH                    ALLOW       Anywhere
+Nginx HTTP                 ALLOW       Anywhere
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+Nginx HTTP (v6)            ALLOW       Anywhere (v6)
+sudo ufw allow ‘Nginx Full’
+sudo ufw delete allow ‘Nginx HTTP’
+sudo ufw status
+Output
+Status: active
+To                         Action      From
+—                         ——      —-
+OpenSSH                    ALLOW       Anywhere
+Nginx Full                 ALLOW       Anywhere
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+Nginx Full (v6)            ALLOW       Anywhere (v6)
+6. Obtaining an SSL Certificate
+sudo certbot –nginx -d example.com -d www.example.com
+Output
+IMPORTANT NOTES:
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/your_domain/fullchain.pem
+Key is saved at: /etc/letsencrypt/live/your_domain/privkey.pem
+This certificate expires on 2022-06-01.
+These files will be updated when the certificate renews.
+Certbot has set up a scheduled task to automatically renew this certificate in the background.
+– – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – –
+If you like Certbot, please consider supporting our work by:
+* Donating to ISRG / Let’s Encrypt: https://letsencrypt.org/donate
+* Donating to EFF: https://eff.org/donate-le
+7. Verifying Certbot Auto-Renewal
+sudo systemctl status snap.certbot.renew.service
+Output
+○ snap.certbot.renew.service – Service for snap application certbot.renew
+Loaded: loaded (/etc/systemd/system/snap.certbot.renew.service; static)
+Active: inactive (dead)
+TriggeredBy: ● snap.certbot.renew.timer
+8. Conclusion
+In this tutorial, you installed the Let’s Encrypt client certbot, downloaded SSL certificates for
+your domain, configured Nginx to use these certificates, and set up automatic certificate renewal
+available link —> https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04

@@ -1,0 +1,29 @@
+AI-Driven Enterprise Systems Engineering Platform for Defence and Space Tech
+Client Name: A leading defence and space tech firm in the middle east
+Industry Type: Defence & Space
+Products & Services: Enterprise Systems Engineering Platform (SaaS Platform)
+Organization Size: 100+
+About Client: Working with this client has been a dynamic experience. He is highly knowledgeable, detail-oriented, and sets strict deadlines, often updating requirements to match evolving priorities. The work environment can be high-pressure, with a strong focus on accuracy and delivery. Adaptable and goal-driven team members will find working with him rewarding.
+The project involved managing a large and evolving admin-side system where multiple modules needed continuous updates, localization support, and better usability. A major challenge was keeping the interface consistent while adding multi-language support across many pages, improving export behavior, and enhancing prompt management and user configuration features. The team also had to address frequent requirement changes, bug fixes, and strict delivery expectations within a tight timeline.
+We worked on systematically updating the admin interface across multiple modules by completing multi-language support, improving export functionality, and refining prompt management. In parallel, we implemented last import date/time tracking, improved file naming and tooltip behavior, introduced word count chips and dropdown multi-selection, and began building the user configuration manager. The work was approached incrementally so that completed items could be stabilized while ongoing tasks continued without disrupting delivery.
+The solution followed a modular admin-panel workflow where each feature area was updated independently, such as export handling, prompt management, workflow editors, configuration management, and import tracking. The system was structured to support both admin-side and user-side enhancements, with changes applied across related pages to maintain consistency. This allowed the team to roll out improvements module by module while preserving the existing application flow.
+The delivered work included completed multi-language support for many pages, improved export behavior with correct file/page naming, last import date and time tracking across numerous admin pages, updated chips and word-count indicators in prompt management, tooltip cleanup, and improved usability in the workflow and sidebar interactions. Additional deliverables included a sample user configuration manager clone, bug fixes for decomposition and prompt management, and ongoing implementation for remaining admin modules.
+Framework used
+Frontend and backend application stack for an admin dashboard system, with modular page-based development and server-side support.
+Language/techniques used
+Feature-based development, UI enhancement, localization support, export/import handling, tooltip and chip-based UI improvements, bug fixing, and incremental module updates.
+Models used
+AI Models : OpenAI GPT (configurable via environment) and a custom AI service hosted at http://34.163.69.158:8000
+Classification Models : 10-band and 12-band categorization systems for tasks like workflow, risk, and taxonomy management
+Graph Algorithms : Used for hierarchical decomposition, traceability path finding, and dependency resolution in system breakdowns
+Skills used
+Front-end development, admin panel customization, multi-language implementation, stateful UI updates, export/download logic, debugging, usability improvement, and task prioritization under deadline pressure.
+Databases used
+Graph Database : Neo4j AuraDB (cloud-hosted) for storing project hierarchies, requirements, tasks, and relationships
+File Storage : Cloudflare R2 (S3-compatible object storage) and Google Cloud Storage (alternative) for storing exports, configuration files, and project documents
+Web Cloud Servers used
+Development server: http://34.163.69.158
+The main technical challenges were handling a large number of page-level updates without breaking existing behavior, keeping multi-language support consistent across many modules, and implementing accurate export and import metadata across both admin and user sides. Additional challenges included managing tooltip behavior, improving prompt management UX, and fixing bugs in decomposition and configuration-related screens while continuing to deliver under a strict schedule.
+The challenges were solved by completing the work in stages and validating each module after implementation. Multi-language support was applied page by page, export logic was corrected to match the relevant tab or page context, and import metadata was standardized across admin pages. UI issues such as long chips, tooltips, and dropdown handling were refined to improve readability and usability, while bug fixes were applied directly to the affected modules to keep the system stable.
+These updates improved the usability, consistency, and reliability of the admin system. Multi-language support made the platform more accessible, export and import tracking improved operational clarity, and prompt management enhancements made the interface easier to use and maintain. The work also helped reduce manual confusion, supported stricter documentation practices, and kept the project moving toward its next phase of languages and regions.
+http://34.163.69.158/

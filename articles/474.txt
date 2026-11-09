@@ -1,0 +1,112 @@
+List of Data Analytics Tools, categorized by their functionality
+Here’s a comprehensive list of Data Analytics Tools , categorized by their functionality:
+1. Business Intelligence (BI) & Data Visualization
+Tableau
+Power BI
+Google Looker Studio (formerly Data Studio)
+Qlik Sense
+GoodData
+MicroStrategy
+TIBCO Spotfire
+Mode Analytics
+Domo
+Sisense
+Kibana (Elastic Stack)
+Grafana
+SAP BusinessObjects
+2. Data Processing & ETL (Extract, Transform, Load)
+Apache NiFi
+Apache Airflow
+Talend
+Informatica
+Fivetran
+Matillion
+Stitch
+Alteryx
+Hevo Data
+AWS Glue
+Google Dataflow
+Azure Data Factory
+Pentaho
+3. Databases & Data Warehousing
+Amazon Redshift
+Google BigQuery
+Snowflake
+Microsoft Azure Synapse Analytics
+PostgreSQL
+MySQL
+MongoDB
+Cassandra
+Elasticsearch
+ClickHouse
+DuckDB
+Vertica
+4. Machine Learning & AI Analytics
+TensorFlow
+PyTorch
+Scikit-learn
+H2O.ai
+Google Vertex AI
+Amazon SageMaker
+Azure Machine Learning
+DataRobot
+MLflow
+IBM Watson
+5. Big Data & Distributed Analytics
+Apache Spark
+Hadoop
+Apache Flink
+Dask
+Presto (Trino)
+Kafka Streams
+Google Dataproc
+Azure HDInsight
+6. Data Integration & API Automation
+Zapier
+Retool
+Pipedream
+Make (Integromat)
+Google Cloud Workflows
+MuleSoft Anypoint Platform
+Boomi
+Tray.io
+7. Spreadsheet-Based Analytics
+Microsoft Excel
+Google Sheets
+Airtable
+Zoho Analytics
+Smartsheet
+8. Statistical & Programming-Based Analytics
+R (RStudio, Shiny)
+Python (Pandas, NumPy, SciPy)
+MATLAB
+SAS
+SPSS
+Julia
+Stata
+9. Cloud-Based Data Analytics Platforms
+Google Analytics
+Adobe Analytics
+Mixpanel
+Heap Analytics
+Amplitude
+Segment
+Looker (Google Cloud)
+10. Marketing & Web Analytics
+Google Tag Manager
+Facebook Analytics
+SEMrush
+Ahrefs
+Moz
+Hotjar
+Crazy Egg
+11. No-Code & Low-Code Analytics
+Metabase
+Google Looker
+Causal
+Explorium
+QuickSight (AWS)
+AutoML (Google Cloud, AWS, Azure)
+Would you like a breakdown of specific tools for your use case?
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

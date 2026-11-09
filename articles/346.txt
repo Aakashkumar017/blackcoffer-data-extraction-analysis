@@ -1,0 +1,38 @@
+Real-Time Trading Simulation Platform
+Client Background
+Client Name: Confidential (Fintech / EdTech)
+Industry Type: Financial Services
+Products & Services: Trading Education Platform
+Organization Size: 100+
+About Client: An educational platform providing risk-free trading simulations for aspiring investors.
+The Problem
+The client needed a realistic trading environment to simulate market actions without risking real capital. They required real-time data ingestion and professional-grade charting tools to mimic a live brokerage account.
+Our Solution
+I built a simulation platform using FastAPI for high-speed backend processing and Jinja2 for server-side rendering.
+Real-Time Data: Integrated the Databento API to fetch and stream live market data to the platform.
+Visualization: Embedded and configured TradingView Widgets on the frontend.
+Simulation Engine: Developed backend logic to execute “paper trades” against live market prices.
+Solution Architecture
+Frontend: Jinja2 Templates + TradingView JS Library.
+Backend: FastAPI (Python).
+Data Feed: Databento WebSocket API.
+State Management: Redis (for session data).
+Deliverables
+Functional Trading Dashboard.
+Paper Trading Backend Engine.
+Market Data Integration Module.
+Tech Stack
+Framework used: FastAPI, Jinja2
+Language/techniques used: Python, WebSockets
+Models used: Time-Series Data Processing
+Skills used: Fintech Development, WebSocket Management
+Databases used: PostgreSQL (Trade Logs), Redis (Live Data)
+Web Cloud Servers used: NA
+What are the technical challenges faced during project execution
+Managing WebSocket stability to ensure continuous data streaming from Databento without packet loss.
+Synchronizing the frontend TradingView charts with the backend simulation engine execution prices.
+How the Technical Challenges were Solved
+Implemented an auto-reconnect logic with exponential backoff for the WebSocket connections to handle network jitter.
+Used a shared Redis cache to store the “Last Traded Price” (LTP), ensuring both the chart and the trade engine referenced the exact same data point.
+Business Impact
+Created a high-fidelity simulation environment that allows users to practice trading strategies with real-time market accuracy, effectively serving as a risk-free training ground.

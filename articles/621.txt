@@ -1,0 +1,22 @@
+Grafana Dashboard – Oscar Awards
+TOOLS Used:
+Grafana
+PostgreSQL (For Data Connection in Grafana)
+Python – Pandas (For Data Cleaning)
+Kaggle (For Dataset)
+Dataset Used: https://www.kaggle.com/datasets/pushpakhinglaspure/oscar-dataset
+This documentation provides a step-by-step guide on how to set up and configure a Grafana dashboard using the Oscar Awards dataset. The dataset contains information about Oscar Awards from 1927 to 2022 and will be used to create visualizations in Grafana.
+Step 1) Downloaded the Oscar Awards 1927-2022 Dataset from above mentioned link.
+Step 2) Clean the data using Python
+Remove null values
+Store Years in Correct format
+Push the cleaned Dataframe to PostgreSQL Database
+Step 3) Make New Data Connection in Grafana for the newly created PostgreSQL dataset.
+Step 4) Create a New Dashboard in Grafana.
+Step 5) Add new Visualizations (Line Chart, Scatter Plot, Tables, Cards)
+Fetch Data through SQL.
+Customize the visuals according to preference.
+Screenshots
+PostgreSQL Database
+Grafana Dashboard
+Demo video:

@@ -1,0 +1,47 @@
+Conversational AI PDF Chatbot with Memory Using Groq LLaMA & ChromaDB
+This project is a production-ready Conversational RAG (Retrieval-Augmented Generation) chatbot built with Streamlit. Users upload one or more PDF files, and the app allows them to ask questions about the content in a multi-turn conversation. The app maintains full chat history across turns so follow-up questions are understood in context.
+1.1 Key Features
+Upload multiple PDFs and chat with their combined content
+Session-based memory — follow-up questions understand previous context automatically
+Groq LLaMA 3.3 70B as the LLM — fast and 100% free
+HuggingFace MiniLM embeddings — no OpenAI key needed
+ChromaDB persistent vector store — stored locally in ./chroma_db
+API key loaded from .env — no input box in the UI
+Clean Streamlit UI with expandable chat history viewer
+1.2 Tech Stack
+2.1 How RAG + Memory Works
+When a user asks a question, the system first reformulates it as a standalone question using chat history (so follow-ups like ‘tell me more about that’ work). Then it retrieves relevant chunks from ChromaDB, passes them as context to Groq LLaMA, and returns a concise answer.
+PDF Upload ↓ PyPDFLoader → RecursiveCharacterTextSplitter ↓ HuggingFace Embeddings → ChromaDB (local) User Question + Chat History ↓ create_history_aware_retriever (Groq) → Standalone Question ↓ ChromaDB Retriever → Relevant Chunks ↓ create_stuff_documents_chain (Groq LLaMA 3.3 70B) ↓ Answer → Streamlit UI + ChatMessageHistory updated
+2.2 LangChain Components
+3.1 Prerequisites
+3.2 Installation Steps
+Step 1 — Clone the repo
+git clone https://github.com/shivamrawat2002/conversational-rag-pdf-chatbot/tree/main cd Conversational-QnA-Chatbot
+Step 2 — Create and activate virtual environment
+python -m venv venv venv\Scripts\activate     # Windows source venv/bin/activate  # Mac/Linux
+Step 3 — Install dependencies
+pip install streamlit langchain-classic langchain-core langchain-community pip install langchain-chroma langchain-groq langchain-huggingface pip install langchain-text-splitters chromadb pypdf python-dotenv
+Step 4 — Create .env file in project root
+GROQ_API_KEY=gsk_your_groq_key_here HF_TOKEN=hf_your_huggingface_token_here
+Step 5 — Run the app
+streamlit run app.py
+Open http://localhost:8501 in your browser. Upload a PDF and start chatting!
+4.1 How to Use the App
+4.2 Session ID Explained
+The Session ID field lets you run multiple independent conversations. Each session has its own isolated chat history. If you want a fresh conversation, change the Session ID. Useful for comparing answers across different research sessions.
+4.3 Tips for Best Results
+Use specific questions rather than vague ones — e.g. ‘What are the key findings in section 3?’ works better than ‘Tell me about the document’
+Upload multiple related PDFs together — they are all embedded into the same ChromaDB collection
+If answers seem off, try re-uploading the PDF — this re-chunks and re-embeds the content
+Keep Breadth and Depth in mind — larger PDFs with more chunks give richer, more accurate answers
+The chat history expander shows both Human and AI messages for full transparency
+5.1 Changing the LLM Model
+Edit app.py line 33 to use a different Groq model:
+# Current (recommended): llm = ChatGroq(groq_api_key=api_key, model_name=’llama-3.3-70b-versatile’) # Other free Groq models: # model_name=’llama-3.1-8b-instant’   (faster, smaller) # model_name=’mixtral-8x7b-32768′     (older, still free)
+5.2 Changing Chunk Size
+Edit app.py to adjust how PDFs are split:
+text_splitter = RecursiveCharacterTextSplitter( chunk_size=5000,   # characters per chunk (increase for more context) chunk_overlap=500  # overlap between chunks (increase to reduce cut-offs) )
+5.3 Changing the Embedding Model
+Edit app.py to use a different HuggingFace embedding model:
+# Current (fast, lightweight): embeddings = HuggingFaceEmbeddings(model_name=’all-MiniLM-L6-v2′) # Higher quality alternative: # embeddings = HuggingFaceEmbeddings(model_name=’all-mpnet-base-v2′)
+Conversational-QnA-Chatbot/ ├── app.py              # Main Streamlit app — all logic lives here ├── .env               # API keys (GROQ_API_KEY, HF_TOKEN) — never commit! ├── requirements.txt   # Python dependencies ├── chroma_db/         # Auto-created — persistent ChromaDB vector store ├── temp.pdf           # Temporary file for uploaded PDF processing └── venv/              # Python virtual environment Demo Video

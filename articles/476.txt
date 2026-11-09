@@ -1,0 +1,76 @@
+List of AI and ML tools based on different use cases
+Here’s a categorized list of AI and ML tools based on different use cases:
+1. AutoML & Model Training Platforms
+Google Vertex AI – End-to-end ML development on GCP
+AWS SageMaker – Fully managed ML service
+Azure Machine Learning – Model training and deployment on Azure
+H2O.ai – Open-source AutoML and AI Cloud
+DataRobot – Enterprise AI and automated ML
+MLflow – Open-source lifecycle management for ML models
+IBM Watson Studio – AI-driven data science and ML
+Neptune.ai – ML model metadata management
+2. Open-Source ML Frameworks & Libraries
+TensorFlow – Google’s deep learning library
+PyTorch – Popular DL framework by Meta
+Scikit-learn – Classical ML library for Python
+Keras – High-level API for deep learning
+XGBoost – Gradient boosting framework
+LightGBM – Gradient boosting for speed and efficiency
+Fast.ai – Deep learning library built on PyTorch
+CatBoost – Gradient boosting from Yandex
+3. AI-Powered Data Processing & Annotation Tools
+Labelbox – AI-assisted data labeling
+SuperAnnotate – Image and video annotation
+Roboflow – Computer vision dataset management
+V7 – AI-powered annotation for medical and industrial AI
+Snorkel AI – Automated data labeling with weak supervision
+4. AI & ML Model Deployment & Monitoring
+Kubeflow – ML model deployment on Kubernetes
+BentoML – Model serving framework
+Triton Inference Server – Scalable AI model serving by NVIDIA
+Seldon Core – ML model serving for Kubernetes
+Evidently AI – Model monitoring for ML drift detection
+WhyLabs AI – AI observability and monitoring
+5. Vector Databases & Embeddings Search
+Pinecone – Scalable vector search
+Weaviate – Open-source vector database
+FAISS – Facebook AI’s fast similarity search
+Milvus – Open-source vector database for AI applications
+ChromaDB – AI-native vector database
+Vespa – Scalable search and recommendation engine
+6. AI-Powered Chatbot & NLP Tools
+LangChain – Framework for LLM-powered applications
+LlamaIndex – Data indexing for LLMs
+Rasa – Open-source conversational AI
+Dialogflow – Google’s chatbot platform
+Botpress – Low-code chatbot builder
+ChatterBot – Python-based chatbot framework
+OpenAI API – GPT models for text generation
+7. Computer Vision & Image Processing Tools
+OpenCV – Open-source computer vision library
+Detectron2 – Facebook’s object detection framework
+YOLO (You Only Look Once) – Real-time object detection
+DeepFace – Face recognition in Python
+Dlib – ML toolkit for face detection
+Segment Anything (SAM) – Meta’s image segmentation model
+8. AI-Powered Code Generation & Development
+GitHub Copilot – AI-powered code completion
+CodiumAI – AI-generated code insights and testing
+Tabnine – AI-assisted code completion
+Codeium – Free AI coding assistant
+PolyCoder – Open-source AI code generation
+9. AI for Business Intelligence & Analytics
+Tableau AI – AI-powered data visualization
+Power BI with Copilot – AI-assisted analytics
+ThoughtSpot – AI-driven business intelligence
+Dataiku – End-to-end AI for data teams
+Looker AI – Google’s AI-powered analytics
+10. Generative AI & Creative Tools
+DALL·E – AI image generation by OpenAI
+Stable Diffusion – Open-source AI image generation
+Runway ML – AI for video editing and creative workflows
+Deep Dream Generator – AI-enhanced images
+Fotor AI – AI-powered photo editing
+Would you like a more detailed breakdown for any specific category?
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

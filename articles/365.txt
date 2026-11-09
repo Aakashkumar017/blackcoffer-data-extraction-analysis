@@ -1,0 +1,74 @@
+Municipalities Data Cleaning, Revenue Models & Power BI Dashboards
+Client: State Government
+Industry Type: Government
+Products & Services: Data Analysis
+Organization Size: 10000+
+The Problem
+Data cleaning and preprocessing were required across multiple datasets for 20 municipalities. The project was broken down into three stages:
+Stage 1: Power BI Dashboards using data from 20 municipalities.
+Stage 2: Revenue model with monthly-based predictions for 20 municipalities.
+Stage 3: Revenue model with quarterly and yearly-based predictions for 20 municipalities.
+Our Solution
+The solution focused on creating normalized and cleaned data, which was consolidated into the following files:
+C1-Sum-actual-cleaned_normalized.csv
+C1-Sum-budget-cleaned_normalized.csv
+C4-actual-cleaned_normalized.csv
+C4-budget-cleaned_normalized.csv
+C6-actual-cleaned_normalized.csv
+C6-budget-cleaned_normalized.csv
+C7-actual-cleaned_normalized.csv
+C7-budget-cleaned_normalized.csv
+C9-actual-cleaned_normalized.csv
+C9-budget-cleaned_normalized.csv
+Dim_municipalities.csv
+Dim-budget-type.csv
+Dim-date.csv
+Dim-period-by-year.csv
+Dim-province.csv
+Additionally, use case models for revenue and other relevant business processes were written, and preliminary Power BI dashboards were created.
+Solution Architecture
+Data Cleaning & Normalization: Files were cleaned and normalized to ensure consistency across datasets.
+Use Case Modeling: Detailed use case models were written for the revenue process.
+Power BI Dashboards: Built initial dashboards to visualize data trends and projections.
+Revenue Modeling: Focused on creating models for monthly, quarterly, and yearly revenue predictions.
+Deliverables
+Normalized Cleaned Data Consolidated Files : Normalized Data Files
+Use Case Models : Use Case Models
+Tech Stack
+Tools Used:
+Power BI (for dashboarding and visualization)
+Excel (for cleaning and preprocessing)
+Python (for data manipulation and preprocessing)
+Languages/Techniques Used:
+SQL (if required for database queries)
+Power Query (for data manipulation within Power BI)
+DAX (for calculations within Power BI)
+Models Used:
+N/A
+Skills Applied:
+Data Cleaning & Preprocessing – Cleaned, normalized, and consolidated data for use in dashboards and models.
+Revenue Modeling – Built models to predict monthly, quarterly, and yearly revenues.
+Use Case Modeling – Created detailed use case models for revenue generation and financial forecasting.
+Dashboard Development – Developed preliminary Power BI dashboards for data visualization.
+Data Integration – Combined multiple datasets into a unified, structured format for easier analysis.
+Databases:
+N/A
+Cloud Server:
+N/A
+Technical Challenges Faced
+Complex Data Cleaning – Multiple datasets with varying structures.
+Data Normalization – Ensuring consistency across different files.
+Revenue Model Accuracy – Predicting revenue with limited historical data.
+Dashboard Design – Effectively visualizing large and complex datasets.
+How the Technical Challenges Were Solved
+Data Cleaning – Applied systematic cleaning procedures to standardize data.
+Normalization – Used automated scripts and manual processes to normalize data fields.
+Revenue Modeling – Applied statistical methods and assumptions to create reliable predictions.
+Dashboard Design – Leveraged Power BI features (DAX, Power Query) to create interactive and informative dashboards.
+Business Impact
+Improved Decision-Making : Cleaned and consolidated data enabled more accurate analysis, leading to better financial forecasting and strategic decisions for municipalities.
+Enhanced Data Visualization : Power BI dashboards provided real-time insights, making it easier for stakeholders to track performance and identify trends.
+Optimized Revenue Predictions : Monthly, quarterly, and yearly revenue models offered valuable projections that supported budget planning and resource allocation.
+Informed Policy Planning : The comprehensive data and predictive models assisted in shaping policies based on reliable forecasts and demographic insights.
+Project Website URL
+Black Coffer Github Repo

@@ -1,0 +1,41 @@
+Biomedical Engineering AI Tools & AI Software
+Artificial intelligence (AI) has significantly impacted biomedical engineering, leading to the development of various tools and software that enhance diagnostics, treatment planning, and research. Below is a comprehensive list of notable AI tools and software in the field:​ The Australian+3Latest news & breaking headlines+3BioMed Central+3
+1. Wisecube Orpheus
+Description: A biomedical knowledge graph comprising tens of billions of facts on approximately 85 million entities, facilitating data analysis and exploration.​ wisecube.ai
+Source:
+2. Hetionet
+Description: An integrative network connecting various biomedical data types, such as diseases, drugs, and genes, to uncover new insights.​
+Source:
+3. Biolink Model
+Description: A data model and toolkit designed to standardize biomedical data integration and interoperability.​
+Source:
+4. KnowEnG
+Description: A knowledge-guided analysis platform that utilizes AI to interpret genomic data.​ arXiv+3Broad Institute+3arXiv+3
+Source:
+5. BioBERT
+Description: A pre-trained biomedical language representation model optimized for biomedical text mining tasks.​
+Source:
+6. PubTator
+Description: An AI-driven tool that automatically annotates biomedical literature with relevant entities like genes, diseases, and chemicals.​
+Source:
+7. OpenBEL
+Description: An open platform for capturing, integrating, and sharing biological knowledge in a computable format.​
+Source:
+8. BeatProfiler
+Description: An AI-based tool developed to rapidly analyze heart cell function, aiding in the study and diagnosis of cardiac conditions.​ Medical Xpress+1Valispace+1
+Source:
+9. Eko Health’s CORE500
+Description: A digital stethoscope integrated with AI software, providing high-fidelity audio, a full-color display, and a 3-lead electrocardiogram (ECG) for enhanced cardiac assessments.​ Wikipedia
+Source:
+10. BiomedGPT
+Description: A generalist vision-language foundation model designed for diverse biomedical tasks, demonstrating robust prediction abilities and competitive performance in various applications.​ arXiv
+Source:
+11. Laila by BioNTech
+Description: An AI assistant based on Meta’s Llama 3.1 model, developed to automate routine scientific tasks and monitor laboratory devices, thereby streamlining experimental processes.​ Financial Times
+Source:
+12. AlphaFold by DeepMind
+Description: An AI system that predicts protein structures with high accuracy, significantly advancing our understanding of protein folding and function.​ apnews.com
+Source:
+These AI tools and software exemplify the integration of artificial intelligence in biomedical engineering, driving advancements in research, diagnostics, and patient care.
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

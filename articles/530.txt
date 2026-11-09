@@ -1,0 +1,55 @@
+Efficient Supply Chain Assessment: Overcoming Technical Hurdles for Web Application Development
+Client: A leading supply chain tech firm in the USA
+Industry Type: Retail
+Products & Services: Retail Solutions, Supply Chain, Warehouse Management
+Organization Size: 100+
+The project required the development of a web application for supply chain assessment, including features such as questionnaire creation, PDF report generation, email communication, and data management from external sources. Overcoming technical challenges related to data integration, PDF generation, email automation, and scalability was crucial for the project’s success
+Our solution successfully addressed the technical challenges by employing a combination of custom scripts, third-party libraries, and cloud services. The web application provided a user-friendly interface for supply chain assessment, seamless data management, and automated report generation and delivery. MongoDB Atlas ensured data reliability and scalability, while responsive design made the application accessible across devices. The deployment strategy ensured reliable and efficient service to users
+The solution comprised a web application built using Python for the backend and React for the frontend. Key components included:
+Data synchronization scripts for Excel and Google Spreadsheets.
+PDF generation using Python libraries.
+Email integration for personalized report delivery.
+MongoDB Atlas for data storage.
+Responsive design for cross-platform compatibility.
+Deployment to a cloud platform with scalability and high availability.
+Project Resouces well be access via github Only
+Github Link : Frontend : https://github.com/AjayBidyarthy/Waqar-Jadoon-Frontend Backend : https://github.com/AjayBidyarthy/Waqar-Jadoon-Backend
+Frontend : https://github.com/AjayBidyarthy/Waqar-Jadoon-Frontend
+Backend : https://github.com/AjayBidyarthy/Waqar-Jadoon-Backend
+Tools used React JS Django MongoDB GCP
+React JS
+Django
+MongoDB
+GCP
+Language/techniques used Python React JS
+Python
+React JS
+Models used Python Django ORM
+Python Django ORM
+Skills used Python Django REST Framework React JS
+Python
+Django REST Framework
+React JS
+Databases used MongoDB
+MongoDB
+Web Cloud Servers used Google Cloud Platform (GCP)
+Google Cloud Platform (GCP)
+Excel Data Integration : Extracting questions, answers, and options data from Excel sheets and synchronizing it with the web application in real-time posed technical challenges.
+PDF Report Generation : Creating a feature to dynamically generate PDF performance reports based on user responses while maintaining a consistent format and content was a complex task.
+Email Integration : Configuring the system to send personalized PDF reports to users’ email addresses required integrating email services, which presented its own set of challenges.
+Google Spreadsheets Integration : Establishing a seamless connection with Google Spreadsheets for data management and retrieval introduced potential compatibility issues and data synchronization challenges.
+MongoDB Atlas Setup : Setting up and managing a MongoDB Database at MongoDB Atlas demanded expertise in database configuration, security, and scalability.
+Cross-Platform Compatibility : Ensuring the web application worked seamlessly across different browsers and devices, including mobile, desktop, and tablets, presented compatibility and responsive design challenges.
+Scalability and Deployment : Preparing the application for deployment to a server or cloud platform required considerations for scalability, load balancing, and ensuring high availability.
+Excel Data Integration : A Python script was developed to read data from Excel sheets and update the database, ensuring real-time synchronization of questions, answers, and options data.
+PDF Report Generation : We used a PDF generation library in Python to dynamically generate performance reports based on user responses. The format and content were standardized using templates.
+Email Integration : An email integration service was utilized to automate the process of sending personalized PDF reports to users’ email addresses after they submitted their responses.
+Google Spreadsheets Integration : A custom script was implemented to read data from Google Spreadsheets, ensuring compatibility and data consistency with the web application.
+MongoDB Atlas Setup : MongoDB Atlas was configured with appropriate security measures, and data was migrated to the cloud-hosted database. Scaling options were explored for future growth.
+Cross-Platform Compatibility : Responsive design techniques and extensive cross-browser testing were employed to ensure the web application functioned optimally across various platforms and devices.
+Scalability and Deployment : The application was deployed to a cloud platform with auto-scaling capabilities, load balancing, and high availability architecture to accommodate growing user traffic.
+Frontend : http://34.18.45.30:3000/
+Backend : http://34.18.45.30:8000/
+Summarized: https://blackcoffer.com/
+This project was done by the Blackcoffer Team, a Global IT Consulting firm.
+This solution was designed and developed by Blackcoffer Team Here are my contact details: Firm Name: Blackcoffer Pvt. Ltd. Firm Website: www.blackcoffer.com Firm Address: 4/2, E-Extension, Shaym Vihar Phase 1, New Delhi 110043 Email: ajay@blackcoffer.com Skype: asbidyarthy WhatsApp: +91 9717367468 Telegram: @asbidyarthy

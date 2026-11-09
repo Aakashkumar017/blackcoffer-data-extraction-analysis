@@ -1,0 +1,54 @@
+SEO & Traffic Analytics Dashboard for WeAreAMS
+Client: A leading automobile dealer in India
+Industry Type: Automobile
+Products & Services: Automobile Services
+Organization Size: 2000+
+Our Solution
+We designed a visually engaging and insight-rich dashboard in Looker Studio (and optionally Power BI) to provide WeAreAMS with clear visibility into their organic traffic, conversion trends, regional performance, and SEO competitor metrics. The dashboard integrates data from Google Analytics, Search Console, and SEMRush to help track key performance indicators and guide marketing decisions.
+Deliverables
+Interactive Looker Studio dashboard with brand-aligned styling
+Monthly trendline visualizations for organic traffic
+Conversion metrics from Google Analytics (form submits & whitepaper downloads)
+SEO visibility trendline including 3 competitors using SEMRush data
+Regional inbound traffic breakdown (Americas, APAC, EMEA, UK & Ireland)
+Tools Used
+Looker Studio
+Google Analytics (GA4)
+Google Search Console
+SEMRush
+Language/Techniques Used
+Google Analytics filters and segments
+Search Console query-level insights
+SEMRush keyword visibility tracking
+Region-level segmentation using GA geo dimensions
+Custom color theming aligned with website brand colors
+Model Used
+Not applicable – no machine learning model used. This is a business intelligence dashboard powered by data connectors.
+Skills Used
+Data visualization
+Data integration across multiple sources
+SEO metric analysis
+UX/UI for dashboard layout
+Performance reporting & segmentation
+Databases Used
+Google Analytics 4 (GA4 data source)
+SEMRush internal database via user interface
+Google Search Console
+Web Cloud Servers Used
+Google Cloud (via Looker Studio & Google Analytics backend)
+Technical Challenges Faced During Project Execution
+Integrating third-party SEMRush data into Looker Studio
+Aligning GA segment filters to isolate organic conversions only
+Mapping regional breakdowns to predefined segments
+Maintaining dashboard design consistency with brand guidelines
+How the Technical Challenges Were Solved
+Used manual entry and scheduled updates for SEMRush visibility data
+Applied GA4 segment filters and regex logic to extract only organic traffic conversions
+Mapped country-level GA data into predefined regional buckets for display
+Applied custom theme settings and HEX colors from the WeAreAMS website to ensure brand compliance
+Business Impact
+Enabled data-driven SEO and content decisions through competitor benchmarking
+Increased visibility into conversion performance by source
+Allowed marketing team to track regional performance and tailor strategies accordingly
+Reduced reporting time by centralizing all key metrics into one dashboard
+Project Snapshots

@@ -1,0 +1,203 @@
+List of DevOps, MLOps, and DataOps tools, categorized based on their functionality
+Here’s a comprehensive list of DevOps, MLOps, and DataOps tools , categorized based on their functionality:
+1. DevOps Tools
+(Focuses on automation, CI/CD, monitoring, and collaboration for software development and IT operations.)
+Version Control & Source Code Management
+Git
+GitHub
+GitLab
+Bitbucket
+Azure DevOps
+Continuous Integration & Continuous Deployment (CI/CD)
+Jenkins
+GitHub Actions
+GitLab CI/CD
+CircleCI
+Travis CI
+TeamCity
+Bamboo
+Spinnaker
+ArgoCD
+FluxCD
+Containerization & Orchestration
+Docker
+Kubernetes
+Podman
+OpenShift
+Rancher
+Amazon ECS
+Nomad
+Infrastructure as Code (IaC) & Configuration Management
+Terraform
+AWS CloudFormation
+Pulumi
+Ansible
+Chef
+Puppet
+SaltStack
+Monitoring & Observability
+Prometheus
+Grafana
+Datadog
+New Relic
+Splunk
+Nagios
+ELK Stack (Elasticsearch, Logstash, Kibana)
+Zabbix
+AppDynamics
+OpenTelemetry
+Log Management & Aggregation
+ELK Stack (Elasticsearch, Logstash, Kibana)
+Fluentd
+Graylog
+Loki (Grafana)
+Splunk
+Sumo Logic
+Security & Compliance
+SonarQube
+Aqua Security
+Falco
+Snyk
+Twistlock
+HashiCorp Vault
+Trivy
+Clair
+Collaboration & Communication
+Slack
+Microsoft Teams
+Mattermost
+Atlassian Confluence
+JIRA
+Networking & Service Mesh
+Istio
+Linkerd
+Consul
+Envoy Proxy
+Cilium
+Secrets Management & Identity Access Management (IAM)
+HashiCorp Vault
+AWS Secrets Manager
+Azure Key Vault
+CyberArk
+Doppler
+2. MLOps Tools
+(Focuses on automating the ML lifecycle, from data preparation to model deployment and monitoring.)
+ML Model Training & Experiment Tracking
+MLflow
+Weights & Biases (W&B)
+Kubeflow
+Neptune.ai
+Comet.ml
+TensorBoard
+DVC (Data Version Control)
+Feature Engineering & Data Versioning
+DVC (Data Version Control)
+Feast
+Delta Lake
+Hopsworks
+Pachyderm
+Model Deployment & Serving
+TensorFlow Serving
+TorchServe
+KServe (formerly KFServing)
+Seldon Core
+NVIDIA Triton
+BentoML
+Model Monitoring & Explainability
+WhyLabs
+Arize AI
+Fiddler AI
+Evidently AI
+Arthur AI
+Aporia
+Automated Machine Learning (AutoML)
+Google AutoML
+H2O.ai AutoML
+AutoKeras
+MLJAR AutoML
+AutoGluon
+Containerization & Orchestration for ML
+Docker
+Kubernetes
+Kubeflow Pipelines
+MLRun
+Vertex AI Pipelines (Google)
+ML Workflow Orchestration
+Apache Airflow
+Flyte
+Prefect
+Metaflow
+KubeFlow Pipelines
+MLFlow Pipelines
+Hyperparameter Tuning
+Optuna
+Ray Tune
+Hyperopt
+SigOpt
+Edge AI & Model Optimization
+TensorFlow Lite
+ONNX Runtime
+Apache TVM
+OpenVINO
+NVIDIA TensorRT
+3. DataOps Tools
+(Focuses on automating data workflows, data pipelines, and governance for data engineering.)
+Data Integration & ETL/ELT
+Apache NiFi
+Apache Airflow
+AWS Glue
+Google Dataflow
+Azure Data Factory
+Matillion
+Talend
+Fivetran
+Stitch
+Informatica
+Data Pipeline Orchestration
+Apache Airflow
+Prefect
+Dagster
+Flyte
+Luigi
+Data Storage & Processing
+Apache Hadoop
+Apache Spark
+Databricks
+Snowflake
+Google BigQuery
+AWS Redshift
+ClickHouse
+Data Governance & Data Quality
+Great Expectations
+Monte Carlo
+Soda.io
+Alation
+Collibra
+Atlan
+Data Cataloging & Discovery
+DataHub
+OpenMetadata
+Amundsen
+Alation
+Collibra
+Data Versioning & Lineage
+DVC
+Pachyderm
+Delta Lake
+LakeFS
+Streaming & Real-time Data Processing
+Apache Kafka
+Apache Flink
+Apache Pulsar
+Redpanda
+Google Pub/Sub
+AWS Kinesis
+Data Security & Compliance
+Immuta
+Privacera
+Satori
+BigID
+Summary
+Would you like a more detailed breakdown for any category? 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

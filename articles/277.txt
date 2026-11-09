@@ -1,0 +1,31 @@
+AI Chatbot with Web Search Agent
+Many AI chatbots rely only on pre-trained knowledge and cannot access real-time information from the internet. Because of this limitation, users cannot retrieve the latest news, updates, or current data through the chatbot.
+In practical applications such as research, customer support, and knowledge retrieval, users often need up-to-date information. Traditional chatbots fail to provide accurate answers for recent events or dynamic content available on the web.
+Therefore, there is a need for a chatbot that can intelligently search the internet and provide real-time information to the user.
+To solve this problem, we developed an AI chatbot with an integrated Web Search Agent .
+The chatbot allows users to enable a Web Search Mode . When this mode is enabled, the chatbot automatically performs a web search for the user’s query and retrieves relevant information from the internet.
+The system uses the Tavily Search API to fetch search results and the AI model processes and summarizes the information before presenting it to the user.
+This approach enables the chatbot to provide accurate, real-time, and context-aware responses , improving the usefulness of the system for users.
+The system follows an AI agent architecture where the chatbot decides when to use an external tool.
+Workflow:
+The user sends a query through the chatbot interface.
+The AI agent analyzes the request.
+If Web Search Mode is enabled, the AI triggers the Web Search Tool.
+The system calls the Tavily API to retrieve relevant search results.
+The AI processes the results and generates a summarized response.
+The chatbot returns the final answer to the user.
+Architecture Flow
+User → Chat Interface → LangGraph Agent → Web Search Tool → Tavily API → AI Processing → Response to User
+AI chatbot interface capable of interacting with users.
+Web Search feature integrated into the chatbot.
+Toggle option to enable or disable Web Search Mode.
+Integration with Tavily API for real-time search results.
+AI-generated summaries of search results.
+Functional prototype demonstrating AI tool-based behavior.
+The developed solution demonstrates how AI chatbots can be enhanced with external tools to provide real-time information.
+This type of system can benefit multiple industries, including:
+Customer Support Companies can use AI chatbots that retrieve the latest product information or troubleshooting solutions from the web.
+Research and Knowledge Platforms Users can quickly obtain updated information without manually searching multiple websites.
+Education Sector Students can ask questions and receive summarized explanations from current online resources.
+Business Intelligence Organizations can monitor trends, news, and industry updates using AI-powered assistants.
+Overall, integrating web search with AI agents improves the accuracy, usefulness, and real-time capabilities of chatbot systems.

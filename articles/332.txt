@@ -1,0 +1,95 @@
+AI Smart Parking System (Computer Vision-Based)
+Client Background
+Client Name: A leading AI Data Center firm in the USA
+Industry Type: Engineering Analytics & AI Solutions
+Products & Services: Engineering document analysis Computer vision-based automation AI-driven validation systems
+Engineering document analysis
+Computer vision-based automation
+AI-driven validation systems
+About Client:
+The client works with complex engineering datasets including: Electrical panel images Architectural drawings Multi-page technical PDFs
+Electrical panel images
+Architectural drawings
+Multi-page technical PDFs
+Their workflows required high accuracy, scalability, and automation
+Objective: Reduce manual inspection Improve validation accuracy Automate structured data extraction
+Reduce manual inspection
+Improve validation accuracy
+Automate structured data extraction
+The Problem
+Parking management challenges: Manual monitoring of parking slots No real-time occupancy tracking Inefficient space utilization
+Manual monitoring of parking slots
+No real-time occupancy tracking
+Inefficient space utilization
+Difficulty in: Detecting vehicle presence Identifying misaligned parking
+Detecting vehicle presence
+Identifying misaligned parking
+Our Solution
+Developed a real-time parking detection system using computer vision
+Key capabilities: Vehicle detection using YOLO Parking slot mapping using coordinates Occupancy detection (free vs occupied) Alignment detection (proper vs misaligned)
+Vehicle detection using YOLO
+Parking slot mapping using coordinates
+Occupancy detection (free vs occupied)
+Alignment detection (proper vs misaligned)
+Solution Architecture
+Frame capture module: Live camera or video input
+Live camera or video input
+Detection module: YOLO-based vehicle detection
+YOLO-based vehicle detection
+Processing: Slot boundary comparison IoU and inside-percentage calculations
+Slot boundary comparison
+IoU and inside-percentage calculations
+Logic layer: Occupancy classification State stabilization
+Occupancy classification
+State stabilization
+Visualization: OpenCV overlays including boxes, masks, and warnings
+OpenCV overlays including boxes, masks, and warnings
+Deliverables
+Real-time parking detection system
+Slot occupancy tracking
+Visualization output (OpenCV-based)
+Configurable environment setup
+Technical Challenges
+Accurate detection in real-time video streams
+Defining parking boundaries precisely
+Handling misaligned vehicles
+Ensuring stable detection over time
+Solutions
+Polygon-based slot mapping
+Time-based stabilization logic
+IoU and percentage-based calculations
+Dynamic overlays for visualization
+Business Impact
+Improved parking space utilization
+Enabled real-time monitoring
+Reduced manual supervision
+Scalable for smart city applications
+Frameworks
+FastAPI
+Modal (serverless compute)
+Languages / Techniques
+Python
+Computer vision
+ETL pipelines
+OCR processing
+Models Used
+YOLOv8 (object detection)
+OCR models (Gemini, DeepSeek tested)
+Vision Language Models (experimental)
+Skills Used
+Data processing and automation
+Computer vision
+System design
+Backend development
+Problem-solving
+Databases
+JSON outputs and structured datasets
+No external database in most pipelines
+Cloud / Infrastructure
+Modal serverless compute
+Local and containerized (Docker) setups
+Automated previously manual engineering workflows
+Improved accuracy and reduced human error
+Enabled scalable processing of large datasets
+Delivered structured and actionable insights
+Reduced operational time and effort significantly

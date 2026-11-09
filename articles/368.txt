@@ -1,0 +1,55 @@
+Political Research Automated Data Acquisition
+Client: A leading political platform saas firm in North America
+Industry Type: Politics & Think Tank
+Products & Services: Political SaaS Platform
+Organization Size: 100+
+The Problem
+Client needed a centralized system to automatically collect and organize information on elected officials across Canada. The goal was to streamline political research, which previously required extensive manual data gathering across various websites and formats, including HTML pages, PDFs, images, and shapefiles.
+Our Solution
+We designed a scalable, multi-phase solution—PRADA (Political Research Automated Data Acquisition)—to automate the scraping, cleaning, and structuring of political data from Canadian government websites and social platforms. The system fetches elected officials’ information, profile images, and geographical data from multiple sources and prepares it for use in a future AI platform.
+Solution Architecture
+Scraping Engine: Modular scrapers built using Python, BeautifulSoup, and Selenium for headless navigation of government portals and social media.
+Image Acquisition: Facebook page crawlers and local government profile image extractors.
+Geospatial Processing: Converts municipal shapefiles and SVG maps into structured GeoJSON and centroid data.
+Missing Geometry Detection: Identifies and logs areas with incomplete GIS data.
+Storage: Google Cloud Storage (Firebase) for storing images and data files.
+Future Deployment: Scraping engine to be deployed as an API on Google App Engine with configuration through a central JSON schema.
+Deliverables
+Scraped list of elected officials with contact and position data
+Profile image crawler for official websites and Facebook pages
+GeoJSON mapping of all municipalities with centroid metadata
+Log of missing geometries and image gaps.
+Link to Final Output Folder : https://drive.google.com/drive/folders/1WSgrx07MqS1mWiPwzhBXj9u2gjMVoTma?usp=drive_link Check for code on Github as everything is stored by date.
+Tech Stack
+Languages/Tools: Python, Selenium, BeautifulSoup, Pandas, GeoPandas
+GIS Processing: QGIS, GeoJSON, TopoJSON, SVG parsing
+Cloud & Storage: Google Cloud Storage (Firebase), Google App Engine
+Other: Facebook Graph API (planned), FastAPI (for API buildout)
+Skills Applied:
+Web scraping and data crawling automation
+Headless browser scripting with Selenium
+GIS and geospatial data transformation
+JSON schema-driven configurations
+Cloud integration (Firebase, Google App Engine)
+Data cleaning, validation, and deduplication
+Databases:
+GCP
+Cloud Server:
+GCP
+Technical Challenges Faced
+Non-uniform structures across websites: Different layouts and naming conventions across municipal portals.
+Missing or broken images on public sites: Required fallback crawling of Facebook pages.
+Shapefile inconsistencies: Mismatched or outdated municipal boundaries made standardization difficult.
+Multi-format data ingestion: Some data came in HTML, others in PDFs or map formats.
+How the Technical Challenges Were Solved
+Built dynamic XPath scrapers with fallback CSS selectors to handle variation.
+Used Facebook search and graph crawler (manual fallback) for missing image links.
+Parsed and normalized SVG maps into GeoJSON with calculated centroids for uniform spatial data.
+Split map and data processing into logical blocks to maintain performance and modularity.
+Business Impact
+Reduced manual effort by 90% in collecting elected official data.
+Enabled Paul to scale research efforts across all Canadian municipalities with consistent and structured data.
+Created a foundation for building AI-based tools to analyze political representation and trends.
+Provide GIS files with appropriate Structure for future building on the file.
+Project Website URL
+Black Coffer Github Repo

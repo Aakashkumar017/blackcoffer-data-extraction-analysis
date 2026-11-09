@@ -1,0 +1,26 @@
+Self-Hosted Marketing Automation Engine: Mautic v5 Integration with Custom Lead Capture and Analytics Dashboard
+Modern marketing operations rely heavily on SaaS automation platforms (e.g., HubSpot, Mailchimp, Marketo). However, enterprise businesses face three critical challenges with these platforms:
+High Recurring Costs: Subscriptions scale exponentially with database size (number of contacts).
+Data Ownership & Privacy: Sending sensitive customer information to third-party servers raises compliance risks under GDPR/CCPA regulations.
+Integration Friction: Seamlessly embedding capture forms into custom brand touchpoints while maintaining high-performance analytics dashboards can be complex.
+We built a fully containerized, self-hosted marketing automation ecosystem using Mautic v5 (running via Docker) integrated with a modern, customized customer landing page and campaign analytics dashboard mockup.
+The system implements the following automated workflow:
+Lead Capture: Visitors enter details via a responsive, custom-styled landing page.
+Database Synced Ingestion: Inputs are sent directly to the Mautic backend via secure API/JS scripts, creating contacts in real-time.
+Smart Segmentation: Leads are instantly sorted into target segments (e.g., Demo Subscribers).
+Triggered Campaigns: The contact instantly enters a drip campaign sequence ( Demo Email Campaign ) that triggers automated welcome emails.
+Analytics Review: Marketers monitor progress using a dark-themed analytics dashboard mockup showing KPIs, engagement charts, and device metrics.
+docker-compose.yml: Service orchestration config with healthchecks, persistent volumes, and custom Apache docroot configs.
+index.html: Landing page featuring the live-connected Mautic signup form.
+dashboard.html: Custom dark-mode analytics dashboard showing key marketing metrics.
+style.css: Design token system for the landing page and dashboard mockup.
+app.js: Client-side validation, chart rendering, and local-storage logic.
+README.md: Comprehensive setup and operational documentation.
+Containerization: Docker, Docker Compose
+Marketing Backend: Mautic v5, PHP 8.2, Apache 2.4
+Database: MariaDB 11 (Relational Database)
+Frontend Web: HTML5, CSS3 (Vanilla design token system), JavaScript (ES6, local-storage & DOM rendering)
+Server Runtime: Python (for local development server hosting)
+Zero Licensing Fees: By replacing commercial platforms with a self-hosted Mautic setup, companies can eliminate subscription fees, resulting in significant savings.
+100% Data Sovereignty: Patient, financial, or consumer data remains fully inside the company’s private cloud/hosting environment, making GDPR, HIPAA, and CCPA compliance simple.
+Open-Source Customizability: Marketers and developers can build custom integrations, plugins, and workflows without closed-source platform limitations.

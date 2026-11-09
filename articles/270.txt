@@ -1,0 +1,56 @@
+Blackcoffer AI Voice Agent Using Livekit
+The Problem
+Businesses and service platforms today struggle to provide always-on, real-time voice assistance to their users. Traditional customer support relies heavily on human agents, which introduces delays, high operational costs, and limited scalability. Text-based chatbots lack the natural conversational feel users expect, and existing voice solutions are either too expensive, too rigid, or require complex infrastructure to deploy.
+There is a clear gap for a low-latency, intelligent, voice-first AI assistant that can understand natural speech, respond conversationally, and scale without additional human resources.
+Our Solution
+Blackcoffer AI Voice Agent is a real-time, browser-based conversational voice assistant powered by state-of-the-art AI models. Users simply open a web page, click “Start call,” and immediately begin speaking to an AI assistant that listens, understands, and responds naturally all with sub-second latency.
+The solution combines:
+Speech-to-Text (STT) using Deepgram Nova-2 for accurate, real-time transcription
+Large Language Model (LLM) using Google Gemini for intelligent, context-aware responses
+Text-to-Speech (TTS) using Deepgram Aura for natural-sounding voice output
+Voice Activity Detection (VAD) using Silero to detect when the user starts and stops speaking
+A polished Next.js web frontend for an instant, no-install user experience
+Solution Architecture:
+Flow:
+1. User opens the web app and clicks “Start call”
+2. Frontend requests connection details from Next.js API (`/api/connection-details`)
+3. User joins a LiveKit room via WebRTC
+4. LiveKit Cloud dispatches a job to the `BlackCoffer` Python agent worker
+5. The agent connects to the room and begins the pipeline:
+VAD detects speech →STT transcribes it → LLM generates a reply → TTS speaks it back
+6. Conversation continues in a natural turn-based loop
+Deliverables:
+– Real-time voice agent — Python backend (`agent.py`) powered by LiveKit Agents framework v1.4.3
+– Web-based frontend — Next.js app (`frontend-bot/`) with LiveKit Components React for a polished UI
+– Speech-to-Text — Deepgram Nova-2 model, English language, real-time streaming
+– LLM Integration — Google Gemini (`gemini-2.0-flash-lite`) for fast, intelligent responses
+– Text-to-Speech — Deepgram Aura-2 (`aura-2-andromeda-en`) for natural voice output
+– Voice Activity Detection — Silero VAD with tuned thresholds for smooth conversations
+– Agent name dispatch — Named `BlackCoffer` for explicit LiveKit room dispatch
+– Environment configuration — Secure `.env` for all API keys, no hardcoded secrets
+– Dev-mode hot reload — File watcher for instant agent restarts during development
+Tech Stack
+| Agent Framework | [LiveKit Agents] |
+| Speech-to-Text | [Deepgram] |
+| LLM | [Google Gemini] |
+| Text-to-Speech | [Deepgram] |
+| Real-time Transport | [LiveKit Cloud] |
+| Frontend | [ Next.js ] |
+| Backend Language | Python 3.12 |
+| Frontend Language | TypeScript |
+| Authentication | LiveKit JWT access tokens |
+Business Impact
+For Customer Support Teams
+Businesses can deploy Blackcoffer AI as a 24/7 first-line voice support agent , handling common queries without human intervention. This directly reduces support ticket volume and agent workload, cutting operational costs by an estimated 40–60% for routine interactions.
+For SaaS & Product Companies
+Product teams can embed Blackcoffer AI as an in-app voice assistant , dramatically improving user onboarding and feature discoverability — without hiring additional support staff.
+For Healthcare & Finance
+In regulated industries where fast, accurate information is critical, a voice AI that can respond in real time (< 1 second latency) helps patients and clients get answers instantly, improving satisfaction scores and reducing wait times.
+For E-commerce
+Voice-based product search, order tracking, and recommendations add a hands-free shopping experience that increases conversion rates and average session duration.
+Scalability Advantage
+Because the agent runs as a stateless Python worker connecting to LiveKit Cloud, it can scale horizontally to thousands of simultaneous conversations with no architectural changes — something human agents can never achieve.
+Cost Efficiency
+– Deepgram STT & TTS : Pay-per-second pricing, far cheaper than AWS Polly or Azure Speech at scale
+– Google Gemini : Free tier available; Gemini Flash is among the most cost-efficient LLMs per token
+– LiveKit Cloud : Consumption-based pricing — no idle costs

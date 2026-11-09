@@ -1,0 +1,23 @@
+Spark DDE to LLM Bridge
+The Problem
+Financial traders and analysts using the legacy Spark Traders platform rely on its Windows-native DDE (Dynamic Data Exchange) interface to access critical trading data. However, DDE is an antiquated protocol that lacks native interoperability with modern, cutting-edge AI tools and agents, such as Claude Desktop (via MCP) and OpenAI Custom GPTs. This restricts traders from leveraging natural language processing for real-time portfolio analysis and market monitoring.
+Our Solution
+We developed a cross-platform bridge architecture that connects legacy Spark DDE to modern LLM interfaces. The solution consists of a background listener that continually extracts real-time data from Spark (supporting both native Windows DDE and macOS Excel workarounds), a secure REST API that serves this data, and a Model Context Protocol (MCP) server that seamlessly integrates these endpoints directly into AI assistants as executable tools.
+Solution Architecture
+1.DDE Listener (`src/dde_listener/listener.py`): Connects to Spark via `pywin32` (Windows) or `xlwings` (macOS), continually polling data and writing the normalized state to a localized `state.json` cache. Includes a fallback mock mode for robust development.
+2.FastAPI Backend (`src/api/main.py`): Provides highly responsive, localized REST endpoints (`/pnl`, `/positions`, `/orders`, `/price/{symbol}`) over the cached DDE state, secured via an `X-API-Key` header.
+3.MCP Server (`src/mcp/server.py`): Exposes the REST API as Model Context Protocol tools (`get_pnl`, `get_positions`, `get_orders`, `get_symbol_price`), allowing AI agents like Claude to autonomously query live trading systems.
+Deliverables
+– Fully functional DDE state listener supporting multiple environments (Windows, macOS, Mock).
+– A secured FastAPI application serving localized JSON state.
+– A FastMCP integrated server for Claude Desktop and Custom GPT integration.
+– Comprehensive `README.md` containing setup, deployment, and testing instructions.
+– A functional Python MCP test client (`test_mcp_client.py`) for validation.
+Tech Stack
+– Language: Python 3.9+
+– API Framework: FastAPI, Uvicorn, Pydantic
+– Legacy Integration: pywin32, xlwings
+– AI Integration: Model Context Protocol (MCP) Python SDK
+– Data Storage: Local JSON caching
+Business Impact
+This solution bridges the gap between decades-old financial infrastructure and next-generation AI agents. By enabling LLMs to securely and autonomously query a trader’s live Profit and Loss, open positions, active orders, and live market prices, trading firms can drastically reduce the cognitive load on analysts. It transforms complex, multi-screen terminal setups into intuitive, conversational interfaces—allowing for instantaneous, AI-driven portfolio analysis and risk management without migrating away from battle-tested legacy systems.

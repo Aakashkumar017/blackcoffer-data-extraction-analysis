@@ -1,0 +1,81 @@
+Comprehensive Customer Attribution and Behavior Journey Platform
+Client: A leading retail tech firm in the EU
+Industry Type: Retail
+Products & Services: Data Analysis and consulting
+Organization Size: 90+
+The Problem
+Clients needed a centralized, intelligent platform to track customer behavior across the entire e-commerce funnel—from marketing touchpoints (Facebook, Google Ads, Email) to purchase behavior (Shopify, WooCommerce) and fulfillment metrics. The goal was to optimize campaign performance, reduce inefficiencies in user experience, and provide actionable insights across marketing, sales, and customer service touchpoints.
+Our Solution
+We designed and partially built a modular analytics platform that integrates with Shopify/WordPress and major marketing/CRM platforms. It collects, cleans, models, and visualizes multi-source customer journey data, offering end-to-end performance visibility.
+Key implementations:
+Designed full solution architecture for data collection, processing, and analysis
+Integrated APIs from Klaviyo, Facebook, Google Analytics, Google Ads, Merchant Center, and Shopify
+Created predictive and prescriptive models to identify trends, drop-offs, and high-value customers
+Built Power BI dashboards for client-facing insights, KPIs, and optimization recommendations
+Set up Google BigQuery as the core data warehouse to handle unified modeling and dashboard scalability
+Developed dynamic modules to generate improvement suggestions across email, ad campaigns, product performance, and fulfillment logic
+Solution Architecture
+Data Collection Layer: APIs from Shopify, Klaviyo, Google Ads, Facebook, Google Analytics, etc.
+Data Warehousing: Google BigQuery (scalable storage, modeling, performance layer)
+Processing & ML: Python (API ingestion, modeling scripts, trend analysis, anomaly detection)
+Visualization: Power BI Pro (interactive dashboards, KPI tracking, journey visualizations)
+Orchestration & Automation: Google Cloud Functions + CRON jobs for API syncs
+Security: Tokenized API access, OAuth2 flows, GDPR/CCPA data handling compliance
+Solution architecture summary: https://docs.google.com/drawings/d/1GNyBVtc9hvDrBML3RBWHMIlWMXC4jQgbWYwcq8HbbrY/edit?usp=sharing
+Deliverables
+Access setup and data collection for 90%+ of sources
+API connectors and data modeling scripts for Klaviyo, Google stack, Facebook, and Shopify
+Google Ads access application and security review completed
+KPI taxonomy and dashboard wireframes (Power BI)
+Partially completed dashboards for key funnel areas
+Centralized BigQuery tables to support multi-channel data queries
+Pause-ready codebase for future resumption or pivot of platform
+Tech Stack
+Languages: Python, SQL
+Data Warehouse: Google BigQuery
+APIs Integrated: Shopify, Facebook Ads, Google Ads, Google Analytics, Klaviyo, Google Merchant Center
+Visualization: Power BI Pro
+Infra & Storage: Google Cloud
+Auth & Access: OAuth2, token-based secure access
+Version Control & Workflow: GitHub
+Skills Applied:
+Multi-platform API Integration
+Customer Journey Mapping
+Data Warehousing and ETL Design
+Machine Learning for Segmentation & Prediction
+Campaign Attribution Modeling
+Power BI Dashboard Development
+Data Normalization, Cleaning, and Join Logic
+OAuth2 & Secure Data Handling
+Performance Optimization Insights
+Databases:
+Google BigQuery Warehouse
+Cloud Server:
+GCP
+Technical Challenges Faced
+Multiple APIs with differing data structures and limitations
+Incomplete/unavailable data points (e.g., bounce rate & unsubs in Klaviyo)
+Complex OAuth2 flows for Google Ads API access
+Sync issues due to dynamic tokens and resets in Facebook Apps
+AdWords to Ads API migration mid-development
+High volume of data requiring normalization across platforms
+KPI taxonomy alignment between marketing and e-commerce systems
+How the Technical Challenges Were Solved
+Developed modular connectors with error handling and fallback logging
+Created temporary proxies and validation logic to substitute missing KPIs
+Applied for and completed Google Ads token and verification flows
+Resolved Facebook token reset via new dev app and secure token storage
+Migrated API scripts from AdWords to new Ads API with updated security model
+Aligned metrics and modeled unified customer profiles in BigQuery
+Created dynamic mapping templates to match marketing KPIs with product SKUs and customer segments.
+Business Impact
+Provided a scalable framework to unify and analyze e-commerce customer journeys
+Enabled data-driven decision making across marketing, email, and fulfillment
+Equipped business with KPI-focused dashboards to monitor customer funnel health
+Created a flexible, API-driven platform architecture ready for expansion or resale
+Although the project was paused due to business sale, the infrastructure and models remain re-usable for future applications or white-labeled deployment.
+Project Website URL
+Black Coffer Github Repo
+Project Video
+Google Ads API says that developer token of manager account will be valid & support Basic & Standard Account once we apply for it.
+Google has deprecated the previous GoogleAdwords APIs and launched GoogleAdsAPIs so this seems necessary. made a loom video for easier explanation on where to find Application form. https://www.loom.com/share/fcbf1d421d374d59a809d4840d52af00

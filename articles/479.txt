@@ -1,0 +1,203 @@
+List of Sales Tools categorized by their primary function
+Here’s a comprehensive list of Sales Tools categorized by their primary function:
+1. Customer Relationship Management (CRM)
+Salesforce
+HubSpot CRM
+Zoho CRM
+Pipedrive
+Freshsales (Freshworks CRM)
+Microsoft Dynamics 365
+SugarCRM
+Close
+Insightly
+Copper
+2. Sales Intelligence & Prospecting
+LinkedIn Sales Navigator
+Apollo.io
+ZoomInfo
+Lusha
+Clearbit
+Seamless.AI
+LeadIQ
+Cognism
+Adapt.io
+InsideView
+3. Sales Engagement & Automation
+Outreach.io
+Salesloft
+Mixmax
+Yesware
+Mailshake
+Reply.io
+VanillaSoft
+PersistIQ
+Woodpecker.co
+Klenty
+4. Lead Generation & Capture
+Leadfeeder
+OptinMonster
+Hunter.io
+Snov.io
+Voila Norbert
+FindThatLead
+Albacross
+Datanyze
+Aeroleads
+CallPage
+5. Email Tracking & Outreach
+Mailtrack
+Yesware
+GMass
+MailTag
+Bananatag
+Boomerang for Gmail
+RightInbox
+Streak CRM for Gmail
+Newton Mail
+Vocus.io
+6. Sales Analytics & Forecasting
+Clari
+InsightSquared
+Aviso
+Salesforce Einstein Analytics
+Gong.io
+Chorus.ai
+People.ai
+Tableau for Sales
+Domo
+Aviso AI
+7. Proposal & Document Management
+PandaDoc
+Proposify
+DocuSign
+HelloSign
+Qwilr
+GetAccept
+Better Proposals
+Nitro Sign
+Adobe Sign
+SignNow
+8. Contract & e-Signature
+DocuSign
+Adobe Sign
+HelloSign (Dropbox Sign)
+SignNow
+PandaDoc
+Zoho Sign
+RightSignature
+eversign
+SignRequest
+OneSpan Sign
+9. CPQ (Configure, Price, Quote) Tools
+Salesforce CPQ
+Oracle CPQ Cloud
+SAP CPQ
+Apttus CPQ
+PROS Smart CPQ
+PandaDoc CPQ
+DealHub.io
+Cincom CPQ
+Experlogix CPQ
+Verenia CPQ
+10. Sales Enablement & Training
+Seismic
+Showpad
+Highspot
+Brainshark
+MindTickle
+Bigtincan
+Allego
+Spekit
+Guru
+Unboxed Training & Technology
+11. Call & Conversation Intelligence
+Gong.io
+Chorus.ai
+Avoma
+ExecVision
+Refract.ai
+Revenue.io (RingDNA)
+Jiminny
+Salesken
+Modjo
+Fireflies.ai
+12. Video Selling & Personalization
+Vidyard
+Loom
+BombBomb
+Hippo Video
+Covideo
+OneMob
+Dubb
+Bonjoro
+Vocal Video
+Ziggeo
+13. Social Selling & Influencer Outreach
+LinkedIn Sales Navigator
+Hootsuite
+Sprout Social
+Buffer
+BuzzSumo
+Oktopost
+SocialBee
+Brandwatch
+Upfluence
+Nimble
+14. AI-Powered Sales Assistants
+Conversica
+Drift
+Saleswhale
+Tact.ai
+Exceed.ai
+Clari Copilot
+Humantic AI
+Veloxy
+Kalendar.ai
+ChatGPT for Sales (via API)
+15. Business Phone & Sales Dialers
+Aircall
+RingCentral
+Dialpad
+JustCall
+Kixie
+CloudTalk
+Nextiva
+Vonage Business
+Grasshopper
+Toky
+16. eCommerce & Sales Funnels
+Shopify Sales
+ClickFunnels
+Kartra
+Kajabi
+Leadpages
+GrooveFunnels
+Unbounce
+Instapage
+ThriveCart
+SamCart
+17. Referral & Affiliate Sales
+ReferralCandy
+Post Affiliate Pro
+PartnerStack
+Tapfiliate
+Everflow
+LeadDyno
+OSI Affiliate Software
+Refersion
+Affise
+FirstPromoter
+18. Chatbots & Conversational Sales
+Drift
+Intercom
+Tidio
+Chatfuel
+LiveChat
+ManyChat
+Freshchat
+Crisp Chat
+Zoho SalesIQ
+MobileMonkey
+This is an exhaustive list covering various aspects of sales, from prospecting and engagement to contract signing and intelligence. Let me know if you need a more tailored list based on specific use cases! 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

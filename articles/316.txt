@@ -1,0 +1,23 @@
+Enable natural language analytics using Snowflake AI for instant business insights.
+The problem
+Business stakeholders often find it difficult to get useful insights from raw relational databases without needing data engineers to create complicated SQL queries. This reliance causes delays, slowing down important decision-making. For instance, if a sales manager wants to see how revenue is spread across various market segments, it can take days to get a custom report, which slows down the quick responses needed in today’s fast-paced business world.
+Our solution
+We developed a Proof of Concept (PoC) utilising Snowflake Cortex AI to create an intelligent, conversational data agent capable of comprehending natural language. By integrating a semantic layer into raw retail data, such as the TPC-H sample datasets, this solution enables individuals without technical expertise to inquire about the database using simple English. The AI agent interprets the user’s request, converts it into optimal SQL, executes the query on vast datasets within milliseconds, and presents the results in both tabular form and native visualisations directly within the chat interface.
+Solution Architecture
+Data Storage & Ingestion: The raw CUSTOMER and ORDERS tables are kept in a special Snowflake Database called POC_DB, within the RAW_DATA Schema. These tables are filled using standard SQL data copying from sample datasets.
+Compute Layer: Data processing is managed by a dedicated Snowflake Virtual Warehouse named POC_WH. It uses features like auto-suspend and dynamic scaling, ranging from X-Small to Large, to efficiently manage cloud compute expenses.
+Semantic Layer: A YAML-based Semantic Model, located in a secure Snowflake Managed Stage called POC_STAGE, is used. This file connects physical database columns to business logic, such as linking O_TOTALPRICE to the idea of “Total Revenue.”
+AI Orchestration: The Snowflake Cortex Analyst functions as the agent’s brain, understanding natural language input, using the Semantic Model for context, writing the necessary SQL, and delivering the aggregated results.
+Deliverables
+We have a complete Snowflake setup, which includes a database, schema, and an auto-suspending virtual warehouse. The analytical tables, namely CUSTOMER and ORDERS, have been ingested and are ready for you to query. Additionally, there’s a Snowflake Managed Stage holding a validated Semantic Model YAML file. We’ve also set up a Cortex AI Agent with the Cortex Analyst tool. Furthermore, there’s a conversational user interface that can respond to questions such as “What is the total revenue by market segment?” and display native bar charts.
+In simpler terms, we’ve got everything ready for you to start using Snowflake. The database, schema, and virtual warehouse are all set up. The CUSTOMER and ORDERS tables are loaded and ready for queries. There’s a verified Semantic Model YAML file in the Managed Stage. We’ve configured a Cortex AI Agent with the Cortex Analyst tool, and there’s a user interface that can answer your questions and show bar charts.
+Tech Stack
+Cloud Data Platform: Snowflake
+Compute / Orchestration: Snowflake Virtual Warehouses
+AI / Machine Learning: Snowflake Cortex Analyst
+Configuration: YAML (Semantic Modeling)
+Query Language: Snowflake SQL
+Business Impact
+Democratized Data Access: By enabling sales, marketing, and executive teams to conduct their own analytics without needing to write any code, we’re promoting a culture where data is at everyone’s fingertips.
+Accelerated Time-to-Insight: We’ve cut down the time it takes to generate ad-hoc reports from several days to just a few seconds, giving our leaders the ability to make quick, well-informed decisions.
+Optimized Resource Allocation: This approach allows data engineers to move away from repetitive SQL tasks and concentrate on developing sophisticated data architecture. Additionally, Snowflake’s separate computing environment ensures that AI queries don’t slow down other important ETL processes. Demo Video

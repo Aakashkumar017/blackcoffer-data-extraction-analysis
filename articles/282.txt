@@ -1,0 +1,22 @@
+Automated News Headline Fetcher Pipeline using Apache Airflow and GNews API
+The Problem
+Manually checking news websites every day for top headlines is time-consuming and inconsistent. There is no automated way to collect, store, and track daily news data for analysis or reporting purposes. Businesses and researchers who need daily news data have to do it manually which leads to missed updates and wasted time.
+Our Solution
+We built an automated News Headline Fetcher Pipeline using Apache Airflow that runs every day automatically. It fetches top 10 live news headlines from India using GNews API, stores them in a structured CSV file, and then a second task reads and prints the complete CSV data in logs for verification. Zero manual effort required after setup.
+Solution Architecture
+Airflow DAG triggers daily on Astronomer.io → fetch_headlines task calls GNews API → Top 10 live headlines fetched → Data saved in CSV file with title, source, published date and URL columns → read_csv task reads the CSV file and prints complete structured data in logs for verification.
+Deliverables
+Working Apache Airflow DAG deployed on Astronomer.io cloud platform
+Automated daily pipeline that fetches live top 10 news headlines from India
+CSV file with structured data having 4 columns — title, source, published date, URL
+Two task sequential pipeline — fetch_headlines task followed by read_csv task
+Complete execution logs showing all 10 live headlines with source names as proof
+Tech Stack
+Apache Airflow (Workflow Orchestration)
+Astronomer.io (Cloud Airflow Platform)
+GNews API (Live News Data Source)
+Python (DAG and task code)
+PythonOperator (Airflow Task Operator)
+CSV (Data Storage Format)
+Business Impact
+Media companies can use this pipeline to automatically track and archive daily news without any manual effort saving hours of work every day. Marketing teams can monitor industry news and competitor mentions automatically every morning. Research organizations can collect and store news data over weeks and months for trend analysis and reporting. News aggregator platforms can use this as a base pipeline to build fully automated content feeds. The daily schedule feature means once deployed, the pipeline runs forever without any human intervention making it highly scalable and cost effective for any business that needs regular data collection.

@@ -1,0 +1,37 @@
+LegalXpress – Automated Document Marketplace
+Client Background
+Client Name: Confidential (Legal Tech)
+Industry Type: Legal Services
+Products & Services: Digital Contract Automation
+Organization Size: 100+
+About Client: A legal-tech firm democratizing access to professional legal documents through automation.
+The Problem
+The client needed a scalable platform where administrators could create dynamic legal templates and users could purchase and customize them. Manual document generation was slow, prone to formatting errors, and lacked a centralized payment gateway.
+Our Solution
+I architected and deployed the platform using Next.js for a high-performance full-stack solution, paired with Supabase for real-time database management and authentication.
+Template Engine: Developed an admin workflow to create master templates.
+PDF Generation: Built a dynamic filling engine that takes user input and compiles it into a finalized, downloadable PDF contract.
+Solution Architecture
+Frontend: Next.js (SSR) for SEO and performance.
+Backend: Next.js API Routes (Serverless).
+Database: Supabase (PostgreSQL) + Row Level Security (RLS).
+Storage: Supabase Storage for generated PDF archives.
+Deliverables
+Admin Dashboard for Template Creation.
+User Dashboard for Document Management.
+Automated PDF Generation Module.
+Tech Stack
+Framework used: Next.js
+Language/techniques used: TypeScript, SQL, PDF-Lib
+Models used: N/A (Rule-based Logic)
+Skills used: Backend Architecture, Database Design, Payment Integration
+Databases used: Supabase (PostgreSQL)
+Web Cloud Servers used: Vercel / Supabase Cloud
+What are the technical challenges faced during project execution
+Handling complex formatting requirements for legal documents (e.g., dynamic page breaks, variable text lengths) when generating PDFs programmatically.
+Ensuring data privacy and isolation between different user accounts.
+How the Technical Challenges were Solved
+utilized a robust PDF generation library with custom coordinate mapping to ensure text alignment remained professional regardless of input length.
+Implemented strict Row Level Security (RLS) policies in Supabase to ensure users could only access their own documents.
+Business Impact
+Automated the end-to-end legal document creation process, allowing the client to monetize templates and significantly reducing the turnaround time for contract generation.

@@ -1,0 +1,37 @@
+VoiceChat POC — Real-Time Audio & Text AI Chatbot using Vapi AI
+The Problem
+Traditional chatbots are limited to text-only interaction, creating friction for users who prefer speaking naturally. Building a voice-enabled AI system from scratch requires complex infrastructure — WebRTC, speech recognition, voice synthesis, and real-time audio streaming which is time-consuming and expensive to set up and maintain.
+Key pain points:
+Text-only interfaces feel unnatural and slow for many users
+Voice AI systems require complex backend infrastructure
+Maintaining separate pipelines for text and voice creates development overhead
+No unified interface for both interaction modes
+Our Solution
+A unified AI chatbot that supports both text and voice interaction in a single clean interface — built with Vapi AI. Users can type messages for instant text responses, or click the voice button to have a real-time spoken conversation with the AI. Both modes use the same AI assistant configured on Vapi’s platform.
+No complex backend, no Python agent, no WebRTC setup — just a Next.js frontend and Vapi’s managed voice infrastructure.
+Solution Architecture
+Frontend (Next.js) — A single chat interface handles both text and voice. Messages are displayed in a chat bubble format. Voice status bar shows real-time listening and speaking states with animated indicators.
+Text Mode — User types a message → Next.js API route calls Vapi’s Chat API → AI response rendered in chat.
+Voice Mode — User clicks the mic button → Vapi Web SDK connects to a managed voice session → Deepgram handles STT → Groq LLM generates response → Vapi TTS speaks the reply. All audio transcripts appear in the chat in real time.
+Vapi Platform — Manages the entire voice pipeline including STT, LLM, TTS, and session management. The assistant is configured once on the Vapi dashboard and reused for both text and voice.
+Deliverables
+Text Chat — Users can type messages and receive AI responses with loading animation. Enter key sends the message. Response appears as a chat bubble.
+Voice Conversation — One click on the mic button starts a real-time voice session. AI greets the user, listens, and responds with synthesized voice.
+Real-time Status Indicator — Animated bar visualizer shows whether the AI is listening or speaking during a voice session.
+Voice Transcript in Chat — Everything said during a voice session appears as chat bubbles in real time — both user speech and AI responses.
+Loading States — Spinner on send button during text response, spinner on mic button while connecting to voice session.
+Unified Interface — Both text and voice work in the same chat window with the same message history.
+Tech Stack
+Frontend: Next.js 14, React, TypeScript, TailwindCSS
+Voice Infrastructure: Vapi AI — fully managed voice pipeline
+STT: Deepgram — via Vapi
+LLM: Groq API — LLaMA 3.3 70B via Vapi
+TTS: Vapi built-in voice (Elliot)
+Vapi Web SDK: @vapi-ai/web — browser voice session management
+API: Vapi Chat API — for text mode responses
+Business Impact
+Customer Support — Businesses can deploy a voice + text AI agent on their website that handles customer queries 24/7 without any complex infrastructure. Users who prefer speaking get a natural experience; users who prefer typing get instant text responses.
+Healthcare — Patients can speak or type their symptoms and get instant AI-powered guidance — removing barriers for elderly or differently-abled users.
+Education — Students can converse with an AI tutor in their preferred mode — voice for practice, text for reference — using a single interface.
+Rapid Deployment — Vapi’s managed infrastructure means no backend voice server to maintain. The entire POC was built and deployed with minimal code, demonstrating that production-grade voice AI is now accessible without deep infrastructure expertise.
+Cost Effective — Vapi’s pay-as-you-go model with free credits makes it ideal for POCs and early-stage products without upfront infrastructure investment

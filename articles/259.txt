@@ -1,0 +1,24 @@
+Voice FAQ Assistant using LiveKit Agents
+Traditional text-based or DTMF (touch-tone dial) FAQ systems are rigid, causing customer friction and high support overhead. Customers have to navigate complex menus or type exact keywords to get answers. Real-time voice assistants often suffer from high latencies, double-responding (due to short pauses or intermediate transcription events), and phonetic misalignments (e.g. transcribing “Blackcoffer” as “black copper”, “black coffin”, or “back offer”). Furthermore, developing custom event-driven loops to handle turn-taking, VAD, and interruptions manually is highly complex and error-prone, leading to unstable conversational states.
+We developed a highly responsive, low-latency conversational Voice FAQ Assistant that leverages LiveKit Cloud and LiveKit Inference. Rather than writing brittle custom event listeners and strict keyword-matching logic, we configured a native AgentSession loop that automatically orchestrates voice activity detection (VAD), speech-to-text (STT), text-to-speech (TTS), and LLM generation. By injecting the FAQ knowledge base directly into the system instructions of a cloud-hosted Gemma 4 31B model, the agent can understand and answer questions semantically, handling phonetic mis-transcriptions flawlessly without double-triggering or manual string matching.
+The architecture consists of a real-time, low-latency communication pipeline built on LiveKit:
+User Voice Input : Captures the user’s microphone stream in real time.
+VAD (Voice Activity Detection) : Built-in Silero VAD segmenting speech and determining turn boundaries.
+STT (Speech-to-Text) : Deepgram Nova-3 transcribing speech streams into text.
+Agent Orchestrator : The LiveKit Agents SDK AgentSession coordinates turn-taking, handles interruptions, and routes state.
+Semantic LLM : A cloud-hosted Google Gemma 4 31B model (via LiveKit Inference) receives the conversation history, maps the query semantically to the FAQ data, and generates a concise response.
+TTS (Text-to-Speech) : Cartesia Sonic synthesizes synthesized audio from the LLM text output in real-time.
+Audio Output : Streams back the voice response directly to the user’s speakers with sub-second end-to-end latency.
+Codebase Entrypoint : A lightweight and robust src/agent.py implementing the AgentSession and FAQAgent setup.
+Environment Configuration : Set up .env for LiveKit Cloud WebSocket URL and token credentials.
+Dependency Manifest : pyproject.toml and uv.lock configured with the correct versions of livekit-agents and livekit-plugins.
+Git Repository Integration : Configured remote origin and pushed the complete, unshallowed commit history to the GitHub repository
+Framework : LiveKit Agents Python SDK (v1.6.4+)
+LLM : Google Gemma 4 31B (via LiveKit Inference)
+STT (Speech-to-Text) : Deepgram Nova-3 (via LiveKit Inference)
+TTS (Text-to-Speech) : Cartesia Sonic-3-Latest (via LiveKit Inference)
+Runtime & Tooling : Python 3.11, uv package manager, Git
+Reduced Support Overhead : Automates up to 80% of common customer service inquiries, allowing human agents to focus on complex, high-value tasks.
+Improved Customer Experience : Provides instantaneous, human-like voice responses (sub-second latency) 24/7, reducing customer wait times to zero.
+Robust Semantic Matching : Unlike brittle keyword-matching bots, the system understands context and handles accents, background noise, and pronunciation variants, resulting in a higher resolution rate on first contact.
+Consolidation and Cost Savings : By routing all model endpoints through LiveKit Inference, the business avoids managing separate subscriptions and keys for Deepgram, Cartesia, and LLM providers, consolidating costs into a single billing structure.

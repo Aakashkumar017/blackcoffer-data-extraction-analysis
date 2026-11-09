@@ -1,0 +1,73 @@
+AI Voice Receptionist & Automated Appointment Scheduling System
+Client: A leading retail firm in the USA
+Industry Type: Retail
+Products & Services: Retail Tech services
+Organization Size: 100+
+The Problem
+To build an AI-driven assistant capable of answering phone calls, holding natural conversations, and autonomously scheduling appointments via Google Calendar. The goal was to simulate a human receptionist that can gather customer details, respond to questions (including medical), handle booking flows, and send calendar invites and confirmation emails—all using AI with a human-like voice.
+Our Solution
+Built a conversational AI assistant capable of simulating human phone interactions using OpenAI GPT-3 and Dialogflow .
+Developed and deployed the bot logic with Google Calendar API for scheduling and AWS Lambda for backend operations.
+Used OpenAI GPT-3 fallback responses to handle complex or unclear queries, especially around medical questions.
+Integrated Google Calendar to avoid booking conflicts and automatically send appointment invites.
+Created an email notification system that dispatches confirmations post-appointment.
+Initiated TTS (Text-to-Speech) exploration using AWS Polly, Google TTS, and IBM Watson for human-like bot speech.
+Solution Architecture
+Dialogflow + GPT-3 – Conversational AI core, enhanced fallback responses.
+AWS Lambda – Handles conversation flow and integrates with external APIs.
+OpenAI GPT-3 (via EC2) – Generates dynamic responses during fallback or unclear user intent.
+Google Calendar API – Appointment scheduling, conflict checking, and event creation.
+Email System – Sends confirmation emails after booking.
+TTS (Polly, Watson, GCP TTS) – Exploring for future voice-based deployment.
+Deliverables
+Fully functional AI chatbot that collects name, phone, email, availability, and books appointments.
+Integration with Google Calendar API (including time zone handling, overbooking checks).
+Inline webhook fulfillment for both GPT-3 and calendar interaction .
+Appointment confirmation emails sent automatically.
+AWS-hosted Lambda functions powering bot logic.
+Dialogflow fallback tied to GPT-3 for advanced query handling (especially medical).
+Base implementation for voice bot(TTS options evaluated not implemented).
+Tech Stack
+Platforms: Google Dialogflow, AWS Lambda, EC2
+APIs: OpenAI, Google Calendar, Gmail API (Email)
+Languages: Python, Node.js (for Lambda functions), Dialogflow Inline Editor
+Others: AWS Polly (TTS), Flask (for early tools)
+Skills Applied:
+Conversational AI Design (Dialogflow + GPT-3 fallback)
+API Integration (OpenAI, Google Calendar, Email)
+Serverless Function Development (AWS Lambda)
+Voice AI Research (TTS engines)
+Regex Validation & Slot Management
+Calendar Logic (availability checks, invite logic)
+Databases:
+GCP Buckets
+Cloud Server:
+AWS + GCP
+Technical Challenges Faced
+Handling complex user queries that didn’t match predefined intents
+Calendar overbooking and time zone confusion
+Phone/email input errors and malformed entries
+Lambda timeout issues while calling external APIs
+Creating natural, dynamic fallback responses
+TTS integration with Lex/Dialogflow for human-like voice output
+Dialogflow’s limited ability to handle detailed logic
+Managing secure deployment of GPT-3 with minimal latency
+How the Technical Challenges Were Solved
+Integrated GPT-3 through EC2-hosted APIs as fallback for vague or medical queries
+Used Google Calendar API for real-time availability checks and timezone-aware scheduling
+Added regex validation + re-prompt logic for correcting invalid phone/email inputs
+Shifted GPT logic from Lambda to EC2 to avoid timeout issues
+Handled fallback responses with webhook fulfillment in Dialogflow to inject GPT replies
+Evaluated multiple TTS engines (AWS Polly, Google TTS, IBM Watson) for future voice use
+Modularized slot data handling and designed custom slot types for better validation and error correction
+Ensured appointment confirmation with real-time email dispatch via Gmail APIs.
+Business Impact
+Reduced administrative load by automating bookings and confirmations
+Improved customer engagement through natural, human-like AI conversations
+Positioned business for future-ready voice AI upgrade with minimal changes
+Integrated workflows that can scale across services beyond medical scheduling
+Project Website URL
+Black Coffer Github Repo
+Project Video
+Loom video that explains how you can start testing the MedBot.
+Link: https://www.loom.com/share/4fdabf79c329458087e0f41d22669fcf

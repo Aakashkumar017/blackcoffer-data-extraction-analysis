@@ -1,0 +1,91 @@
+Multi-Modal Continuous Authentication & Intelligent Threat Detection Platform
+Client Name: Confidential (Cybersecurity & Communication Platform)
+Industry Type: Cybersecurity / SaaS Communication
+Products & Services: Secure messaging platform with real-time communication and threat monitoring
+Organization Size: 40+
+About Client:
+The client operates in the secure communications domain, offering real-time messaging services for organizations that require strong identity verification and protection against insider threats and cyber attacks. Their existing system relied on traditional login-based authentication, which was insufficient for continuous identity assurance and real-time threat detection.
+The client faced several critical challenges:
+Session Hijacking Risk: Once logged in, there was no continuous verification of the user.
+Insider Threats: Unauthorized users could misuse active sessions.
+Weak Behavioral Security: No use of behavioral biometrics like typing or mouse patterns.
+Lack of Voice Verification: Voice messages could not be authenticated.
+Spam & Attack Vulnerability: Group chats were exposed to spam and malicious traffic.
+No Real-time Threat Detection: Network-level anomalies were not monitored effectively.
+This created a gap between authentication and actual user behavior , increasing security risks.
+We developed a multi-modal security platform combining:
+1. Continuous Biometric Authentication
+Keystroke dynamics (typing behavior)
+Mouse movement patterns
+Real-time identity verification using BiLSTM models
+2. Voice Authentication System
+Speaker verification using ECAPA-TDNN embeddings
+Automatic enrollment and similarity-based validation
+3. Real-Time Chat System
+WebSocket-based communication
+Integrated authentication checks during active sessions
+4. Network Intrusion Detection System (NIDS)
+Hybrid model: Random Forest (known attacks) Isolation Forest (unknown anomalies)
+Random Forest (known attacks)
+Isolation Forest (unknown anomalies)
+Real-time monitoring and alerting
+5. Adaptive Learning System
+Models retrain automatically using new behavioral data
+Improves accuracy over time without manual intervention
+The system follows a multi-layered architecture :
+Frontend Layer Captures keystroke, mouse, and voice data Sends batched behavioral data to backend
+Captures keystroke, mouse, and voice data
+Sends batched behavioral data to backend
+Backend Layer (FastAPI) Handles authentication, chat, and processing Runs behavioral verification models Manages user sessions and strike logic
+Handles authentication, chat, and processing
+Runs behavioral verification models
+Manages user sessions and strike logic
+ML Layer BiLSTM models for behavioral authentication ECAPA-TDNN for voice embeddings Ensemble ML models for intrusion detection
+BiLSTM models for behavioral authentication
+ECAPA-TDNN for voice embeddings
+Ensemble ML models for intrusion detection
+Data Layer PostgreSQL for behavioral data SQLite for chat and messages
+PostgreSQL for behavioral data
+SQLite for chat and messages
+Real-time Communication WebSockets for instant updates and alerts
+WebSockets for instant updates and alerts
+Secure real-time chat application
+Continuous authentication system
+Voice verification module
+Network intrusion detection dashboard
+Adaptive ML training pipeline
+Admin dashboards and analytics
+Framework used
+FastAPI, Flask, SocketIO
+Language/techniques used
+Python, JavaScript, HTML/CSS
+Models used Bidirectional LSTM (behavioral biometrics) ECAPA-TDNN (voice recognition) Random Forest + Isolation Forest (NIDS)
+Bidirectional LSTM (behavioral biometrics)
+ECAPA-TDNN (voice recognition)
+Random Forest + Isolation Forest (NIDS)
+Skills used Machine Learning Deep Learning Real-time systems design Cybersecurity engineering
+Machine Learning
+Deep Learning
+Real-time systems design
+Cybersecurity engineering
+Databases used
+PostgreSQL, SQLite
+Web Cloud Servers used
+Uvicorn (ASGI server), Flask server for NIDS
+Real-time processing of behavioral data without latency
+Designing accurate biometric models with limited user data
+Handling asynchronous voice processing
+Avoiding false positives in authentication
+Integrating multiple ML models into a single pipeline
+Ensuring scalability for concurrent users
+Implemented batch processing for keystroke and mouse events
+Used BiLSTM models for sequence learning and better accuracy
+Introduced adaptive retraining pipelines
+Applied threshold-based decision fusion (70% keystroke, 30% mouse)
+Used background workers and thread pools for non-blocking processing
+Combined supervised + unsupervised models for robust intrusion detection
+Enhanced Security: Continuous authentication reduced unauthorized access risk
+Improved User Trust: Real-time identity verification increased confidence
+Reduced Fraud & Abuse: Immediate logout on suspicious behavior
+Scalable Architecture: Supports multiple concurrent users and real-time processing
+Intelligent Threat Detection: Early detection of anomalies and attacks

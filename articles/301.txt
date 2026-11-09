@@ -1,0 +1,28 @@
+AI Requirement Analyzer – Intelligent Document Parsing & Project Planning System
+The Problem
+Business Analysts, Product Managers, and development teams often struggle with extracting actionable insights from large, unstructured project requirement documents like Statements of Work (SOWs) and Business Requirement Documents (BRDs). Manual extraction of modules, tasks, and effort estimates is highly time-consuming and prone to human error. Furthermore, identifying potential project risks early on and outlining a phased timeline can be challenging when dealing with dense, multi-page text formats (PDF/DOCX).
+Our Solution
+The AI Requirement Analyzer is a full-stack SaaS platform designed to automate the extraction and structuring of project requirements. Users can seamlessly upload their requirement documents, and the system leverages advanced LLMs (Llama 3.3 70B via Groq) to instantly analyze the content. It automatically identifies core modules, assigns individual tasks, provides effort estimates, assesses project risks, and generates a phased roadmap for robust and predictable execution.
+Solution Architecture
+The system follows a modern, containerized full-stack architecture:
+Client Interface: A modern Next.js 14 frontend built with Tailwind CSS and Lucide Icons, providing a clean, responsive, and intuitive user experience for document uploads and data visualization.
+AI Orchestration Layer: A robust Node.js (Express + TypeScript) API backend that acts as the bridge between file parsers and the Groq AI engine, orchestrated seamlessly via LangChain.js.
+Processing Pipeline: Specialized utilities (pdf-parse and mammoth) extract raw text from uploaded files, which is then analyzed by the LLM and enforced into structured, predictable JSON outputs using Zod schemas.
+Data Persistence: A PostgreSQL database, managed via Prisma ORM, securely stores all analysis history, extracted requirements, and generated roadmaps for future reference and retrieval.
+Infrastructure Layout: Fully containerized using Docker Compose for seamless deployment, environment consistency, and easy scalability.
+Deliverables
+Interactive Analysis Dashboard: A complete, user-friendly workstation to upload project documents and instantly view parsed analytical results.
+Automated Requirement Parsing: An intelligent engine that extracts core modules, sub-tasks, and accurate development effort estimates from unstructured text.
+Risk Assessment Engine: A system that automatically identifies, highlights, and categorizes potential project risks by severity levels.
+Roadmap Visualization: Automatically generates a phased timeline to guide project execution from start to finish.
+Analysis History Tracking: A centralized repository of all past document analyses, ensuring historical insights are easily accessible for team reference.
+Tech Stack
+Business Impact
+Drastic Efficiency Gains: Transforms hours of manual reading, requirement gathering, and task breakdown into seconds of automated AI parsing.
+Enhanced Accuracy: Mitigates human oversight, ensuring no critical requirements, edge cases, or modules are missed during the initial planning phase.
+Proactive Risk Management: Identifies potential project bottlenecks and risks early in the lifecycle, saving significant development cost and time down the road.
+Standardized Project Planning: Generates consistent, objective modular breakdowns and effort estimates across all new projects, improving cross-team alignment.
+Summary of Work
+Explored Codebase: Analyzed package.json, README.md, frontend, and backend configurations to identify core features and the underlying technology stack.
+Identified Stakeholders: Focused on Product Managers, Business Analysts, and Development Leads as the primary beneficiaries of this system.
+Drafted Success Story: Completed all requested sections with professional, impact-driven content tailored to the AI Requirement Analyzer’s strengths.

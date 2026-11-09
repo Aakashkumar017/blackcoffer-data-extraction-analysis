@@ -1,0 +1,91 @@
+Centralized Analytics Platform for Multi-Clinic Healthcare Operations
+Client: A leading healthcare firm in the USA, & EU
+Industry Type: Healthcare
+Products & Services: Hair Loss treatment products and Wellness
+Organization Size: 700+
+The Problem
+Client’s company needed to scale and centralize its analytics infrastructure across 7 clinics and multiple departments. They were grappling with siloed datasets, unoptimized dashboards, fragmented marketing and customer insights, and inconsistent data pipelines affecting decision-making and operational visibility.
+Our Solution
+Revamping dashboards used across Management Board, Clinic Directors, Hair Specialists, and Finance.
+Creating intelligent GSheet tools to aid operations (e.g., leads review, capacity, doctor availability).
+Integrating and modeling marketing data (Meta, Google Ads, GA4), Shopify, SimplyBook, and Salesforce.
+Building scalable, cost-optimized pipelines using Kleene.ai and BigQuery.
+Enabling clinic teams with tailored analytics (consultations, cancellations, capacity).
+Structuring data governance, deduplication, and GCP cost analysis.
+Designing customer segmentation and campaign performance analysis.
+Solution Architecture
+Data Sources:
+Shopify (Sales, Revenue)
+SimplyBook (Consultations, Appointments)
+Meta Ads, Google Ads, GA4 (Marketing)
+Salesforce (Leads & CRM)
+Internal Google Sheets (manual ops + lookup)
+Kleene.ai (ETL orchestration)
+Storage & Modeling:
+Google BigQuery as the centralized warehouse
+Custom SQL models for each stakeholder layer (MB, CD, Hair Specialist, Finance)
+Analytics & Visualization:
+Looker Studio Dashboards
+Dynamic Google Sheets tools with Apps Script automation
+Automation & Monitoring:
+Kleene for scheduled ingestion
+GSheet trackers for volume monitoring
+Log-based monitoring for manual entry vs. automated pipelines
+Deliverables
+Fully revamped Management Board (MB) dashboard (growth + clinic-level views)
+GSheet-based Customer Outreach and Retention Review system for 7 clinics
+Consultation and Cancellation Insights dashboards
+Capacity Monitoring and Clinic Booking Ratios
+Bonus Incentive Tracker tied to KPIs
+SimplyBook-to-Shopify revenue model with consultation-to-booking analysis
+Campaign Performance Analysis by Source/Medium/Creative
+Scalable and cost-effective BigQuery architecture with optimization monitoring
+Data governance + documentation for clinic operations and ad hoc use
+All deliverables on the Client’s Cloud space and Workspace along with access on Client’s email domains.
+Tech Stack
+Data Engineering: BigQuery, Kleene.ai, Google Apps Script, SQL
+Visualization: Looker Studio, Google Sheets
+ETL & Pipelines: Kleene.ai, BigQuery SQL
+Marketing & Ops Integration: Meta Ads, GA4, Google Ads, Salesforce, SimplyBook, Shopify
+Skills Applied:
+Data modeling & transformation
+Pipeline automation & optimization
+Dashboard design (KPI-focused)
+Stakeholder-centric tool development
+Customer segmentation logic
+Cross-platform data harmonization
+Google Workspace automation (Apps Script)
+Cost monitoring & governance
+Databases:
+GCP BigQuery Warehouse
+Cloud Server:
+GCP + Kleene.ai
+Technical Challenges Faced
+High Cost of BigQuery Queries:
+Inefficient joins and frequent full scans by dashboard users led to surging costs.
+Inconsistent IDs and Duplicates:
+Duplicates in CRM and overlapping IDs across booking platforms required consolidation and hashing logic.
+Manual Data Entry Points:
+Clinic teams used manual sheets, causing data sync issues with CRM and bookings.
+Data Silos in Marketing Sources:
+Attribution and campaign insights scattered across Meta, Google Ads, GA4 with no unified tracking.
+Dynamic Staff and Doctor Schedules:
+Frequent personnel changes caused delays in weekly capacity planning and bonus calculation.
+How the Technical Challenges Were Solved
+BigQuery Optimization:
+Partitioning, clustering, materialized views, and dashboard-specific summary tables.
+Data Deduplication Logic:
+Merge rules for Salesforce, SimplyBook, Shopify IDs.
+Hybrid GSheet-Database Tools:
+Built sync tools that allow clinic teams to update status manually but sync results back into the master database.
+Attribution Modeling:
+Created UTM parsing pipelines and source/medium mapping tables for campaign-level insights.
+Integrated GA4 events (conversion, pageview) with ad spend.
+Dynamic Team Roster Tracker:
+Live lookup sheets integrated with clinic dashboards to auto-update weekly doctor/hair specialist performance.
+Business Impact
+Increase in operational dashboard usage across clinics and HQ
+Decreased BQ costs through query optimization and data summary logic
+Improved conversion tracking.
+Streamlined clinic management with capacity and doctor tracking reducing underbooking and overstaffing
+Boosted transparency between marketing, operations, and the finance team via unified dashboards

@@ -1,0 +1,78 @@
+AI PDF Chatbot with LangGraph
+The Problem
+Organizations and individuals deal with large volumes of PDF documents — resumes, reports, manuals, contracts, and research papers. Extracting specific information from these documents is slow, manual, and error-prone.
+Key pain points:
+Reading through entire PDFs to find one specific fact takes significant time
+Traditional search (Ctrl+F) only finds exact keyword matches, not semantic meaning
+No conversational interface — users cannot ask follow-up questions or get contextual answers
+Multiple PDFs cannot be queried together in a unified chat experience
+No session isolation — in multi-user environments, one user’s data bleeds into another’s
+There was a need for an intelligent system that could read any PDF, understand its content semantically, and answer natural language questions — just like asking a human expert.
+We built an AI-powered PDF Chatbot using Next.js, LangGraph, Qdrant vector database, and Groq LLM. The system allows users to:
+Upload any PDF document and chat with it instantly
+Ask questions in natural language — Hindi or English — and get accurate answers from the PDF content
+Upload multiple PDFs in one session and query across all of them
+Have normal conversations when no PDF is uploaded (general AI assistant mode)
+Start a new chat that clears only their own session data — other users’ data is unaffected
+The solution uses semantic vector search — the chatbot understands the meaning of a question, not just keywords. It finds the most relevant chunks from the uploaded PDF and passes them to the LLM to generate accurate, contextual answers.
+LangGraph orchestrates the entire pipeline as a stateful graph — routing, retrieval, and prompt construction happen as automatic sequential steps, making the system extensible and maintainable.
+Upload Flow
+When a user uploads a PDF:
+pdf-parse extracts raw text from the PDF
+RecursiveCharacterTextSplitter splits text into 500-character chunks with 50-character overlap
+HuggingFace (all-MiniLM-L6-v2) converts each chunk into a 384-dimensional vector
+Vectors are stored in Qdrant Cloud with sessionId and source (PDF filename) as metadata
+Chat Flow — LangGraph Pipeline
+Every user message goes through a 3-node LangGraph StateGraph:
+State automatically travels node to node — routeNode sets isSimple, retrieveNode reads it and sets context, promptNode reads context and sets systemPrompt. No manual passing required.
+3 Scenarios
+Scenario 1 — Simple greeting (“hi”, “hey”, “thanks”):
+routeNode: isSimple = true
+retrieveNode: Qdrant search SKIP, context = “”
+promptNode: “Friendly AI assistant” prompt
+Result: Normal conversational reply
+Scenario 2 — PDF attached + any message:
+routeNode: isSimple = false (currentFile set hai)
+retrieveNode: Sirf us PDF ke chunks search (source filter)
+promptNode: “Answer ONLY from this PDF content” prompt
+Result: Answer sirf us attached PDF se
+Scenario 3 — Question without attaching PDF:
+routeNode: isSimple = false
+retrieveNode: Saare session ke uploaded PDFs mein search (sessionId filter only)
+promptNode: “Answer from all uploaded PDFs” prompt
+Result: Answer from any relevant uploaded PDF
+Session Isolation
+Every user gets a unique sessionId stored in localStorage
+All Qdrant vectors tagged with sessionId — users never see each other’s data
+New Chat: /api/new-chat deletes only that user’s vectors, generates new sessionId
+Payload indexes on sessionId and source enable fast filtered queries
+Fully functional AI PDF Chatbot web application (Next.js 16)
+PDF upload and processing pipeline (pdf-parse + chunking + vector embedding)
+LangGraph-orchestrated 3-node pipeline (route → retrieve → prompt)
+Qdrant Cloud vector database integration with session-based isolation
+Real-time streaming chat interface with markdown rendering and code syntax highlighting
+PDF support — upload and query across multiple documents in one session
+New Chat functionality — session-scoped data cleanup
+Responsive UI (mobile + desktop) with file attachment, copy button, and streaming tokens
+REST APIs: /api/chat (streaming), /api/upload (PDF), /api/clear-context (session clear)
+This solution has significant potential across multiple industries and use cases:
+HR & Recruitment
+Recruiters can upload resumes and query across all of them — “which candidates know React?” — saving hours of manual screening
+Candidates can upload their own resume and ask the AI to help improve it or answer interview prep questions
+Legal & Compliance
+Lawyers can upload contracts and ask specific questions — “what are the termination clauses?” — without reading 50 pages
+Compliance teams can query regulatory documents to find specific obligations instantly
+Education & Research
+Students can upload research papers and textbooks and ask questions in their native language
+Professors can build course-specific chatbots by uploading study material
+Enterprise Knowledge Management
+Employees can query internal SOPs, product manuals, and policy documents conversationally
+Onboarding time reduces significantly — new employees can get instant answers from documentation
+Healthcare
+Doctors can upload patient reports and ask summarization or analysis questions
+Medical students can query textbooks and clinical guidelines in plain language
+Key Metrics (Potential)
+80% reduction in time to find specific information in documents
+Zero additional cost — entire stack runs on free tiers (Groq, HuggingFace, Qdrant)
+Multi-language support — answers in the same language as the question
+Infinitely scalable — Qdrant Cloud handles millions of vectors

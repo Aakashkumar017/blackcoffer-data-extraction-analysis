@@ -1,0 +1,21 @@
+AI-Powered Resume Analyzer using Make.com
+The Problem
+Recruiters and job seekers have to manually evaluate resumes which is time-consuming and subjective. An HR professional spends 5-10 minutes reading a single resume and personal bias often affects the decision. There is no standardized scoring system to objectively judge the quality of a resume.
+Our Solution
+We built an automated Resume Analyzer that takes any resume text as input and performs detailed AI-powered analysis — returning a score, strengths, weaknesses, missing skills, and an overall summary. The entire process completes in just 2-3 seconds without any manual effort.
+Solution Architecture
+User sends resume text → Make.com Webhook receives the request → HTTP module calls Groq API → Llama 3.3 70B model analyzes the resume → JSON response is returned back to the user through the webhook response module.
+Deliverables
+Working Make.com automation scenario
+Webhook endpoint that accepts resume text as input
+AI-generated JSON response with score (0-100), strengths, weaknesses, missing skills and overall summary
+Fully tested end-to-end pipeline
+Tech Stack
+Make.com (Automation Platform)
+Groq API (LLM Provider — Free Tier)
+Llama 3.3 70B Versatile (AI Model)
+Webhooks (Input/Output)
+JSON (Data Format)
+Reqbin (Testing Tool)
+Business Impact
+In the recruitment industry, this tool can save 80% of HR teams time spent on resume screening. Companies that do bulk hiring such as IT firms, BPOs, and startups can automatically score thousands of resumes without any manual effort. Integrating this into job portals and ATS (Applicant Tracking Systems) can provide instant feedback to candidates, improving the overall candidate experience. Additionally, coaching institutes and career counselors can use this tool to give personalized resume improvement suggestions to their students and clients.

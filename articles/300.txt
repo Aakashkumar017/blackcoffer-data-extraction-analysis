@@ -1,0 +1,26 @@
+Automated Order Processing & Customer Notification System for Bakery Shop using Make.com
+Small bakery businesses often rely on manual order handling, which leads to:
+Delays in order processing
+Human errors while recording customer details
+Lack of real-time order tracking
+No instant confirmation to customers
+This results in poor customer experience and inefficient operations, especially during peak hours.
+We developed an automated workflow using Make.com that streamlines the entire order process.
+Whenever a customer submits an order form:
+The system automatically captures the order details
+Stores the data in an organized Excel sheet
+Sends an instant confirmation email to the customer
+This eliminates manual intervention and ensures fast, accurate, and reliable order processing .
+Functional Make.com workflow scenario
+Integrated form-to-database pipeline
+Automated email notification system
+Excel sheet with structured order data
+Documentation of workflow and setup
+Automation Platform: Make.com
+Form Service: Google Forms / Web Forms
+Data Storage: Microsoft Excel / Google Sheets
+Email Service: Gmail / SMTP
+Faster order processing and response time
+Minimized human errors in order recording
+Improved customer satisfaction with instant confirmations
+Better order tracking and data management Demo Video

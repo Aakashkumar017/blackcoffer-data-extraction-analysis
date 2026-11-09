@@ -1,0 +1,20 @@
+Deploy Nodejs app on a cloud VM such as GCP, AWS, Azure, Linode
+1. How to Install Node.js on Ubuntu 22.04
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04
+2. How to Install PM2 on vm
+https://pm2.keymetrics.io/docs/usage/quick-start/
+3. How to Install git on vm
+commands:-
+sudo apt update,
+sudo apt install git
+git version
+4. How to configure pm2 on nodejs project
+https://pm2.keymetrics.io/docs/usage/application-declaration/
+5. Pull the project code from git to new vm on specific branch
+6. Install all dependencies
+7. Finally run this command –> pm2 start ecosystem.config.js
+9. nodejs server will run on specific port
+10. How To Install Nginx on Ubuntu
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+11. How To Set Up a Node.js Application for Production on Ubuntu
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04

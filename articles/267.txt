@@ -1,0 +1,24 @@
+AI-Powered Virtual Receptionist Using Vapi AI
+Project Overview
+In this Task I have created an AI voice assistant named Alex which will be talking as the receptionist of Blackcoffer and will give the whole info about the company according to the knowledge base that I provided to it.
+Technical Stack
+Tool Used: Vapi.ai
+Voice Provider: Eleven Labs
+Knowledge Base: Blackcoffer Information PDF (Vector Database via Vapi)
+Model: GPT 4o Cluster
+Configuration Details
+Assistant Identity
+Name: Alex
+Persona: Professional, knowledgeable, and helpful consultant representing Blackcoffer.
+Primary Goal: To assist users with questions regarding Blackcoffer’s data-driven solutions and consulting services.
+Voice Settings
+Provider: ElevenLabs
+Voice ID: [Your ElevenLabs Voice ID Here]
+Stability: 0.5
+Similarity Boost: 0.75
+Knowledge Base
+The assistant is grounded by the Blackcoffer_Information.pdf. This file covers:
+Company Overview & Mission
+Service Offerings (Data Science, AI/ML, Big Data)
+Industry Expertise
+Contact Information

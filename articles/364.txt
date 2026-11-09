@@ -1,0 +1,54 @@
+Insurance Power BI Dashboard
+Client: A leading financial firm in the USA
+Industry Type: Banking
+Products & Services: Financial Services
+Organization Size: 2000+
+The Problem
+Client working with a banking client, required a clean, insightful Power BI dashboard to visualize insurance data and uncover actionable insights such as total customers, demographics, and estimated income. The challenge was to take static Excel data and convert it into dynamic business intelligence visuals that could support internal decision-making.
+Our Solution
+We created an interactive and informative Power BI dashboard by cleaning, modeling, and visualizing the insurance-related data from the provided Excel sheets.
+Performed end-to-end Power BI setup—importing data, establishing relationships, calculating KPIs, and building dashboards.
+Included metrics such as total customer count, customer demographics, and estimated income.
+Designed an intuitive, user-friendly layout with clear filters, data slicing, and visual storytelling using best practices in data visualization.
+Final dashboard was delivered as a .pbix file, fully functional and shareable.
+Solution Architecture
+Data Source: Excel-based CSV and .xlsx files
+ETL: Power Query for transformation
+Modeling: Data relationships built between Clients, Customers, and Income tables
+Visualization: Power BI (with slicers, cards, clustered bars, pie charts, etc.)
+Delivery: Power BI file shared via Google Drive link
+Deliverables
+Finalized Dashboard.pbix Power BI dashboard with custom visuals
+Loaded and modeled dataset of 5 Excel tables
+Interactive metrics:
+Total Customers
+Customer Demographics
+Estimated Income
+Slicer-enabled filters and page navigation
+Optimized for readability and insight generation Link to dashboard file  : https://drive.google.com/file/d/1yXBL-IMUrN5rddjcJOyvNSB1cSLMs_jf/view?usp=drive_link
+Tech Stack
+BI Tool : Power BI Desktop
+Data Source : Excel (.xlsx, .csv)
+Languages/Features : Power Query (M), DAX
+File Sharing : Google Drive, Email
+Skills Applied:
+Data Exploration & Cleaning
+Data Modeling (Relationships, Star Schema Design)
+KPI & DAX Calculations
+Report & Dashboard Design
+Visual Optimization (Custom Charts, Filters)
+Business Analysis & Insurance Domain Understanding
+Technical Challenges Faced
+Inconsistent field names and data formats across Excel sheets
+Missing or indirect relationships between key tables
+Estimated Income not available as a clean, ready-to-use metric
+Demographics data required grouping and transformation
+Dashboard performance lag due to complex filtering
+How the Technical Challenges Were Solved
+Standardized fields using Power Query transformations
+Built custom relationships and calculated columns in data model
+Derived Estimated Income via DAX measures and logic
+Created grouping logic for age, region, and customer segments
+Optimized model by reducing cardinality and limiting cross-filtering
+Business Impact
+Helped the client visualize and interpret insurance data easily

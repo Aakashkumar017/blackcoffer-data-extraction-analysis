@@ -1,0 +1,54 @@
+Enterprise AI Assistant using Amazon Bedrock, Knowledge Bases, Guardrails, and AI Agents
+Organizations often maintain large volumes of documentation, including academic policies, employee handbooks, product manuals, and FAQs. Finding relevant information manually is time-consuming and inefficient.
+Traditional search systems rely on keyword matching and frequently fail to understand user intent or provide conversational responses. Additionally, deploying Large Language Models without safety controls may result in hallucinations, prompt injection attacks, or inappropriate responses.
+Businesses require an AI assistant that can answer questions accurately using enterprise documents while ensuring secure and responsible AI interactions.
+Developed an Enterprise AI Assistant using Amazon Bedrock that demonstrates the complete lifecycle of building production-ready Generative AI applications.
+The solution includes:
+Conversational AI using Amazon Nova Lite
+Multi-turn conversation support
+Tool Calling (Function Calling)
+Retrieval-Augmented Generation (RAG) using Amazon Bedrock Knowledge Bases
+AI Safety using Amazon Bedrock Guardrails
+Intelligent AI Agent using the Strands Agents SDK
+Instead of relying solely on the model’s pre-trained knowledge, the application retrieves relevant information from documents stored in Amazon S3 and generates grounded responses with source citations.
+Guardrails ensure harmful prompts, prompt injection attempts, and unsafe content are automatically filtered before responses are returned.
+Conversational AI chatbot using Amazon Bedrock
+Multi-turn conversational memory implementation
+Tool Calling (Function Calling)
+Knowledge Base integrated with Amazon S3
+Retrieval-Augmented Generation (RAG)
+AI Guardrails for responsible AI
+AI Agent using Strands SDK
+Source citations from retrieved documents
+End-to-end Python implementation
+Documentation and deployment-ready codebase
+Cloud
+Amazon Web Services (AWS)
+Amazon Bedrock
+Amazon S3
+AWS IAM
+AI & ML
+Amazon Nova Lite
+Amazon Bedrock Converse API
+Amazon Bedrock Knowledge Bases
+Amazon Bedrock Guardrails
+Retrieval-Augmented Generation (RAG)
+Tool Calling (Function Calling)
+AI Agents
+Strands Agents SDK
+Programming
+Python 3.12
+Boto3
+Development
+Git
+GitHub
+VS Code
+The proposed solution demonstrates how enterprises can securely integrate Generative AI into their internal workflows.
+Potential business benefits include:
+Reduce document search time by over 80%.
+Improve employee productivity through conversational document retrieval.
+Minimize hallucinations by grounding responses using enterprise knowledge.
+Protect AI applications from prompt injection attacks.
+Enforce organizational AI safety policies using Guardrails.
+Reduce customer support workload through automated FAQ handling.
+Easily extendable to HR, Finance, Healthcare, Legal, Banking, Education, and Customer Support use cases.

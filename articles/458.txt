@@ -1,0 +1,22 @@
+Environmental Engineering AI Tools & AI Software
+​Artificial Intelligence (AI) is increasingly being integrated into environmental engineering to enhance data analysis, optimize resource management, and improve sustainability efforts. Below is a list of notable AI tools and software utilized in this field:​ Barron’s+4ODU Digital Commons+4UPenn EII+4
+1. ARIES (Artificial Intelligence for Environment & Sustainability): An international non-profit research project that integrates scientific data and models to assess environmental sustainability and inform policy-making. ​ Wikipedia
+2. k.LAB: An open-source software infrastructure that semantically describes, codes, and distributes data and models for environmental analysis, supporting projects like ARIES. ​ Wikipedia
+3. Kayrros Methane Watch: An AI-driven platform that leverages satellite data to monitor methane emissions globally, aiding in the identification and mitigation of greenhouse gas sources. ​ Axios+1UPenn EII+1
+4. BrainBox AI: Utilizes AI to optimize HVAC systems in buildings, enhancing energy efficiency and reducing carbon emissions. ​ Time
+5. Vapar: Employs AI to enhance inspection processes of water infrastructure, improving accuracy and efficiency in identifying issues like leaks or blockages. ​ Financial Times
+6. Edge Impulse: An open-source TinyML-enabled toolkit that allows environmental engineers to implement machine learning models for tasks such as soil and water quality testing. ​ arXiv
+7. Conservation Labs’ H2know: An AI-powered water sensor that monitors water usage and detects leaks, promoting water conservation and efficiency. ​ Business Insider
+8. Autodesk’s AI Tools: Provides AI capabilities to enhance environmental monitoring and infrastructure inspection processes, improving accuracy and efficiency.
+Financial Times ​
+9. AI for Environmental Compliance Monitoring: AI applications that assist in ensuring adherence to environmental regulations by analyzing data from various sources to detect compliance issues.
+UPenn EII ​
+10. AI in Water Management: Integrates AI-powered sensors and predictive analytics to monitor water quality in real-time, detect leaks, and optimize water distribution networks.
+EnSafe ​
+11. AI in Environmental Consulting: AI tools that enable environmental consultants to automate routine tasks, analyze large datasets, and make data-driven recommendations, thereby enhancing efficiency and scalability.
+Peak Scientific ​
+12. AI in Sustainable Engineering Education: Utilizing online and open-source machine learning toolkits to prepare the next generation of engineers in applying AI for sustainable solutions.
+arXiv ​
+These tools exemplify the diverse applications of AI in environmental engineering, from monitoring pollution and optimizing resource use to enhancing infrastructure efficiency and ensuring compliance with environmental standards.​
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

@@ -1,0 +1,36 @@
+Elasticsearch Cluster Migration & Proxy Layer
+Client Background
+Client Name: Confidential (Data Infrastructure)
+Industry Type: Big Data / Enterprise Search
+Products & Services: Data Analytics Platform
+Organization Size: 100+
+About Client: A data-centric organization managing millions of records requiring high-speed retrieval.
+The Problem
+The client was operating on a legacy Elasticsearch cluster (v5.6), which faced severe security vulnerabilities, performance degradation, and incompatibility with modern monitoring tools. The application code was tightly coupled to the old API.
+Our Solution
+I executed a zero-downtime migration strategy to upgrade the infrastructure to a modern Elasticsearch (v9.2) version.
+Remote Reindex: Utilized the “Remote Reindex” API to efficiently transfer data from v5.6 to the target cluster without data loss.
+Proxy Layer: Developed a FastAPI middleware layer to intercept legacy application requests and transform them to be compatible with the new cluster’s query syntax.
+Solution Architecture
+Source: Legacy Elasticsearch v5.6 Cluster.
+Target: Modern Elasticsearch v9.2 Cluster.
+Middleware: Python FastAPI Proxy (Translation Layer).
+Deliverables
+Migrated Data Cluster (100% Integrity).
+FastAPI Proxy Service.
+Migration Documentation and Rollback Plan.
+Tech Stack
+Framework used: FastAPI
+Language/techniques used: Python, AsyncIO
+Models used: BM25 Ranking Algorithm (Native Elastic)
+Skills used: DevOps, Data Engineering, API Design
+Databases used: Elasticsearch
+Web Cloud Servers used: AWS EC2 / OpenSearch
+What are the technical challenges faced during project execution
+Mapping deprecated data types (e.g., string vs text/keyword) from v5.6 to v9.2 strict typing schemas.
+Ensuring zero downtime for the search service during the reindexing process.
+How the Technical Challenges were Solved
+Wrote a custom mapping script in Python to automatically transform schema definitions before data ingestion.
+Deployed the FastAPI proxy in parallel, allowing traffic to be gradually shifted to the new cluster using a canary deployment strategy.
+Business Impact
+Modernized the search infrastructure, resulting in faster query speeds and improved security compliance, while the proxy layer saved weeks of development time by preserving legacy app compatibility.

@@ -1,0 +1,33 @@
+Dropbox automation Document AI – Generate New Sheet for Missing value
+Client: A leading IT firm in Australia
+Industry Type: IT
+Products & Services: IT Services
+Organization Size: 2000+
+The solution entails leveraging Google Cloud for automation and Dropbox for data storage. An automation script, developed in Python, would connect to the Dropbox API to access Excel files. For each file, the script would identify missing items and generate a new Excel sheet containing these items. Once completed, the updated Excel files would be saved back to the Dropbox folder. This streamlined process ensures the efficient identification and resolution of missing data points across all Excel files, enhancing data integrity and accessibility.
+1. Connect to Dropbox API :
+Authenticate with the Dropbox API using appropriate credentials to gain access to the Dropbox         account.
+2. Retrieve Excel Files:
+– Utilize the Dropbox API to list files in the specified folder.
+– Filter out Excel files from the list for further processing.
+3. Identify Missing Items:
+– Iterate through each Excel file.
+– Use Pandas to read the Excel data and identify missing items, if any.
+4. Create New Excel File:
+– Generate a new Excel file using Pandas to store the missing items found in the original Excel file.
+5. Save New Excel File to Dropbox:
+– Upload the newly created Excel file containing missing items back to the Dropbox folder.
+6. Repeat Process:
+– Repeat the process for all Excel files in the designated Dropbox folder, ensuring comprehensive   coverage.
+a)Output data is visible on Dropbox.
+a) Pandas: Used for extracting and transforming data , Also generated new sheet with the help of  pandas.
+b) Dropbox: Powerful  library in order to connect with  dropbox .
+c) Google Colab,Vs code : Used google colab for deployment, and VS code for the script development.
+Used Python for data fetching and cleaning due to wide range of available libraries
+No specific models were used in this project.
+a) Data Cleaning: Skills in cleaning extracted data for better outcome..
+b) Data Transformation: Maye be extracted data requires some transformation steps
+Dropbox
+Google Cloud .
+a) Data Extraction: Files with null values.
+a) Checking the column size of the data made it easier.
+Git Hub repository till now  –  https://github.com/AjayBidyarthy/Todd-Stupell

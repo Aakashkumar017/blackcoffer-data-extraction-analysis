@@ -1,0 +1,24 @@
+Retell AI — Voice + Text Chatbot (Audio & Chat)
+The Problem Modern businesses need intelligent, real-time communication tools that can handle both voice and text interactions seamlessly. Traditional chatbots are limited to text-only responses, lacking the natural conversational experience that users expect. Building a voice-enabled AI assistant from scratch requires complex infrastructure — speech recognition, text-to-speech, real-time audio streaming, and LLM integration — which is time-consuming and expensive to develop and maintain. There was a clear need for a POC that demonstrates how a full-featured voice + text AI chatbot can be built rapidly using modern AI APIs.
+Our Solution We built a real-time Voice + Text AI Chatbot using RetellAI as the core voice infrastructure, integrated with a Next.js web application. The solution allows users to have natural voice conversations with an AI agent directly from the browser — no phone required. Additionally, a separate text chat mode is available for users who prefer typing. The AI agent responds intelligently to both voice and text inputs, with real-time transcript display during voice calls.
+Solution Architecture The system follows a clean client-server architecture:
+Frontend (Next.js + RetellWebClient SDK): The browser-based UI handles two modes  Voice Call and Text Chat. For voice, the retell-client-js-sdk establishes a WebSocket connection with RetellAI’s servers, streaming audio bidirectionally in real time. For text, HTTP requests are sent to the backend.
+Backend (Next.js API Routes): A single /api/retell_ai endpoint handles both flows. When type: “call” is received, it calls RetellAI’s REST API to create a web call session and returns an access_token. When type: “chat” is received, it proxies the message to Groq’s LLM API and returns the text response.
+RetellAI Platform: Hosts the AI agent with a configured LLM (GPT-4.1-mini) and voice (ElevenLabs). Manages real-time audio processing, speech-to-text, LLM inference, and text-to-speech — all within a single WebSocket session.
+Groq API: Powers the text chat mode with ultra-fast LLaMA 3.3 70B inference for near-instant text responses.
+Deliverables
+A fully functional web application with Voice Call and Text Chat modes
+Real-time voice conversation with AI agent directly in the browser
+Live transcript display during voice calls showing both user and agent speech
+Text chat interface with typing indicator, timestamps,Mute/Unmute functionality during active calls
+Visual call status indicators (Ready, Connecting, Live, Ended, Error)
+Single unified API endpoint handling both voice session creation and text chat
+Clean, responsive UI built entirely with Tailwind CSS
+Tech Stack
+Business Impact This POC demonstrates significant potential across multiple industries and use cases:
+Customer Support Automation: Businesses can replace or augment traditional call centers with AI voice agents available 24/7 at a fraction of the cost. A single AI agent can handle thousands of concurrent voice calls, eliminating wait times entirely.
+Healthcare: Patient intake, appointment scheduling, and FAQ handling can be automated via voice — making services accessible to users who are not comfortable with typing or text interfaces.
+Banking & Finance: Voice-based account inquiries, transaction status checks, and fraud alerts can be delivered conversationally, improving customer experience while reducing operational costs.
+E-commerce: Order tracking, return requests, and product recommendations can be handled through natural voice conversations, increasing customer satisfaction and reducing support team load.
+Education: AI tutors can conduct spoken Q&A sessions with students, making learning more interactive and accessible for different learning styles.
+Cost Efficiency: By using RetellAI’s managed infrastructure, there is zero need to build and maintain speech recognition, audio streaming, or TTS pipelines — reducing development time from months to days. The unified voice + text interface in a single POC demonstrates how quickly production-ready AI communication tools can be shipped.

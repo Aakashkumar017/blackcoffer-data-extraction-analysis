@@ -1,0 +1,32 @@
+Two-Way Data Integration Between HubSpot and Asana with WhatsApp Sync
+Client: A leading IT firm in the USA
+Industry Type: IT
+Products & Services: IT Services
+Organization Size: 2000+
+The client needed seamless integration between Asana (used for task management) and HubSpot (used for CRM and communication tracking). Manual syncing between the two platforms led to data inconsistencies and operational delays. Additionally, the client wanted to connect their WhatsApp line for centralized communication through Front.io and HubSpot.
+We designed and implemented a custom ETL solution that connects Asana and HubSpot via APIs to enable two-way synchronization. This allows tasks and project details updated in one platform to reflect instantly in the other. We also enabled WhatsApp communication to be managed through HubSpot using Front.io integration.
+Data extraction pipeline from Asana to HubSpot.
+Creation of groups and properties in HubSpot for task mapping.
+Two-way sync logic and API automation.
+Integration of WhatsApp line into HubSpot via Front.io.
+Documentation and demo video walkthrough.
+Tools Used
+Asana
+HubSpot
+Front.io
+REST APIs
+Webhooks
+Python (for scripting and automation)
+API Integration
+ETL Development
+Workflow Automation
+CRM Customization
+Mapping Asana’s project-task model to HubSpot’s contact-deal structure.
+Implementing real-time two-way data sync.
+Integrating WhatsApp through Front.io with HubSpot.
+Defined custom fields and mapping logic between Asana and HubSpot.
+Used webhooks and Python automation for two-way updates.
+Leveraged Front.io APIs and HubSpot integrations to connect WhatsApp communication.
+Eliminated manual syncing between Asana and HubSpot.
+Improved task tracking and CRM updates in real-time.
+Centralized communication improved responsiveness and accountability.

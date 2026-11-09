@@ -1,0 +1,23 @@
+Automated Data Pipeline & Analytics Dashboard
+The Problem Managing large volumes of data and extracting insights from it can be quite a challenge. Doing this manually by extracting raw data and then aggregating it to identify trends or pinpoint issues is not only time-consuming but also prone to mistakes. This can lead to delayed business decisions and inefficient use of resources.
+Our Solution
+To tackle this, we developed an automated, end-to-end Data Engineering pipeline using Databricks. We set up a structured data architecture that ingests raw data, automatically filters for specific criteria, and aggregates data for analysis. We also added advanced SQL analytics to provide in-depth insights, all within the Databricks environment.
+Solution Architecture
+Storage & Schema: We created a foundational schema to serve as the sandbox for data storage.
+Ingestion (Bronze Layer): Raw data is loaded into a raw_data table, capturing detailed information.
+Transformation (Silver/Gold Layer): A scheduled SQL query cleans the data, then groups and aggregates it into a summary table.
+Orchestration: A Databricks Job runs daily at a specified time using a Serverless SQL Warehouse to automatically execute the transformation tasks.
+Presentation: Built-in Databricks SQL visualisations connect directly to the transformed tables to display real-time charts.
+Deliverables
+A fully configured database schema.
+Automated SQL transformation scripts for data cleaning and aggregation.
+Advanced analytical queries using Window Functions and Conditional Aggregation.
+A native Databricks bar chart visualisation for tracking data trends.
+A scheduled, automated Databricks Job pipeline ensuring zero-touch daily data refreshes.
+Tech Stack
+Databricks (Enterprise Trial Edition)
+Databricks Serverless SQL Warehouses (Compute Engine)
+Databricks Workflows / Jobs (Pipeline Orchestration)
+Standard & Advanced SQL (Data Definition, Data Manipulation, Window Functions)
+Business Impact
+By automating the transformation of raw data into clean, visual dashboards, business owners can instantly see which specific data points are generating the highest insights and in which areas. The automated data checks quickly highlight potential issues by comparing successful data points against at-risk data. This continuous, automated pipeline removes the need for manual daily updates, enabling stakeholders to make proactive, data-driven decisions. Demo Video

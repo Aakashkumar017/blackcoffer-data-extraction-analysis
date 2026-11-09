@@ -1,0 +1,26 @@
+Chemical engineering AI Tools & AI Software
+​Artificial intelligence (AI) is revolutionizing chemical engineering by enhancing process optimization, predictive maintenance, and molecular design. Below is a curated list of AI tools and software commonly utilized in the field:​ Beam AI+3DEV Community+3Valispace+3
+1. Molecular Modeling and Simulation:
+ACD/Labs: Utilizes AI to predict chemical properties, aiding in understanding chemical behavior under various conditions.​ Chemojo
+ChemDraw: Incorporates AI techniques to assist in chemical structure drawing and property prediction.​
+ChemAxon: Employs AI for cheminformatics solutions, including chemical property predictions and database management.​
+2. Process Simulation and Optimization:
+Aspen Plus: Integrates AI to model and optimize chemical processes, enhancing efficiency and reducing costs.​
+gPROMS: Uses AI for process modeling and optimization, facilitating advanced process analysis.​
+COMSOL Multiphysics: Incorporates AI to simulate and optimize chemical engineering processes across multiple physics domains.​
+3. Data Analysis and Machine Learning Platforms:
+MATLAB: Offers AI toolboxes for data analysis, modeling, and simulation in chemical engineering applications.​
+Python with SciPy and scikit-learn: Provides open-source libraries for machine learning and data analysis, widely used in chemical engineering research.​ GitHub
+4. Process Monitoring and Control:
+Siemens SIMATIC PCS 7: Utilizes AI for process control systems, improving automation and operational efficiency.​
+Honeywell Experion PKS: Incorporates AI to enhance process monitoring and control in chemical plants.​
+5. Specialized AI Tools:
+Chemist-X: An AI agent that automates reaction condition recommendations in chemical synthesis using retrieval-augmented generation technology. ​ arXiv+1arXiv+1
+Distillation Gym: A reinforcement learning environment where AI agents design distillation trains, aiding in process synthesis. ​ arXiv
+These tools exemplify the integration of AI in chemical engineering, fostering advancements in process efficiency, safety, and innovation.​
+Recent Developments in AI for Chemical Engineering
+Financial Times
+Pollution-busters look to AI for better speed and accuracy
+3 days ago The VergeGoogle AI scientists win Nobel Prize in chemistry165 days ago Financial TimesGoogle DeepMind’s Demis Hassabis on his Nobel Prize: ‘It feels like a watershed moment for AI’154 days ago
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

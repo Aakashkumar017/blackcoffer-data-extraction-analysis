@@ -1,0 +1,116 @@
+List of automation tools categorized by their use case
+Here’s a comprehensive list of automation tools categorized by their use case:
+1. Workflow Automation Tools
+Zapier – Connects apps and automates workflows with no-code.
+Make (Integromat) – Advanced workflow automation with deep integrations.
+n8n – Open-source workflow automation platform.
+Pipedream – Developer-focused automation with serverless execution.
+Retool – Builds internal tools with automation capabilities.
+Automate.io – Simple no-code workflow automation.
+Workato – Enterprise-grade workflow automation.
+Tray.io – Low-code automation for complex workflows.
+Parabola – Visual data automation tool.
+2. Robotic Process Automation (RPA)
+UiPath – Leading RPA tool with AI-powered automation.
+Automation Anywhere – RPA with cloud-native capabilities.
+Blue Prism – Enterprise-grade RPA platform.
+Microsoft Power Automate – RPA and workflow automation within Microsoft ecosystem.
+Kofax RPA – Intelligent automation with cognitive capabilities.
+WorkFusion – AI-powered RPA for business automation.
+NICE RPA – Automation for customer service and back-office processes.
+3. Cloud & IT Automation
+Ansible – Open-source IT automation and configuration management.
+Terraform – Infrastructure as code (IaC) for cloud provisioning.
+Puppet – IT automation for system management.
+Chef – Configuration management and automation tool.
+SaltStack – IT orchestration and configuration management.
+AWS Lambda – Serverless automation for AWS cloud applications.
+Google Cloud Workflows – Orchestrates cloud and API-based automation.
+Azure Logic Apps – Automates workflows in Microsoft Azure.
+4. Data Automation & Integration
+Apache Airflow – Workflow orchestration for data pipelines.
+MindsDB – Automates machine learning workflows.
+Google Cloud Dataflow – Managed stream and batch data processing.
+AWS Glue – Serverless data integration and ETL.
+Talend – Data integration and automation.
+Fivetran – Automated data integration pipelines.
+Stitch – Simple ETL tool for moving data to warehouses.
+Keboola – Data automation and pipeline orchestration.
+5. DevOps & CI/CD Automation
+Jenkins – Open-source CI/CD tool.
+GitHub Actions – Automates software development workflows.
+GitLab CI/CD – Integrated DevOps automation.
+CircleCI – Continuous integration and delivery.
+Travis CI – CI/CD tool for software automation.
+Argo CD – Kubernetes-native GitOps automation.
+Spinnaker – Continuous deployment automation.
+Bitbucket Pipelines – CI/CD for Bitbucket repositories.
+6. Marketing & Sales Automation
+HubSpot – CRM with marketing and sales automation.
+Salesforce Pardot – B2B marketing automation.
+Marketo – AI-driven marketing automation.
+Mailchimp – Email marketing automation.
+ActiveCampaign – Customer experience automation.
+Klaviyo – E-commerce marketing automation.
+GoHighLevel – Sales funnel and CRM automation.
+SharpSpring – Sales and marketing automation.
+7. AI & Chatbot Automation
+ChatGPT API – AI-powered chatbot automation.
+Dialogflow – Conversational AI automation by Google.
+Rasa – Open-source chatbot automation.
+Botpress – AI-powered chatbot development.
+ManyChat – Facebook Messenger and Instagram automation.
+Drift – AI-driven sales chat automation.
+Tidio – Automated chatbot for customer support.
+Landbot – No-code chatbot automation.
+8. Customer Support Automation
+Zendesk – AI-powered helpdesk automation.
+Freshdesk – Omnichannel customer support automation.
+Intercom – AI-powered customer messaging automation.
+LiveAgent – Ticketing and chatbot automation.
+Kustomer – CRM and AI-based support automation.
+Help Scout – Email-based customer service automation.
+Zoho Desk – Automated customer support solutions.
+9. Security & Compliance Automation
+IBM QRadar – Security automation and threat intelligence.
+Splunk Phantom – SOAR (Security Orchestration, Automation, and Response).
+Palo Alto Cortex XSOAR – Security automation platform.
+Tines – Security operations workflow automation.
+Anomali – Threat intelligence automation.
+Siemplify – Security orchestration platform.
+10. AI/ML & Predictive Automation
+H2O.ai – Automated machine learning (AutoML).
+DataRobot – AI-powered predictive automation.
+AutoGluon – Open-source AutoML framework.
+Dify – AI-driven system flow automation.
+MLflow – Machine learning lifecycle automation.
+Google Vertex AI – End-to-end ML automation.
+Amazon SageMaker – Managed AI/ML automation.
+Azure Machine Learning – ML model training and deployment automation.
+11. Document & PDF Automation
+Adobe Acrobat API – PDF automation.
+DocuSign – Electronic signature automation.
+PandaDoc – Automated document generation and signing.
+SignNow – E-signature and workflow automation.
+HelloSign – Contract and document automation.
+Tungsten Network – Invoice and document automation.
+12. HR & Recruitment Automation
+BambooHR – HR process automation.
+Workday – HR, payroll, and workforce automation.
+Greenhouse – AI-driven recruitment automation.
+Lever – CRM-based recruiting automation.
+iCIMS – Hiring and onboarding automation.
+13. E-commerce & Inventory Automation
+Shopify Flow – E-commerce workflow automation.
+BigCommerce Automations – Automates store operations.
+SkuVault – Inventory automation.
+Zoho Inventory – Automated stock management.
+Brightpearl – Retail automation platform.
+14. Voice & Virtual Assistant Automation
+Amazon Alexa Skills Kit – Voice assistant automation.
+Google Assistant SDK – AI-driven voice automation.
+Microsoft Cortana – AI-powered virtual assistant.
+Snips.ai – On-device voice automation.
+This list covers a wide range of automation tools used across industries and applications. Let me know if you need a breakdown for a specific category! 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

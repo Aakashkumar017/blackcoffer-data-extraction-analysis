@@ -1,0 +1,75 @@
+List of Industrial Engineering AI Tools & AI Software, categorized by function
+Here’s a comprehensive list of Industrial Engineering AI Tools & AI Software , categorized by function:
+1. Predictive Maintenance & Asset Management
+AI tools for monitoring equipment health, predicting failures, and optimizing maintenance schedules.
+IBM Maximo – AI-powered enterprise asset management (EAM) system.
+Uptake – Predictive maintenance and industrial IoT analytics.
+Augury – AI-driven machine diagnostics and predictive maintenance.
+Senseye PdM – Predictive maintenance using AI and machine learning.
+GE Digital APM (Asset Performance Management) – Industrial AI for reliability and maintenance.
+2. Manufacturing & Process Optimization
+AI-driven tools for real-time process control, defect detection, and efficiency improvements.
+Siemens MindSphere – IoT and AI-powered industrial analytics platform.
+ThingWorx (PTC) – Industrial AI and IoT platform for smart manufacturing.
+Falkonry LRS – AI-based real-time pattern recognition for manufacturing.
+Peltarion – AI platform for process optimization in industrial applications.
+SparkCognition Manufacturing AI – AI-driven quality control and production optimization.
+3. Supply Chain & Logistics Optimization
+AI-based solutions for demand forecasting, inventory management, and route optimization.
+o9 Solutions – AI-powered supply chain management.
+Llamasoft (Coupa) – AI-driven supply chain analytics and optimization.
+ClearMetal (Project44) – AI-powered supply chain visibility.
+Kinaxis RapidResponse – AI-driven demand and supply planning.
+Blue Yonder (JDA) – AI-based supply chain optimization.
+4. Quality Control & Defect Detection
+AI-based vision and analytics for product inspection and quality assurance.
+Landing AI – Computer vision for industrial quality control.
+Neurala VIA – AI-powered visual inspection for manufacturing.
+Instrumental – AI-based defect detection for electronics manufacturing.
+Qualcomm Vision Intelligence – AI vision for automated quality control.
+DeepVision AI – AI-based quality assurance and defect detection.
+5. Robotics & Automation
+AI-driven robotics solutions for industrial automation.
+ABB RobotStudio – AI-powered industrial robot simulation and programming.
+Boston Dynamics Spot – AI-driven autonomous robotics for industrial use.
+Covariant AI – AI-powered warehouse robotics and automation.
+Realtime Robotics – AI-based motion planning for industrial robots.
+Rethink Robotics Sawyer – AI-driven collaborative robot (cobot).
+6. Energy Efficiency & Sustainability
+AI solutions for optimizing energy consumption and sustainability in industrial settings.
+Schneider Electric EcoStruxure – AI-based energy and automation solutions.
+Grid Edge – AI-driven energy management for industrial facilities.
+AutoGrid – AI-powered energy forecasting and optimization.
+Verdigris – AI-driven energy analytics for industrial buildings.
+Enertiv – AI-powered energy monitoring for industrial operations.
+7. Industrial IoT & Digital Twins
+AI-powered digital twins and IoT platforms for industrial process simulation.
+Microsoft Azure Digital Twins – AI-driven digital twin platform.
+GE Digital Predix – Industrial IoT and AI-driven digital twin solutions.
+PTC ThingWorx Digital Twin – AI-powered industrial digital twin.
+Siemens Digital Industries Software – AI-powered digital twin and process simulation.
+Ansys Twin Builder – AI-based industrial digital twin simulations.
+8. AI-Driven Safety & Risk Management
+AI tools for workplace safety, risk prediction, and hazard prevention.
+StrongArm Technologies – AI-driven worker safety monitoring.
+Intenseye – AI-powered workplace safety and compliance monitoring.
+Everguard AI – AI-based worker safety and hazard detection.
+Protex AI – AI-powered industrial safety compliance system.
+Foresight AI – AI-based risk and hazard prediction in industrial environments.
+9. AI-Based Industrial Data Analytics
+Advanced AI tools for real-time industrial analytics and business intelligence.
+Splunk Industrial Asset Intelligence – AI-driven data analytics for industrial environments.
+Seeq – AI-powered time-series analytics for industrial processes.
+TrendMiner – Self-service AI analytics for industrial operations.
+C3 AI Suite – AI-powered analytics for industrial data.
+Palantir Foundry – AI-driven industrial data integration and analytics.
+10. AI for Industrial Design & Engineering
+AI tools for design, prototyping, and industrial engineering simulations.
+Autodesk Fusion 360 – AI-driven generative design for industrial engineering.
+ANSYS AI-based Simulation – AI-driven engineering simulations.
+Dassault Systèmes CATIA – AI-powered design and engineering software.
+PTC Creo Generative Design – AI-based industrial product design.
+NVIDIA Omniverse – AI-powered 3D industrial design collaboration.
+Would you like me to focus on any specific category in more detail? 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

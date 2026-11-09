@@ -1,0 +1,55 @@
+Amazon Bedrock – AI Interview Preparation Assistant
+The Problem
+Preparing for technical interviews requires candidates to practice coding questions, HR questions, create professional cover letters, and follow structured learning plans. Most students rely on multiple websites and resources, making the preparation process time-consuming and inefficient. There is a need for a single AI-powered platform that can assist users throughout their interview preparation journey.
+Our Solution
+To understand the capabilities of Amazon Bedrock, we developed a simple Proof of Concept (PoC) called AI Interview Preparation Assistant . The application integrates Amazon Bedrock using the Amazon Nova Lite foundation model to provide AI-generated responses for interview preparation.
+The application allows users to ask interview-related questions, generate interview questions, create professional cover letters, and receive personalized learning roadmaps through an easy-to-use web interface.
+Solution Architecture
+User
+│
+▼
+React Frontend (UI)
+│
+▼
+Node.js + Express Backend
+│
+▼
+Amazon Bedrock Runtime API
+│
+▼
+Amazon Nova Lite Model
+│
+▼
+AI Generated Response
+Deliverables
+AI Interview Preparation Web Application
+Amazon Bedrock Integration
+AI Chat Feature
+Interview Question Generator
+Cover Letter Generator
+Learning Roadmap Generator
+Source Code
+Project Documentation
+POC Success Story
+Demo Video
+GitHub Repository
+Tech Stack
+Frontend
+React.js
+Vite
+Tailwind CSS
+Backend
+Node.js
+Express.js
+AI Platform
+Amazon Bedrock
+Amazon Nova Lite
+AWS Services
+AWS IAM
+Amazon Bedrock Runtime API
+Development Tools
+Visual Studio Code
+Git
+GitHub
+Business Impact
+This Proof of Concept demonstrates how Amazon Bedrock can simplify interview preparation using Generative AI. Educational platforms, training institutes, and recruitment companies can use similar solutions to automate interview practice, provide AI-generated learning guidance, and improve candidate readiness. The solution reduces manual effort, delivers instant assistance, and offers a scalable approach to AI-powered career preparation.

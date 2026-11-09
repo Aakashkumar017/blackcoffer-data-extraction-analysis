@@ -1,0 +1,27 @@
+Voice-to-Voice AI Chatbot using LiveKit
+Modern applications require real-time, natural communication interfaces, but face challenges such as:
+Lack of seamless voice interaction systems
+High latency in real-time conversational AI
+Limited support for multi-modal interaction (voice + text)
+Difficulty in scaling real-time communication systems
+Poor user experience due to disconnected STT–LLM–TTS pipelines
+There is a need for a low-latency, scalable, and interactive voice-enabled chatbot system .
+We developed a real-time Voice-to-Voice Chatbot using LiveKit that:
+Enables natural voice conversations with AI
+Supports text input as fallback or alternative
+Uses low-latency streaming for real-time responses
+Integrates STT → LLM → TTS into a seamless pipeline
+The system provides a human-like conversational experience across both voice and text interfaces.
+Real-time Voice-to-Voice Chatbot Prototype
+Multi-modal Interaction (Voice + Text)
+Low-latency Streaming Pipeline
+Integrated STT–LLM–TTS Workflow
+LiveKit framework
+LLM: llama3.2 model using ollama
+STT: deepgram/nova-3
+TTS: cartesia/sonic-3
+Natural, human-like conversations
+Real-time responses with minimal latency
+Seamless switching between voice and text
+Suitable for customer support, assistants, and bots
+Reduces response time significantly

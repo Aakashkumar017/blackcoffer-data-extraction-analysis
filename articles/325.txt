@@ -1,0 +1,166 @@
+Document OCR MCP Server — AI-Powered Identity Document Extraction for Indian KYC
+The Problem
+Organizations across India in banking, fintech, insurance, healthcare, and government sectors face significant challenges in processing KYC (Know Your Customer) documents. Identity verification workflows involving Aadhaar Cards, PAN Cards, Passports, and Driving Licenses often rely on manual review and data entry by human operators.
+This traditional approach is:
+Slow: Even trained operators require several minutes to process a single document.
+Error-Prone: Manual data entry introduces transcription errors that can lead to compliance and operational issues.
+Expensive: High-volume organizations require large verification teams operating continuously.
+Inconsistent: Output quality varies depending on operator skill, experience, and fatigue.
+Privacy-Risky: Sensitive Personally Identifiable Information (PII) such as Aadhaar numbers, PAN numbers, and Passport details pass through multiple human touchpoints, increasing regulatory and security risks.
+With millions of KYC verifications conducted every month across India, the absence of an intelligent, automated, and privacy-focused extraction solution creates a significant operational bottleneck.
+Our Solution
+To address these challenges, we developed the Document OCR MCP Server, a fully local, AI-powered OCR platform exposed through the Model Context Protocol (MCP). The solution integrates seamlessly with Claude Desktop and any MCP-compatible AI client, enabling conversational AI systems to extract structured information directly from identity documents.
+The platform performs all processing locally on the user’s machine, ensuring that sensitive information never leaves the device.
+Users can simply provide a natural language request such as:
+“Extract all fields from my Aadhaar card located at C:/scans/aadhaar.jpg”
+The system automatically:
+Preprocesses the image using adaptive OpenCV techniques including noise reduction, deskewing, and binarization.
+Executes multi-engine OCR using Tesseract and EasyOCR to maximize extraction accuracy.
+Applies document-specific parsing and validation logic.
+Structures the extracted data using Pydantic models.
+Masks sensitive PII by default before returning results.
+Solution Architecture
+1. Entry Point Layer – FastMCP Server
+The FastMCP server acts as the entry point for all OCR operations.
+Key Capabilities:
+Registers six MCP-compatible tools.
+Accepts image paths and privacy settings.
+Returns validated structured JSON responses.
+Enables natural language invocation through Claude Desktop.
+2. Tool Layer (Document Extractors)
+Each supported document type is handled by a dedicated extraction module.
+Aadhaar Extractor
+aadhaar.py
+Name
+Date of Birth
+Gender
+Masked Aadhaar Number
+Address
+Pincode
+PAN Card Extractor
+pan_card.py
+Name
+Father’s Name
+Date of Birth
+Masked PAN Number
+Passport Extractor
+passport.py
+Full biodata extraction
+Machine Readable Zone (MRZ) parsing
+Enhanced accuracy through MRZ validation
+Driving License Extractor
+driving_license.py
+Name
+Date of Birth
+Driving License Number
+Validity Dates
+Vehicle Classes
+Issuing State
+Generic OCR Extractor
+generic_ocr.py
+Automatic document detection
+Raw text extraction
+Key-value pair extraction
+Support for unknown document formats
+3. Utilities Layer
+Image Processing
+image_preprocess.py
+Adaptive OpenCV preprocessing
+Standard processing mode
+Aggressive fallback mode for poor-quality images
+Validation Engine
+validators.py
+Pydantic v2 schemas
+Strong type validation
+Structured outputs for every document type
+Privacy Engine
+privacy.py
+Aadhaar masking: XXXX XXXX 1234
+PAN masking: AB*****4F
+MRZ redaction
+Privacy-first output generation
+4. Integration Layer
+The OCR MCP Server is integrated into Claude Desktop through the claude_desktop_config.json configuration.
+Benefits:
+Automatic startup with Claude Desktop.
+No manual configuration after installation.
+Transparent tool availability through natural language commands.
+Deliverables
+Core Deliverables
+Fully functional MCP Server with six OCR tools.
+Claude Desktop integration.
+Five specialized document extraction modules.
+OCR Capabilities
+Aadhaar extraction.
+PAN Card extraction.
+Passport extraction with MRZ support.
+Driving License extraction.
+Generic document auto-detection.
+AI & Processing Features
+Dual-engine OCR architecture: Tesseract OCR (Primary) EasyOCR (Fallback)
+Tesseract OCR (Primary)
+EasyOCR (Fallback)
+Adaptive image preprocessing pipeline.
+High-accuracy passport MRZ parsing.
+Multi-language OCR support: English Hindi Tamil
+English
+Hindi
+Tamil
+Security & Privacy
+Privacy-first PII masking.
+Configurable full-data access via authorization flag.
+Zero cloud dependency.
+No API keys required.
+Complete local execution.
+Development Assets
+Production-ready project structure.
+pyproject.toml configuration.
+requirements.txt dependencies.
+Comprehensive README documentation.
+Installation and setup guides.
+Technology Stack
+Business Impact
+Banking & Fintech
+Automated KYC verification reduces document processing time from 3–5 minutes per document to under 5 seconds.
+Benefits:
+Faster customer onboarding.
+Reduced operational costs.
+Lower customer drop-off rates.
+Improved compliance accuracy.
+Insurance
+Automated extraction during policy issuance and claims processing eliminates manual data-entry bottlenecks.
+Benefits:
+Faster claim handling.
+Reduced turnaround time.
+Improved operational efficiency.
+Healthcare & Hospitals
+Patient registration workflows can automatically extract identity information from Aadhaar Cards and Driving Licenses.
+Benefits:
+Reduced front-desk queues.
+Fewer transcription errors.
+Faster patient onboarding.
+Government & Public Services
+High-volume citizen services can process identity documents significantly faster.
+Use Cases:
+Welfare schemes.
+Voter registration.
+Public service enrollment.
+Citizen identity verification.
+Privacy & Regulatory Compliance
+The solution is designed around a privacy-first architecture.
+Key Advantages:
+100% local processing.
+No external data transmission.
+No cloud dependencies.
+Default PII masking.
+Reduced regulatory exposure.
+The design aligns closely with the requirements and objectives of India’s Digital Personal Data Protection (DPDP) Act, 2023.
+Scalability & Future Adoption
+Because the solution is built as an MCP server, it can be reused across future AI ecosystems.
+Potential integrations include:
+Enterprise AI copilots.
+Workflow automation platforms.
+Agentic AI systems.
+Customer onboarding solutions.
+Internal enterprise assistants.
+This transforms the OCR engine from a standalone solution into a reusable AI infrastructure component that can scale across multiple industries and use cases. Demo Video

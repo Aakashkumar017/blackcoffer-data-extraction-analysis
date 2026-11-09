@@ -1,0 +1,55 @@
+Unified Automation System for Google LSA & Lead Docket: Real-Time Legal Ad Performance Management
+Client: A leading legal firm in the USA
+Industry Type: Legal
+Products & Services: Legal services
+Organization Size: 120+
+Managing and optimizing Local Services Ads (LSAs) for multiple law firms requires real-time performance tracking, precise cost management, and seamless integration with lead management systems like Lead Docket. The absence of automated syncing between ad performance data and lead tracking often leads to inefficiencies, inaccurate reporting, delayed insights, and suboptimal ad spend.
+We developed an end-to-end automation tool that fetches performance data from Google Local Services Ads and synchronizes it with Lead Docket data. This tool processes, cleans, and stores the data in Google BigQuery and powers a Looker Studio dashboard to provide real-time, interactive performance reports. Additionally, it supports automated bid adjustments, ad content updates, and ad pausing logic based on service availability, ensuring optimal ad spend and inventory alignment.
+Authentication Layer Google OAuth 2.0 for secure access to APIs Google Service Account for BigQuery operations
+Google OAuth 2.0 for secure access to APIs
+Google Service Account for BigQuery operations
+Data Extraction Modules LSA_main() to retrieve reports from LSA API Getting_LSA_dataframe() to process account-specific reports Integration with Lead Docket API for lead data
+LSA_main() to retrieve reports from LSA API
+Getting_LSA_dataframe() to process account-specific reports
+Integration with Lead Docket API for lead data
+Preprocessing Layer Data_preprocessing() handles cleaning, renaming, handling nulls, and computing KPIs like Missed Calls, Avg CPL
+Data_preprocessing() handles cleaning, renaming, handling nulls, and computing KPIs like Missed Calls, Avg CPL
+Storage Layer Google BigQuery for storing processed data Dynamic table creation via BigQueryTableCreation() Data loading through TobigQuery()
+Google BigQuery for storing processed data
+Dynamic table creation via BigQueryTableCreation()
+Data loading through TobigQuery()
+Reporting Layer Looker Studio dashboard visualizing real-time KPIs from both LSA and Lead Docket sources
+Looker Studio dashboard visualizing real-time KPIs from both LSA and Lead Docket sources
+Automation Layer Backend script runs daily to update ad data and adjust campaigns Automatic bid adjustments, pausing of ads for unavailable services
+Backend script runs daily to update ad data and adjust campaigns
+Automatic bid adjustments, pausing of ads for unavailable services
+Fully automated backend data pipeline for LSA and Lead Docket data
+BigQuery database with structured, cleaned tables
+Looker Studio dashboard with combined metrics
+Secure access control for internal use only
+Daily synchronization script for ad performance and lead data
+Tools used
+Google Cloud Platform (BigQuery, OAuth 2.0, IAM)
+Looker Studio (for reporting)
+Lead Docket API
+Google Local Services Ads API
+Language/techniques used
+Python (requests, pandas, numpy, json, datetime, pytz)
+SQL (BigQuery SQL for transformations)
+RESTful APIs for data fetch and interaction
+Skills used
+Data engineering and pipeline development
+API integration
+Data visualization and dashboarding
+Secure authentication and access control
+Automation and scheduling
+Discrepancies in API Data : Pending leads that should be credited still appeared as pending.
+Timezone Inconsistencies : Data inconsistencies due to differences in server and local time zones.
+Schema Variability : Dynamic API response structures required flexible data handling.
+Access Control : Ensuring only authorized personnel had access to sensitive campaign data.
+Pending Lead Discrepancy : Implemented logic to flag and cross-verify pending leads against business rules to estimate missing credits.
+Timezone Issues : Utilized pytz and server-local normalization to ensure consistent datetime formatting.
+Flexible Schema Handling : Used dynamic dataframe creation and validation checks to adapt to changing API structures.
+Secure Access : Integrated OAuth 2.0 with scoped permissions and service account keys to enforce access control policies.
+image 1: complete report
+image 2 : data from lead docket

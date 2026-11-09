@@ -1,0 +1,22 @@
+Automated GitHub Repository Data Pipeline using Airbyte and Google Sheets
+The Problem
+Developers and engineering managers have no easy way to automatically track and monitor their GitHub repository data such as branches, assignees, and repository details in real time. Manually checking GitHub and copying data into spreadsheets is time-consuming, error-prone, and not scalable. There is no automated pipeline that keeps repository data always up to date without any manual effort.
+Our Solution
+We built an automated data pipeline using Airbyte Cloud that connects GitHub as a source and Google Sheets as a destination. The pipeline automatically syncs repository data every 24 hours — pulling branches, assignees, and repository details directly from GitHub into a structured Google Sheet. Zero manual effort required after setup. The pipeline ran successfully and synced real data from the Nitin-lohumi/AI_chatBot GitHub repository.
+Solution Architecture
+Airbyte Cloud connection configured → GitHub selected as source with Nitin-lohumi/AI_chatBot repository → Google Sheets selected as destination → Three streams selected — repositories, branches, assignees → Schedule set to every 24 hours → First sync triggered manually → Data automatically loaded into separate tabs in Google Sheets.
+Deliverables
+Working Airbyte Cloud connection between GitHub and Google Sheets
+Automated daily sync pipeline running every 24 hours
+Google Sheet with three structured tabs — repositories, branches, and assignees
+Real data synced from Nitin-lohumi/AI_chatBot GitHub repository
+Fully configured no-code data pipeline with zero manual effort after setup
+Tech Stack
+Airbyte Cloud (Data Integration Platform)
+GitHub (Data Source — REST API via Airbyte connector)
+Google Sheets (Data Destination)
+Airbyte GitHub Connector (Source)
+Airbyte Google Sheets Connector (Destination)
+Business Impact
+Engineering teams can use this pipeline to automatically monitor their GitHub repositories — tracking branch activity, contributor assignments, and repository growth without any manual effort. HR and project management teams can track developer activity and contributions automatically every day. Startups and product companies can use this to create live dashboards from their GitHub data in Google Sheets for reporting to stakeholders. Open source project maintainers can track contributors and branches across multiple repositories automatically. Any organization that uses GitHub can replace manual data tracking with this automated pipeline saving hours of work every
+week and ensuring data is always fresh and accurate.

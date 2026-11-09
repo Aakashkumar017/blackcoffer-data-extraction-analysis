@@ -1,0 +1,24 @@
+AI-Powered Telegram Bot with Ollama Phi-3 Mini Integration
+Businesses often struggle to quickly prototype conversational AI solutions that integrate with messaging platforms. Traditional setups require complex infrastructure, heavy cloud dependencies, and long development cycles. For proof-of-concept (POC) work, teams need a lightweight, local, and secure way to demonstrate AI chatbot capabilities without incurring high costs or delays.
+We built a demo chatbot that connects Telegram with the Groq API running LLaMA-3 models . The bot receives user messages, forwards them to Groq’s hosted LLM, and replies instantly. This setup eliminates local runtime complexity, leverages Groq’s high-performance inference, and provides a secure sandbox for experimenting with AI-driven conversations.
+.
+Telegram Bot API → Handles incoming user messages.
+Grammy Framework → Provides bot orchestration and message routing.
+Groq API → Hosts LLaMA-3 models, exposing an OpenAI-compatible API
+Node.js + dotenv → Manages environment variables and bot lifecycle.
+Integration Layer → Connects Telegram input/output with Ollama responses.
+A working Telegram bot demo integrated with Ollama Phi-3 Mini.
+Source code (index.js, .env, and dependencies).
+Documentation for setup and execution.
+Screenshots of bot interactions.
+A short demo video explaining the workflow.
+Node.js
+Grammy (Telegram bot framework)
+Groq API (cloud LLM runtime)
+dotenv (environment management)
+Git Bash / PowerShell (CLI workflow)
+Rapid Prototyping : Enables teams to showcase AI chatbot capabilities in hours, not weeks.
+Cost Efficiency : Runs locally, avoiding expensive cloud compute.
+Security : Keeps sensitive data on-premises.
+Scalability Potential : Demonstrates how lightweight models can be extended to enterprise workflows.
+Innovation Catalyst : Helps businesses explore conversational AI use cases (customer support, internal tools, knowledge assistants).

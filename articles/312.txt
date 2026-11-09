@@ -1,0 +1,34 @@
+AI-Powered Sales Support Agent using Retell AI
+Customer support teams frequently handle repetitive queries related to order tracking, such as:
+“What is my order status?”
+“What is the transaction ID?”
+“When will my order be delivered?”
+These queries:
+Consume significant agent time
+Increase operational costs
+Lead to delays during peak hours
+Depend heavily on manual lookup in CRM/Excel systems
+We developed an AI-powered Sales Support Voice Agent using Retell AI that automates order-related queries.
+Customers simply provide their Order ID via voice
+The AI agent retrieves: Order Status Transaction ID Expected Delivery Date
+Order Status
+Transaction ID
+Expected Delivery Date
+Responds instantly with accurate information
+The solution eliminates manual intervention and ensures 24/7 availability.
+Fully functional AI Voice Agent (Retell AI)
+Custom Tool Calling Integration
+Make.com Automated Workflow
+Structured Excel Data Source
+Documentation of architecture & workflow
+Demo showcasing real-time interaction
+Conversational AI : Retell AI
+Automation Platform : Make.com
+Integration : Webhooks (Custom Tool Call)
+Data Source : Excel
+Backend Logic : Workflow-based (No-code automation)
+Instant Query Resolution: Reduced response time from minutes to seconds
+Reduced Support Load: Automated repetitive queries
+Cost Efficiency: Lower dependency on human agents
+Improved Customer Experience: Faster, accurate, and 24/7 support
+Scalability: Easily extendable to CRM and multi-use cases

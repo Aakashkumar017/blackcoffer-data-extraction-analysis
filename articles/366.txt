@@ -1,0 +1,48 @@
+AI Radiology Software
+Client: A Medical & Research firm in Spain
+Industry Type: Medical and Research
+Products & Services: Medical treatment and consultancy
+Organization Size: 200+
+Radiologists routinely dictate findings and then manually transcribe, structure, and integrate these observations into standardized report templates. This process is time-consuming, prone to transcription errors, and can lead to inconsistent formatting. Additionally, evolving report standards and regulatory requirements around patient data privacy introduce further complexity. Without seamless integration of dictation, templating, and compliance checks, radiology departments face workflow bottlenecks, delayed reports, and increased administrative burden.
+Develop a secure, AI-powered web application that streamlines the entire report-generation workflow:
+Secure Login System Two-factor authentication and role-based access ensure only authorized users can view or edit patient reports.
+Two-factor authentication and role-based access ensure only authorized users can view or edit patient reports.
+Speech Recognition Integration Leverage a high-accuracy API (e.g., Whisper) to convert radiologist dictation into text in real time.
+Leverage a high-accuracy API (e.g., Whisper) to convert radiologist dictation into text in real time.
+AI-Powered Template Integration Automatically map transcribed findings into predefined report templates, ensuring consistency in structure and terminology.
+Automatically map transcribed findings into predefined report templates, ensuring consistency in structure and terminology.
+Interactive Text Editor Provide an embedded rich-text editor for radiologists to review, correct, and annotate the AI-generated draft before final sign-off.
+Provide an embedded rich-text editor for radiologists to review, correct, and annotate the AI-generated draft before final sign-off.
+Continuous Learning Loop Capture user edits and feedback to retrain and fine-tune the AI model, improving transcription accuracy and template mapping over time.
+Capture user edits and feedback to retrain and fine-tune the AI model, improving transcription accuracy and template mapping over time.
+Regulatory Compliance Implement end-to-end encryption, audit logs, and data handling practices aligned with HIPAA (or relevant local regulations) to safeguard patient information.
+Implement end-to-end encryption, audit logs, and data handling practices aligned with HIPAA (or relevant local regulations) to safeguard patient information.
+Web Application
+Source code
+documentations
+Support and feature enhancement
+Tools used
+Frontend: React.js
+Language/techniques used
+Python (Django), Nodejs
+Models used
+Python (AI Models), Node.js (User management Models)
+Skills used
+Python, Node.js, React.js, UI/UX Designing
+Databases used
+MongoDB
+Web Cloud Servers used
+Server: GCP – A VM (8 GB) for frontend, backend and database deployments
+One of the main technical challenges in this project is formatting the transcribed content and identifying the key medical findings. Users typically upload audio recordings describing health issues, which are then converted into text using speech-to-text technology. However, the difficult part is not just transcribing the audio—it’s pulling out the important details (like key findings and parameters) and organizing them into a structured format. This structured data needs to match specific placeholders on the frontend so the final report is clear, well-organized, and easy to read.
+We solved the challenge by using OpenAI’s language models. After converting the audio to text, we sent that text to the GPT model along with a specific prompt asking it to find the key medical details and return them in a structured JSON format. This structured output made it easy to organize the information and fill the correct fields in the report on the frontend, ensuring everything is properly formatted.
+The implementation of this AI-powered web application significantly improves operational efficiency in radiology reporting, directly translating into measurable business benefits:
+1. Increased Productivity
+By automating transcription and structuring of medical reports, radiologists spend less time on documentation and more on patient care. This leads to faster report turnaround times and the ability to handle more cases per day—boosting overall output without increasing workforce costs.
+2. Reduced Operational Costs
+Eliminating the need for manual transcription services and minimizing human error reduces rework and administrative overhead. Hospitals and imaging centres can cut down on outsourcing and correction costs, resulting in substantial savings.
+3. Improved Report Accuracy and Consistency
+Using AI to structure reports ensures standardized formatting and terminology, reducing variability between reports. This leads to better clinical decision-making and fewer legal or compliance risks, which can be costly if errors occur.
+4. Enhanced Patient Experience and Trust
+Faster and more accurate reporting means patients receive diagnoses quicker, improving satisfaction and outcomes. This can lead to stronger patient loyalty, better reviews, and increased referrals—ultimately driving more business.
+http://34.176.223.156/
+Video Link explaining the project- https://www.loom.com/share/e9f234620e6c451d85d3d4f5b74c31f3?sid=b26abc19-25e8-4c39-949a-e02e9fdf1200

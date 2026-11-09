@@ -1,0 +1,8 @@
+AI Desktop Automation Assistant using Groq LLM
+Modern workflows involve repetitive manual tasks such as opening applications, creating files, and executing commands. These tasks consume time and reduce productivity. Additionally, non-technical users find it difficult to automate such processes without scripting knowledge.
+We developed an AI-powered desktop automation assistant that converts natural language commands into structured actions using a Large Language Model (LLM). The system interprets user intent and executes system-level operations such as file creation and application launching using Python.
+User Input → FastAPI Backend → Groq LLM (Intent Parsing) → JSON Output → Action Executor → System Command Execution → Response
+– Working FastAPI-based backend API – Groq LLM integration for intent detection – Action execution module for system-level tasks – End-to-end automation pipeline – API testing via Swagger UI
+– Python – FastAPI – Groq LLM (LLaMA 3) – Uvicorn – OS & Subprocess libraries – dotenv
+This solution can significantly improve productivity by automating repetitive desktop tasks. It can be applied in enterprises for workflow automation, reducing manual effort and operational costs. It also enables non-technical users to interact with systems using natural language, improving accessibility and efficiency.
+1. Swagger UI Interface 2. API Execution Response 3. File Creation Output 4. Backend Code Structure 5. Command Execution Flow Demo Video

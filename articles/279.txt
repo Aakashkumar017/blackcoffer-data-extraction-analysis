@@ -1,0 +1,32 @@
+Weather MCP Server — Real-time Weather Data via Model Context Protocol
+Large Language Models (LLMs) like Claude are powerful reasoning engines, but they operate with a fundamental limitation — they are isolated from live, real-world data. When a user asks Claude about today’s weather, stock prices, or any other live information, Claude can only respond from its training data, which has a knowledge cutoff date.
+Specifically, the following pain points exist in standard LLM deployments:
+Claude has no access to real-time weather data from external APIs
+Users must manually look up weather and paste it into the chat — poor UX
+No standardized way for Claude Desktop to call external tools or APIs
+Developers had no simple framework to extend Claude with custom capabilities
+Enterprises cannot integrate proprietary data sources into Claude conversations
+This creates a significant gap between what Claude can know (static, trained knowledge) and what users actually need (live, contextual, real-world data).
+We built a Weather MCP Server — a lightweight Node.js service that implements Anthropic’s Model Context Protocol (MCP). This server acts as a bridge between Claude Desktop and the OpenWeatherMap API, giving Claude the ability to fetch live weather data on demand.
+The solution works as follows:
+A TypeScript-based MCP server exposes a get_weather tool to Claude Desktop
+Claude Desktop auto-starts the server via stdio transport (no manual startup needed)
+When a user asks about weather, Claude calls the tool with the city name
+The server fetches live data from OpenWeatherMap API and returns structured results
+Claude presents the weather data naturally in the conversation
+Key Differentiators:
+Zero manual steps — server starts automatically with Claude Desktop
+Type-safe implementation using TypeScript and Zod schema validation
+Clean separation of concerns — MCP handles communication, API handles data
+Easily extensible — new weather tools (forecast, alerts) can be added in minutes
+Production-ready logging and error handling built in
+The architecture follows a clean 3-layer design:
+Communication Flow:
+User types weather query → Claude Desktop receives it
+Claude identifies get_weather tool is needed → sends tools/call over stdio
+MCP server receives JSON-RPC message → extracts city parameter
+Server calls OpenWeatherMap REST API with city + API key
+API returns JSON → server formats and returns structured text
+Claude Desktop receives result → presents weather to user naturally
+Configuration
+The server is registered in claude_desktop_config.json and auto-launches on Claude Desktop startup. No manual intervention required after setup.

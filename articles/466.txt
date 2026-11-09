@@ -1,0 +1,117 @@
+List of programming languages, categorized based on their primary use cases
+Here’s a comprehensive list of programming languages, categorized based on their primary use cases:
+General-Purpose Programming Languages
+C
+C++
+Java
+Python
+JavaScript
+C#
+Go
+Rust
+Swift
+Kotlin
+Dart
+TypeScript
+PHP
+Ruby
+Objective-C
+Perl
+Lua
+Functional Programming Languages
+Haskell
+Lisp
+Scheme
+Clojure
+F#
+Elixir
+Erlang
+OCaml
+Racket
+Scripting Languages
+Bash
+PowerShell
+Groovy
+Tcl
+AWK
+Lua (also used for scripting)
+Web Development Languages
+HTML (markup language, but essential)
+CSS (styling language)
+JavaScript
+TypeScript
+PHP
+Ruby
+ASP.NET (C# based)
+Database Query Languages
+SQL
+PL/SQL (Oracle)
+T-SQL (Microsoft SQL Server)
+GraphQL
+XQuery
+Scientific and Data Analysis Languages
+R
+MATLAB
+Julia
+Wolfram Language (Mathematica)
+SAS
+Embedded and Systems Programming Languages
+C
+C++
+Rust
+Assembly (various architectures)
+VHDL
+Verilog
+Game Development Languages
+C++
+C# (Unity)
+Lua (game scripting)
+Python (Pygame)
+GDScript (Godot Engine)
+Mobile Development Languages
+Swift (iOS)
+Kotlin (Android)
+Java (Android)
+Dart (Flutter)
+Low-Level and Hardware-Oriented Languages
+Assembly (x86, ARM, RISC-V, etc.)
+VHDL
+Verilog
+Forth
+Concurrency and Parallel Computing Languages
+Erlang
+Elixir
+Chapel
+X10
+Artificial Intelligence and Machine Learning Languages
+Python (TensorFlow, PyTorch, Scikit-learn)
+R
+Lisp (historically used in AI)
+Prolog
+Blockchain and Smart Contract Languages
+Solidity (Ethereum)
+Rust (Polkadot, Solana)
+Vyper (Ethereum)
+Michelson (Tezos)
+Esoteric and Experimental Languages
+Brainfuck
+Befunge
+Piet
+Malbolge
+Whitespace
+Quantum Computing Languages
+Q# (Microsoft)
+Qiskit (IBM, Python-based)
+Quipper
+Cirq (Google, Python-based)
+Domain-Specific Languages (DSLs)
+SQL (Databases)
+R (Statistics)
+LaTeX (Document preparation)
+Makefile (Build automation)
+Regex (Pattern matching)
+Puppet (Configuration management)
+HCL (HashiCorp Configuration Language)
+This is not an exhaustive list, but it covers most commonly used and niche programming languages across various domains. Let me know if you need a more specific categorization or historical perspective! 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

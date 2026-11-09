@@ -1,0 +1,38 @@
+VoiceBot POC — Real-Time AI Voice Conversation using LiveKit Agents
+The Problem
+Traditional chatbots are text-only, which creates barriers for users who prefer speaking over typing. Building a real-time voice AI system requires handling multiple complex components simultaneously — audio capture, speech recognition, AI processing, and voice synthesis — all with minimal latency.
+Key pain points:
+No natural voice interaction in existing chatbot solutions
+High latency in speech-to-speech pipelines breaks conversation flow
+Complex WebRTC setup required for real-time audio streaming
+Difficult to integrate voice AI into existing web applications
+Our Solution
+A real-time voice conversation built using LiveKit Agents framework. Users click a single button in the web interface, a voice overlay opens, and they can immediately start speaking with an AI assistant. The AI listens, understands, thinks, and responds with a natural synthesized voice — just like a real conversation with an AI.
+Solution Architecture
+Frontend (Next.js) — A voice overlay modal opens when the user clicks “Use Voice” from the chat input menu. It connects to a LiveKit room via WebRTC, captures microphone audio, and plays back the AI’s synthesized voice through the browser’s audio system using the RoomAudioRenderer component.
+LiveKit Cloud — Acts as the real-time media server. It manages the WebRTC room and automatically dispatches jobs to the Python agent worker when a user joins.
+Python Agent Worker — A persistent background process built with livekit-agents SDK. When a user joins a room, LiveKit dispatches a job to the agent which connects and begins processing audio immediately.
+Pipeline — User speaks → Deepgram transcribes speech to text → Groq LLaMA processes and generates response → Cartesia converts response to audio → audio streams back to user in real time.
+Deliverables
+Real-Time Voice Overlay — A modal with waveform visualizer showing live AI speaking and listening states with visual indicators.
+AI Auto-Greeting — The AI automatically greets the user as soon as they join the voice session.
+Bidirectional Voice Conversation — Users speak naturally and the AI responds with synthesized voice with natural turn-taking via Silero VAD.
+Mute Control — Users can mute and unmute their microphone during the session without ending the call.
+Stop Session — Users can end the voice session at any time using the Stop button.
+LiveKit Token API — Secure Next.js API route generates JWT tokens with room-specific metadata for each session.
+Agent Auto-dispatch — LiveKit automatically detects when a user joins and dispatches the Python agent, requiring zero manual intervention.
+Tech Stack
+Frontend: Next.js 14, React, TypeScript, TailwindCSS
+Voice Infrastructure: LiveKit Cloud — WebRTC room management
+Agent Framework: livekit-agents — Python agent worker
+Speech to Text: Deepgram — real-time streaming transcription
+LLM: Groq API — LLaMA 3.3 70B Versatile
+Text to Speech: Cartesia — sonic-2 model
+Voice Activity Detection: Silero VAD
+Auth: LiveKit Server SDK — JWT token generation
+Business Impact
+Customer Support — Businesses can deploy voice AI agents available 24/7 to handle unlimited concurrent conversations, reducing operational costs significantly.
+Healthcare — Patients can speak with AI assistants to describe symptoms or get guidance, removing friction for elderly or differently-abled users who find typing difficult.
+Education — Students can practice language learning or interview preparation by speaking with an AI that responds naturally in real time.
+Accessibility — Voice-first interfaces make AI tools available to users with visual impairments or motor disabilities.
+Speed to Market — This POC demonstrates that a production-grade voice AI system can be built rapidly using modern cloud infrastructure, reducing development time and cost for businesses.

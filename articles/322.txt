@@ -1,0 +1,83 @@
+MLflow Experiment Tracking & Model Lifecycle Management POC
+Problem Statement
+In many organizations, machine learning experiments are managed using notebooks, spreadsheets, and local files. This creates several operational challenges:
+No centralized platform to track experiments
+Difficulty comparing model performance across multiple runs
+Lack of visibility into model parameters and training results
+Manual effort required to identify the best-performing model
+No version control for trained models
+Limited auditability and reproducibility of results
+As projects scale, these issues lead to delays in deployment, inconsistent model management, and increased operational risk.
+Proposed Solution
+To address these challenges, a Proof of Concept (POC) was developed using MLflow , an open-source platform for managing the machine learning lifecycle.
+The solution demonstrates how MLflow can provide:
+Centralized experiment tracking
+Automated parameter and metric logging
+Model version management
+Artifact storage and retrieval
+Visual comparison of multiple model runs
+Improved reproducibility and governance
+The POC trains multiple machine learning models and automatically records all experiment details within MLflow, allowing teams to monitor and manage model development from a single interface.
+Solution Architecture
+Data Layer
+California Housing Dataset
+20,640 records
+8 input features
+Target variable: House Price Prediction
+Model Training Layer
+Three models were trained and evaluated:
+Linear Regression
+Random Forest Regressor
+XGBoost Regressor
+Each model execution logs:
+Hyperparameters
+Evaluation metrics
+Training metadata
+Generated artifacts
+MLflow Tracking Layer
+MLflow acts as the central management platform by storing:
+Experiment runs
+Parameters
+Metrics
+Tags
+Model artifacts
+Version information
+Storage Components:
+SQLite Database (mlflow.db) for metadata
+Local Artifact Store (mlruns/) for models and visualizations
+User Interface Layer
+MLflow UI provides:
+Experiment dashboard
+Run comparison view
+Parameter comparison
+Metrics visualization
+Artifact browsing
+Model registry management
+Key Features Demonstrated
+Deliverables
+Technology Stack
+Business Benefits
+Improved Experiment Visibility
+Provides a centralized platform for tracking and reviewing all machine learning experiments.
+Reduced Manual Effort
+Eliminates spreadsheet-based tracking and manual comparison of model results.
+Better Governance
+Maintains a complete audit trail of model training activities, parameters, and outcomes.
+Enhanced Reproducibility
+Allows teams to recreate experiments using stored configurations and artifacts.
+Faster Decision Making
+Enables quick identification of the best-performing model using objective performance metrics.
+Foundation for MLOps Adoption
+Serves as a starting point for implementing advanced MLOps capabilities such as:
+Automated model deployment
+CI/CD integration
+Model monitoring
+Drift detection
+Production lifecycle management
+POC Results
+Best Performing Model
+XGBoost Regressor
+Performance improvements observed:
+Lowest prediction error
+Highest R² score
+Best overall model accuracy among evaluated models Demo Video

@@ -1,0 +1,34 @@
+Enterprise Chatbot Interface & Auth Wrapper
+Client Name: Confidential (Internal / SaaS)
+Industry Type: AI / Customer Support Automation
+Products & Services: Enterprise AI Knowledge Base
+Organization Size: 100+
+About Client: A technology-focused entity streamlining internal support operations via AI-driven conversational interfaces.
+The Problem The client required a secure, user-friendly interface to interact with their underlying AI/Langchain database. The existing setup lacked a unified frontend and robust authentication, exposing the chatbot endpoints to unauthorized access and making it difficult for non-technical staff to utilize the bot.
+Our Solution I engineered the full-stack wrapper for the chatbot system using Node.js for the backend and React for the frontend.
+Security: Implemented MSAL (Microsoft Authentication Library) to ensure only authorized corporate users could access the bot.
+Integration: Built a lightweight Node.js API layer to securely route user queries to the Langchain database service, decoupling the frontend from the core AI logic.
+Solution Architecture
+Client Layer: React.js Single Page Application (SPA).
+Auth Layer: Azure AD via MSAL for token validation.
+API Layer: Node.js/Express Middleware to sanitize inputs.
+Data Layer: Connection to existing Langchain/Vector DB service.
+Deliverables
+Fully functional React Frontend with Chat UI.
+Secure Node.js Backend API.
+MSAL Authentication Integration Documentation.
+Tech Stack
+Framework used: React.js, Express.js
+Language/techniques used: JavaScript/TypeScript, REST API
+Models used: Integration with Langchain (LLM Interface)
+Skills used: Full Stack Development, OAuth/MSAL Implementation
+Databases used: Vector DB (via API)
+Web Cloud Servers used: AWS EC2 (Containerized)
+What are the technical challenges faced during project execution
+Handling token expiration and seamless refresh cycles using MSAL without disrupting the user chat session.
+Streaming real-time responses from the Langchain backend to the React frontend to minimize perceived latency.
+How the Technical Challenges were Solved
+Implemented an Axios interceptor in the React app to auto-renew auth tokens silently in the background.
+Utilised Server-Sent Events (SSE) in the Node.js layer to stream text chunks from the AI model to the client immediately as they were generated.
+Business Impact
+Delivered a secure, production-ready interface that enabled internal teams to utilize the chatbot safely, protecting sensitive corporate data through enterprise-grade authentication.

@@ -1,0 +1,45 @@
+Real-Time Ad Platform ETL Integration and Reporting
+Client: A leading retail firm in the USA
+Industry Type: Retail
+Products & Services: Retail and Marketing promotions
+Organization Size: 2000+
+The client required a unified, real-time view of their ad performance data sourced from multiple platforms, including Google AdSense, AdPushup, Connatix, and Vidazoo. These platforms had varying APIs, and data had to be extracted regularly, stored efficiently, transformed into meaningful metrics, and visualized in Looker Studio. The client lacked a centralized data warehouse and automation to manage this process.
+We developed a comprehensive ETL pipeline using Python to automate the extraction of data from the required ad platforms. The solution was deployed on a Google Cloud Platform Virtual Machine (GCP VM) to run continuously and reliably. The extracted data was loaded into Google BigQuery, transformed into analytical tables, and connected to Looker Studio for reporting. This enabled the client to monitor key ad performance metrics in near real-time.
+Python scripts created to fetch data from AdSense, AdPushup, Connatix, and Vidazoo APIs.
+Deployment of these scripts on a GCP Virtual Machine for scheduling and automation.
+Storage of raw and processed data in Google BigQuery.
+Transformation of data into analytical tables for reporting.
+Real-time dashboard creation using Looker Studio.
+Python-based ETL scripts for all ad platforms
+Fully deployed and automated VM setup on GCP
+Centralized data warehouse in BigQuery
+Looker Studio dashboards for real-time monitoring
+Data transformation logic and scripts
+Documentation and automation schedule setup
+Tools used
+Looker Studio
+Google BigQuery
+GCP Virtual Machine
+Python
+REST API Integration
+SQL
+ETL development
+Custom Python ETL workflows
+Data Engineering
+API integration
+Cloud Deployment
+Real-time Reporting
+Data Transformation
+Google BigQuery
+Google Cloud Platform (GCP VM)
+What are the technical Challenges Faced during Project Execution
+Handling rate limits and inconsistent data structures across multiple APIs.
+Ensuring uptime and reliability of scheduled scripts on the VM.
+Building dynamic transformation logic for heterogeneous data formats.
+How the Technical Challenges were Solved
+Implemented retry mechanisms and batching in API calls.
+Set up logging and alerting on the VM to monitor script execution.
+Designed modular transformation scripts adaptable to data structure changes.
+Real-time visibility into ad performance from multiple platforms.
+Significant reduction in manual reporting time.
+Data-driven decision-making based on consistent and timely reports.

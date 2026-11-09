@@ -1,0 +1,78 @@
+AI-Powered Document Intelligence & Computer Vision Systems for Engineering Workflows
+Client Background
+Client Name: A leading AI Data Center firm in the USA
+Industry Type: Engineering Analytics & AI Solutions
+Products & Services: Engineering document analysis Computer vision-based automation AI-driven validation systems
+Engineering document analysis
+Computer vision-based automation
+AI-driven validation systems
+About Client:
+The client works with complex engineering datasets including: Electrical panel images Architectural drawings Multi-page technical PDFs
+Electrical panel images
+Architectural drawings
+Multi-page technical PDFs
+Their workflows required high accuracy, scalability, and automation
+Objective: Reduce manual inspection Improve validation accuracy Automate structured data extraction
+Reduce manual inspection
+Improve validation accuracy
+Automate structured data extraction
+The Problem
+Manual inspection of electrical panels involved: Identifying switch states (ON/OFF) Verifying breaker labels and amp ratings Checking wiring correctness
+Identifying switch states (ON/OFF)
+Verifying breaker labels and amp ratings
+Checking wiring correctness
+Challenges: Time-consuming for large-scale audits High chance of human error Subtle visual differences between switch states Variation in lighting and panel layouts
+Time-consuming for large-scale audits
+High chance of human error
+Subtle visual differences between switch states
+Variation in lighting and panel layouts
+No automated way to convert panel images into structured audit data
+Our Solution
+Developed a computer vision-based automated audit system
+Key capabilities: Detect panel components using YOLOv8 Extract text using OCR (Gemini) Convert visual and textual data into structured outputs Validate electrical correctness using rule-based logic
+Detect panel components using YOLOv8
+Extract text using OCR (Gemini)
+Convert visual and textual data into structured outputs
+Validate electrical correctness using rule-based logic
+System processes: Panel images Engineering drawings PDFs
+Panel images
+Engineering drawings
+PDFs
+Solution Architecture
+Input: Panel images / PDFs
+Panel images / PDFs
+FastAPI layer for API handling
+Modal serverless compute: CPU for preprocessing and tiling GPU for model inference
+CPU for preprocessing and tiling
+GPU for model inference
+YOLOv8 detection: Breakers, switches, wires, labels, amp ratings
+Breakers, switches, wires, labels, amp ratings
+OCR layer: Extract breaker numbers and amp ratings
+Extract breaker numbers and amp ratings
+Data association engine: Groups components into breaker-level records
+Groups components into breaker-level records
+Validation engine: Phase calculation Wire-phase mapping Rule-based verification
+Phase calculation
+Wire-phase mapping
+Rule-based verification
+Output: Structured JSON / Excel dataset
+Structured JSON / Excel dataset
+Deliverables
+Automated electrical audit pipeline
+Structured breaker-level dataset
+Validation system for wiring correctness
+Exportable audit reports
+Technical Challenges
+Detecting small components in high-resolution images
+Differentiating visually similar switch states
+Associating multiple detected elements correctly
+Handling missing or unclear data
+Solutions
+Image tiling and preprocessing for better detection
+Precise annotation of multiple object classes
+Geometry-based association logic
+Phase mapping algorithms (L1, L2, L3 logic)
+Business Impact
+Reduced manual inspection effort significantly
+Improved audit accuracy and consistency
+Enabled scalable processing of large datasets

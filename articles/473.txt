@@ -1,0 +1,146 @@
+List of data engineering tools, categorized by their use cases
+Here’s a comprehensive list of data engineering tools , categorized by their use cases:
+1. Data Ingestion & Integration
+These tools help extract, load, and transform data from different sources into data warehouses or lakes.
+ETL/ELT Tools Apache NiFi Apache Hop Apache Airflow dbt (Data Build Tool) Talend Informatica PowerCenter Pentaho Data Integration (PDI) Fivetran Stitch Matillion Hevo Data Airbyte Dataform AWS Glue
+Apache NiFi
+Apache Hop
+Apache Airflow
+dbt (Data Build Tool)
+Talend
+Informatica PowerCenter
+Pentaho Data Integration (PDI)
+Fivetran
+Stitch
+Matillion
+Hevo Data
+Airbyte
+Dataform
+AWS Glue
+Streaming Data Ingestion Apache Kafka Apache Pulsar Apache Flume Apache Beam AWS Kinesis Google Pub/Sub Azure Event Hubs Confluent Redpanda
+Apache Kafka
+Apache Pulsar
+Apache Flume
+Apache Beam
+AWS Kinesis
+Google Pub/Sub
+Azure Event Hubs
+Confluent
+Redpanda
+Data Integration & API Tools MuleSoft Zapier Pipedream Retool Google Cloud Dataflow
+MuleSoft
+Zapier
+Pipedream
+Retool
+Google Cloud Dataflow
+2. Data Storage & Management
+These tools provide scalable storage for structured and unstructured data.
+Databases (SQL & NoSQL) PostgreSQL MySQL Microsoft SQL Server MariaDB Oracle Database IBM Db2 Amazon RDS
+PostgreSQL
+MySQL
+Microsoft SQL Server
+MariaDB
+Oracle Database
+IBM Db2
+Amazon RDS
+NoSQL Databases MongoDB Cassandra CouchDB Redis DynamoDB ArangoDB
+MongoDB
+Cassandra
+CouchDB
+Redis
+DynamoDB
+ArangoDB
+Graph Databases Neo4j JanusGraph Amazon Neptune ArangoDB
+Neo4j
+JanusGraph
+Amazon Neptune
+ArangoDB
+Time-Series Databases InfluxDB TimescaleDB OpenTSDB
+InfluxDB
+TimescaleDB
+OpenTSDB
+Data Lakes & Warehouses Amazon S3 Google Cloud Storage Azure Data Lake Storage Snowflake Amazon Redshift Google BigQuery Azure Synapse Analytics Databricks Delta Lake
+Amazon S3
+Google Cloud Storage
+Azure Data Lake Storage
+Snowflake
+Amazon Redshift
+Google BigQuery
+Azure Synapse Analytics
+Databricks Delta Lake
+3. Data Processing & Transformation
+Tools that help process, clean, and transform data.
+Batch Processing Apache Spark Apache Hadoop Apache Flink Dask Presto (Trino) AWS Glue
+Apache Spark
+Apache Hadoop
+Apache Flink
+Dask
+Presto (Trino)
+AWS Glue
+Streaming Processing Apache Storm Apache Samza Apache Flink Spark Streaming Google Dataflow Amazon Kinesis Data Analytics
+Apache Storm
+Apache Samza
+Apache Flink
+Spark Streaming
+Google Dataflow
+Amazon Kinesis Data Analytics
+Data Transformation dbt (Data Build Tool) Trifacta Google DataPrep Informatica Data Quality
+dbt (Data Build Tool)
+Trifacta
+Google DataPrep
+Informatica Data Quality
+4. Data Orchestration & Workflow Automation
+Tools to schedule, manage, and monitor workflows.
+Apache Airflow
+Prefect
+Luigi
+Dagster
+AWS Step Functions
+Google Cloud Composer
+Azure Data Factory
+Kubeflow
+Argo Workflows
+5. Data Governance & Quality
+Ensuring data integrity, lineage, and security.
+Data Catalog & Lineage Apache Atlas DataHub Amundsen Collibra Alation
+Apache Atlas
+DataHub
+Amundsen
+Collibra
+Alation
+Data Quality & Profiling Great Expectations Monte Carlo Soda Talend Data Quality
+Great Expectations
+Monte Carlo
+Soda
+Talend Data Quality
+Data Security & Privacy Privacera Immuta Apache Ranger
+Privacera
+Immuta
+Apache Ranger
+6. BI & Data Visualization
+Tools for analytics and reporting.
+Tableau
+Looker
+Power BI
+Google Data Studio (Looker Studio)
+Mode Analytics
+Metabase
+Superset
+7. Cloud Data Engineering Tools
+Cloud-native solutions for data engineering.
+AWS AWS Glue AWS Lambda Amazon Redshift Amazon Kinesis AWS Step Functions
+AWS Glue
+AWS Lambda
+Amazon Redshift
+Amazon Kinesis
+AWS Step Functions
+Google Cloud Google BigQuery Google Cloud Dataflow Google Cloud Composer
+Google BigQuery
+Google Cloud Dataflow
+Google Cloud Composer
+Azure Azure Data Factory Azure Synapse Analytics
+Azure Data Factory
+Azure Synapse Analytics
+This list covers most tools in modern data engineering workflows . Let me know if you need specific recommendations based on a particular use case! 🚀
+Are you looking for a team? Post your project here: https://workcroft.com/
+Are you looking for projects? Find projects here: https://workcroft.com/

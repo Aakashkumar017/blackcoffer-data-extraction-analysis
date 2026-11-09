@@ -1,0 +1,26 @@
+Customer Churn Prediction & Analytics with Snowflake Cortex
+Businesses struggle to identify which customers are at risk of churn .
+Existing reports are static and don’t provide real-time insights .
+Customer success teams lack actionable intelligence to reduce churn.
+Built a Cortex Analyst POC on Snowflake using the DEMO_POC.CHURN dataset.
+Enabled natural language queries for churn metrics (e.g., “What’s churn by contract length?”).
+Delivered interactive dashboards and semantic views for analysts and executives.
+Data ingestion : Customer churn dataset loaded into Snowflake (CUSTOMER_CHURN table).
+Semantic view : DEMO_POC.CHURN.DEMO created for structured queries.
+Cortex Analyst : Configured to answer churn questions in natural language.
+Evaluation runs : Verified correctness and logical consistency of responses.
+Access via CoWork : Business users query churn insights directly.
+Cleaned customer churn dataset .
+Semantic view for churn metrics.
+Cortex Analyst agent for natural language queries.
+Evaluation reports showing accuracy and performance.
+Demo scripts and SQL queries for churn analysis.
+Snowflake Cortex Analyst
+Snowflake Warehouse (COMPUTE_WH)
+SQL (for churn queries)
+Power BI (optional dashboards)
+Bandicam (for demo video recording)
+Customer success teams can identify at-risk accounts faster.
+Executives get clear churn summaries for decision-making.
+Data analysts save time by querying in natural language instead of writing SQL.
+Potential to reduce churn by 5–10% through proactive interventions.

@@ -1,0 +1,127 @@
+LangGraph AI Research Agent
+Introduction
+This project presents an AI-powered Research Agent designed to automate the end-to-end research process. Instead of manually searching across multiple sources, reviewing articles, and synthesizing information into a coherent report, users can simply provide a topic, and the agent performs the research autonomously.
+The system conducts multi-stage research, gathers information from diverse sources, analyzes the findings, and compiles them into a well-structured and comprehensive report. The generated output is not limited to brief summaries or bullet points; rather, it is a professionally formatted document that includes clearly defined sections, analytical insights, structured tables (where applicable), and properly cited references.
+The objective of this solution is to significantly reduce research time while improving the consistency, structure, and usability of the final output. The generated reports are designed to be directly usable for academic, technical, or business purposes.
+1.1 Key Capabilities
+Interactive CLI wizard: collects query, breadth, depth, and 3 AI-generated follow-up questions
+Configurable Breadth (2–10): controls how many search queries run per iteration
+Configurable Depth (1–5): controls how many iterative research passes the agent performs
+LangGraph StateGraph with conditional edges — loops back for deeper research passes
+Dual LLM support: Groq (LLaMA 3.3 70B, free) and Google Gemini 2.0 Flash (free)
+Firecrawl integration for real-time web scraping and content extraction
+Auto-generated Markdown reports with executive summary, tables, citations, and next steps
+2.1 High-Level System Architecture
+USER (CLI)
+│ 1. Research Query   2. Breadth (2-10)
+│ 3. Depth (1-5)     4. Follow-up answers
+▼
+LANGGRAPH StateGraph ENGINE
+Node A → Node B → Node C → Node D
+Clarify  Generate  Web      Extract
+Query    Queries   Search   Learnings
+↓ (Firecrawl)
+Node E ← (Conditional Edge)
+Depth Check
+depth > 0? → loop back to Node B
+depth = 0? → Node F: Generate Final Report
+▼
+reports/report.md (Markdown output with citations)
+2.2 Breadth & Depth Parameters
+BREADTH — Number of Search Queries Per Iteration
+DEPTH — Number of Research Iterations (Loop Count)
+How Breadth x Depth Works Together
+2.3 LangGraph Node-by-Node Workflow
+Node A — Clarify Query
+Input: Raw user query + follow-up question answers. The LLM analyzes answers to refine research scope and direction, outputting a clarified query string. Demo: ‘about cars’ + answers → refined to mid-size C-segment market analysis.
+Node B — Generate Search Queries
+Input: Clarified research goal from current iteration. LLM generates exactly N queries where N = Breadth parameter. Output: List of targeted search query strings added to state.
+Node C — Web Search (Firecrawl)
+Input: List of search queries from Node B. Firecrawl API searches each query, extracts clean text from top results. Output: Dict of {query: [page_content, url, …]} added to state.
+Node D — Extract Learnings (LLM Analysis)
+Input: Raw web page content from Node C. LLM reads all pages and extracts key factual learnings and knowledge gaps. Demo Pass 1: 6 learnings. Pass 2: 8 learnings. Pass 3: 0 (no results).
+Node E — Depth Check (Conditional Edge)
+If depth > 0: decrements counter, generates new research direction focused on gaps, loops to Node B. If depth = 0: routes to Node F for final report generation. This is what makes LangGraph powerful — stateful, conditional looping without manual control flow.
+Node F — Generate Final Report
+Input: All accumulated learnings, sources, clarified query, and research context from state. LLM synthesizes everything into a structured Markdown report written to /reports/report.md.
+2.4 System Components
+3.1 Prerequisites
+3.2 Step-by-Step Installation
+Step 1 — Clone the Repository
+git clone https://github.com/shivamrawat2002/LangGrpah_Research_agent.git
+cd LangGrpah_Research_agent
+Step 2 — Create Virtual Environment
+Windows (PowerShell / Command Prompt):
+python -m venv venv
+venv\Scripts\activate
+Mac / Linux:
+python -m venv venv
+source venv/bin/activate
+You must see (venv) at the start of your terminal line before continuing.
+Step 3 — Install Dependencies
+pip install -r requirements.txt
+If requirements.txt fails, install manually:
+pip install langgraph langchain langchain-groq langchain-google-genai firecrawl-py python-dotenv rich
+Step 4 — Get Free API Keys
+Step 5 — Create .env File
+# Choose ONE LLM provider
+GROQ_API_KEY=gsk_your_groq_key_here
+GOOGLE_API_KEY=AIza_your_gemini_key_here
+# Web search (required)
+FIRECRAWL_API_KEY=fc-your_firecrawl_key_here
+# Select which LLM to use
+LLM_PROVIDER=groq   # or: LLM_PROVIDER=gemini
+Step 6 — Create Reports Directory
+mkdir reports
+Step 7 — Verify Project Structure
+LangGrpah_Research_agent/
+├── deep_research/    # Core LangGraph agent package
+│   ├── agent.py     # StateGraph definition + node connections
+│   ├── nodes.py     # Individual node functions (A through F)
+│   ├── state.py     # TypedDict state schema
+│   └── tools.py     # Firecrawl search + LLM tool wrappers
+├── reports/          # Generated .md reports saved here
+├── .env              # Your API keys (NEVER commit this!)
+├── requirements.txt  # All Python dependencies
+└── run.py            # Main CLI entry point
+4.1 Starting the Agent
+python run.py
+4.2 The 4-Step Interactive Wizard
+4.3 Choosing the Right Breadth Value
+Breadth = how many different search angles the agent explores per research pass
+Breadth 2: Fast, good for demos. Uses ~10 Firecrawl credits per depth level.
+Breadth 3-4: Recommended for real projects. Balances speed and coverage.
+Breadth 5-7: Use for detailed reports. May take 8-15 minutes per depth pass.
+Breadth 8-10: Maximum research coverage. Only for critical/important research topics.
+4.4 Choosing the Right Depth Value
+Depth 1: Single pass. Agent searches → extracts → reports. ~2 min. Good for quick answers.
+Depth 2: Two passes. After first pass, identifies gaps and researches them. ~5 min. Recommended.
+Depth 3: Three passes (used in demo). Goes 3 levels deep on sub-topics. ~8-10 min. Comprehensive.
+Depth 4-5: Very thorough. Each pass focuses on increasingly specific knowledge gaps. 15-20+ min.
+5.1 Demo Configuration Used
+5.2 Research Passes
+Depth Pass 1 — Initial Broad Research
+Query 1: ‘2023-2024 global automotive market trends…’ → 0 results (Firecrawl error — gracefully handled)
+Query 2: ‘Consumer preference analysis of the mid-size (C-segment) vehicle market in the United States, 2022-2024’ → 5 results
+Learnings extracted: 6 | Knowledge gaps found: EV adoption barriers, pricing sensitivity
+Depth Pass 2 — Gap-Filling Research on EV/Hybrid Adoption
+New goal: Assess the drivers, barriers, and purchase intent for hybrid and fully electric powertrains within the U.S. C-segment market
+Query 1: ‘2024 US C-segment vehicle buyer purchase intent for hybrid and battery-electric powertrains…’ → 5 results
+Query 2: ‘Barriers to adoption of fully electric powertrains in the US C-segment market 2022-2025…’ → 0 results
+Learnings extracted: 8 | Knowledge gaps found: Price elasticity, TCO analysis
+Depth Pass 3 — Deep Dive on Price Elasticity
+New goal: Quantify the price elasticity of BEV purchase intent in the U.S. C-segment relative to federal/state incentives and TCO
+Query 1: ‘price elasticity of battery electric vehicle purchase intent…’ → 5 results
+Query 2: ‘effect of projected five-year total cost of ownership on BEV demand elasticity…’ → 0 results (Firecrawl 402 Payment Required)
+Learnings extracted: 0 (JSON parse error from LLM + no results from query 2)
+The agent handled all errors gracefully — Firecrawl 402 errors, JSON parse errors, and 0-result queries were all caught and logged without crashing. The final report was still generated successfully using the 14 learnings collected from passes 1 and 2.
+5.3 Report Sections Generated (Actual Output)
+Executive Summary — 5 key findings with quantified data (68% digital research, +22% hybrid growth, etc.)
+Section 1: Market Overview — data table with metrics, revenue forecasts, top-selling models
+Section 2: Consumer Behaviour — digital research dominance, priority attributes, TCO influence
+Section 3: Power-Train Trends — comparison table (Hybrid vs BEV vs ICE), incentive landscape
+Section 4: Barriers to BEV Adoption — 4 barriers with quantified data and cited sources
+Section 5: Opportunities for Stakeholders — OEM, marketing, and policy recommendations
+Section 6: Future Outlook — 3-scenario table (Hybrid-Dominant, Rapid BEV, Balanced Mix)
+Conclusion + Next Steps for School Project
+Sources list — 15 numbered citations

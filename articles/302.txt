@@ -1,0 +1,49 @@
+Apache Airflow ETL Data Pipeline — Proof of Concept (POC)
+Organizations today deal with data arriving from multiple heterogeneous sources — databases, APIs, flat files, and streaming systems. Without a reliable, automated pipeline, data engineers spend significant manual effort orchestrating data movement, handling failures, and ensuring data quality. Key challenges include:
+No centralized pipeline orchestration — tasks run manually or via ad-hoc scripts.
+No automatic retry or failure handling when a step breaks mid-way.
+No data quality validation before loading into the warehouse.
+No visibility or monitoring of pipeline health and task status.
+Teams are notified of failures only after downstream impact is already felt.
+We built and deployed an automated ETL (Extract, Transform, Load) pipeline using Apache Airflow, containerized with Docker. The pipeline orchestrates end-to-end data movement across 5 tasks in a clearly defined DAG (Directed Acyclic Graph):
+Extract — Pulls raw records from the source database.
+Transform — Cleans names, fixes invalid ages and salaries, standardizes formats.
+Validate — Runs data quality checks and raises errors if records fail.
+Load — Inserts validated records into the target warehouse table.
+Notify — Sends a pipeline completion summary with record counts and status.
+The solution runs on a @daily schedule, supports automatic retries on failure, and provides full visibility via the Airflow web UI.
+The solution is built on a microservices architecture using Docker Compose with the following components:
+Airflow Webserver — Hosts the UI at localhost:8080 for monitoring DAGs and task logs.
+Airflow Scheduler — Continuously scans DAGs and triggers runs on schedule.
+PostgreSQL — Stores Airflow metadata (DAG runs, task states, XCom values).
+DAG (etl_data_pipeline.py) — Defines task order and dependencies using the >> operator.
+ETL Helpers (etl_helpers.py) — Reusable utility functions for cleaning, validation, loading, and notifications.
+Data flows: Source DB → Extract → XCom → Transform → XCom → Validate → XCom → Load → Warehouse → Notify
+etl_pipeline.py — Fully functional Airflow DAG with 5 tasks.
+etl_helpers.py — Modular helper library (transform, validate, load, notify functions).
+docker-compose.yaml — One-command environment setup for Airflow + PostgreSQL.
+requirements.txt — All dependencies pinned for reproducibility.
+Live Airflow UI — Running at localhost:8080 with DAG graph, task logs, and run history.
+POC Success Story Document — This document.
+Apache Airflow 2.8.1 — Pipeline orchestration and scheduling.
+Python 3.8 — Core programming language for all DAG and helper logic.
+PostgreSQL 13 — Airflow metadata database.
+Docker & Docker Compose — Containerized deployment.
+XCom — Airflow’s inter-task communication mechanism for passing data between tasks.
+PythonOperator — Airflow operator used to execute all custom Python task functions.
+VS Code — Development IDE used for writing and managing the project.
+This POC demonstrates the potential of automated ETL pipeline orchestration across several industries and sectors:
+Retail & E-Commerce
+Automate daily ingestion of sales, inventory, and customer data. Reduce manual reporting effort and ensure business dashboards always reflect fresh, validated data.
+Banking & Finance
+Schedule and monitor transaction data pipelines with built-in validation checks to ensure regulatory compliance and data accuracy before loading into reporting systems.
+Healthcare
+Orchestrate patient data processing pipelines with strict validation rules, ensuring only clean, complete records reach analytical systems and dashboards.
+Logistics & Supply Chain
+Automate daily data feeds from warehouses, carriers, and suppliers. Reduce pipeline failures and improve visibility into supply chain data quality.
+Key Business Benefits
+Reduced manual effort — Engineers focus on logic, not running scripts.
+Faster failure recovery — Automatic retries and alerting reduce mean time to resolution.
+Improved data quality — Validation gates prevent bad data from reaching downstream systems.
+Full auditability — Every run, task state, log, and XCom value is tracked and queryable.
+Scalable foundation — The same pattern can be extended to 100s of DAGs with minimal overhead. Demo Video
